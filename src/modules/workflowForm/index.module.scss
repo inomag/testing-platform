@@ -1,0 +1,27 @@
+@import '../../designTokens/scssVariables.scss';
+
+.form {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  margin: -20px 0px;
+  &__title {
+    padding: var(--spacing-xl) var(--spacing-s);
+  }
+
+  &__form {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    flex: 1;
+    box-shadow: inset 0 0 var(--spacing-xs) var(--color-neutral-300);
+    border-radius: var(--radius-s-8);
+    margin: 0px var(--spacing-s);
+  }
+
+  &__buttons {
+    padding: var(--spacing-xl) var(--spacing-s);
+    display: flex;
+    gap: var(--spacing-s);
+    justify-content: flex-end;
+  }
+}

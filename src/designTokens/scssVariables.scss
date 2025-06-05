@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+body {
+  margin: 0px;
+}
+
+#root {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-family-default);
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--background-default);
+    border-radius: var(--radius-m-12);
+  }
+}
+
+// Breakpoints
+$XL-desktop-breakpoint: 1800px;
+$desktop-breakpoint: 1000px;
+$tablet-breakpoint: 860px;
+$mobile-breakpoint: 560px;
+
+@mixin media-query($breakpoint) {
+  @if $breakpoint == XL-desktop {
+    @media (max-width: $XL-desktop-breakpoint) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (max-width: $desktop-breakpoint) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (max-width: $tablet-breakpoint) {
+      @content;
+    }
+  } @else if $breakpoint == mobile {
+    @media (max-width: $mobile-breakpoint) {
+      @content;
+    }
+  } @else {
+    @error "Invalid breakpoint: #{$breakpoint}. Use 'XL-desktop', 'desktop', 'tablet', or 'mobile'.";
+  }
+}
+@mixin basePadding {
+  padding: var(--spacing-xs) var(--spacing-m);
+}
+
+$shadow-100: 0px 0px 1px 0px rgba(0, 0, 0, 0.14);
+$shadow-200: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+$shadow-300: 0px 0px 8px 0px rgba(0, 0, 0, 0.14);
+$shadow-400: 0px 8px 12px 0px rgba(0, 0, 0, 0.14);
+
+@mixin baseBoxShadow {
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+@mixin raisedBoxShadow {
+  box-shadow: $shadow-100, $shadow-200;
+}
+
+@mixin overflowBoxShadow {
+  box-shadow: $shadow-100, $shadow-300;
+}
+
+@mixin overlayBoxShadow {
+  box-shadow: $shadow-100, $shadow-400;
+}
+
+@mixin inputBase {
+  @include basePadding;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-s-8);
+  transition: border-color 0.2s ease-in-out;
+  &:focus-within {
+    @include inputFocus;
+  }
+}
+
+@mixin inputFocus {
+  border: 1px solid var(--border-solid-bold);
+  outline: 0;
+}
+
+@mixin custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: var(--spacing-l);
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--background-default);
+    border-radius: var(--radius-s-8);
+    border-left: calc(var(--spacing-l) / 3) solid transparent;
+    border-right: calc(var(--spacing-l) / 3) solid transparent;
+    background-clip: padding-box;
+  }
+}

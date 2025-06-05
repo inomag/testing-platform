@@ -1,0 +1,104 @@
+// follow bam
+.text {
+  font-size: var(--s-font-size);
+  color: var(--text-default);
+  font-weight: var(--font-weight-medium);
+  margin: 0;
+
+  &__italic {
+    font-style: italic;
+  }
+
+  &__underline {
+    text-decoration: underline;
+  }
+
+  &__h1 {
+    font-size: var(--3xl-font-size);
+    font-weight: var(--font-weight-semi-bold);
+  }
+
+  &__h2 {
+    font-size: var(--2xl-font-size);
+    font-weight: var(--font-weight-semi-bold);
+  }
+
+  &__h3 {
+    font-size: var(--xl-font-size);
+    font-weight: var(--font-weight-semi-bold);
+  }
+
+  &__h4 {
+    font-size: var(--l-font-size);
+    font-weight: var(--font-weight-semi-bold);
+  }
+
+  &__h5 {
+    font-size: var(--m-font-size);
+    font-weight: var(--font-weight-semi-bold);
+  }
+
+  &__h6 {
+    font-size: var(--s-font-size);
+    font-weight: var(--font-weight-semi-bold);
+  }
+
+  &__subText {
+    font-size: calc(var(--xs-font-size));
+  }
+
+  &__label {
+    font-size: var(--s-font-size);
+    color: var(--text-subtle);
+  }
+
+  &__sublabel {
+    font-size: calc(var(--xs-font-size));
+    color: var(--text-subtle);
+  }
+
+  &__description {
+    font-size: calc(var(--xs-font-size));
+  }
+
+  &__link {
+    color: var(--text-subtle);
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--text-default);
+    }
+  }
+
+  &__semiBold {
+    font-weight: var(--font-weight-semi-bold);
+  }
+
+  &__bold {
+    font-weight: var(--font-weight-bold);
+  }
+
+  &__medium {
+    font-weight: var(--font-weight-medium);
+  }
+
+  &__regular {
+    font-weight: var(--font-weight-regular);
+  }
+
+  &__error {
+    color: var(--text-status-error);
+  }
+
+  &__success {
+    color: var(--text-status-success);
+  }
+
+  &__warning {
+    color: var(--text-status-warning);
+  }
+
+  &__info {
+    color: var(--text-status-info);
+  }
+}

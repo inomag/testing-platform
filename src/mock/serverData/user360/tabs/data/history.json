@@ -1,0 +1,561 @@
+{
+  "audits": [
+    {
+      "action_type": "Password Reset (Admin)",
+      "date": "2024-12-13T08:09:18.450Z",
+      "history": [
+        {
+          "code": "created_by",
+          "name": "Created By",
+          "value": "Vymo Superuser"
+        },
+        {
+          "code": "user_id",
+          "name": "User Id",
+          "value": "SU"
+        },
+        {
+          "code": "ip_address",
+          "name": "IP Address",
+          "value": "14.98.179.18:54629"
+        },
+        {
+          "code": "source",
+          "name": "Source",
+          "value": "Web"
+        }
+      ]
+    },
+    {
+      "action_type": "User Field Update",
+      "date": "2024-12-13T08:09:18.423Z",
+      "history": [
+        {
+          "code": "created_by",
+          "name": "Created By",
+          "value": "Vymo Superuser"
+        },
+        {
+          "code": "user_id",
+          "name": "User Id",
+          "value": "SU"
+        },
+        {
+          "code": "user_time_zone",
+          "name": "User Time Zone",
+          "value": "+05:30"
+        },
+        {
+          "code": "ip_address",
+          "name": "IP Address",
+          "value": "14.98.179.18:54629"
+        },
+        {
+          "code": "source",
+          "name": "Source",
+          "value": "Web"
+        },
+        {
+          "code": "profile_photo",
+          "name": "Profile Photo",
+          "value": "{\"media_type\":\"photo\",\"items\":[{\"bucket\":\"vymo-uploads-staging\",\"filename\":\"2024-12-13-01-38-43-0.png\",\"size\":293005,\"mime\":\"image/png\",\"label\":\"Screenshot 2024-12-12 at 2.40.37 PM.png\",\"path\":\"lms/testmay/all/2024-12-13-01-38-43-0.png\"}],\"bucket\":\"vymo-uploads-staging\"}"
+        },
+        {
+          "code": "type",
+          "name": "User Type Testing",
+          "value": "branch"
+        }
+      ]
+    },
+    {
+      "action_type": "User Field Update",
+      "date": "2024-10-15T12:31:35.362Z",
+      "history": [
+        {
+          "code": "created_by",
+          "name": "Created By",
+          "value": "Vymo Superuser"
+        },
+        {
+          "code": "user_id",
+          "name": "User Id",
+          "value": "SU"
+        },
+        {
+          "code": "user_time_zone",
+          "name": "User Time Zone",
+          "value": "+05:30"
+        },
+        {
+          "code": "ip_address",
+          "name": "IP Address",
+          "value": "152.58.68.198:56250"
+        },
+        {
+          "code": "source",
+          "name": "Source",
+          "value": "Web"
+        },
+        {
+          "code": "type",
+          "name": "User Type Testing",
+          "value": "branch"
+        },
+        {
+          "code": "tier",
+          "name": "Tier",
+          "value": "Silver"
+        }
+      ]
+    },
+    {
+      "action_type": "Password Reset (Admin)",
+      "date": "2024-10-01T07:30:50.916Z",
+      "history": [
+        {
+          "code": "created_by",
+          "name": "Created By",
+          "value": "Vymo Superuser"
+        },
+        {
+          "code": "user_id",
+          "name": "User Id",
+          "value": "SU"
+        },
+        {
+          "code": "ip_address",
+          "name": "IP Address",
+          "value": "14.98.179.18:60684"
+        },
+        {
+          "code": "source",
+          "name": "Source",
+          "value": "Web"
+        }
+      ]
+    },
+    {
+      "action_type": "User Field Update",
+      "date": "2024-10-01T07:30:50.612Z",
+      "history": [
+        {
+          "code": "created_by",
+          "name": "Created By",
+          "value": "Vymo Superuser"
+        },
+        {
+          "code": "user_id",
+          "name": "User Id",
+          "value": "SU"
+        },
+        {
+          "code": "user_time_zone",
+          "name": "User Time Zone",
+          "value": "+05:30"
+        },
+        {
+          "code": "ip_address",
+          "name": "IP Address",
+          "value": "14.98.179.18:60684"
+        },
+        {
+          "code": "source",
+          "name": "Source",
+          "value": "Web"
+        },
+        {
+          "code": "communication_email_wmf5wfr6fi",
+          "name": "Communication Email",
+          "value": ""
+        },
+        {
+          "code": "designation_name_yqmevas4gj",
+          "name": "Designation Name",
+          "value": ""
+        },
+        {
+          "code": "appointee_name_s1dqakvqze",
+          "name": "Appointee Name",
+          "value": ""
+        },
+        {
+          "code": "nominee_relation_3phc3dmyq1",
+          "name": "Nominee Relation",
+          "value": ""
+        },
+        {
+          "code": "account_branch_name_ihhkpyfim5",
+          "name": "Account Branch Name",
+          "value": ""
+        },
+        {
+          "code": "account_type_6n76aov0ul",
+          "name": "Account Type",
+          "value": ""
+        },
+        {
+          "code": "bank_ifsc_code_s2vwagy6v",
+          "name": "Bank IFSC Code",
+          "value": ""
+        },
+        {
+          "code": "account_bank_name_in228esix",
+          "name": "Account Bank Name",
+          "value": ""
+        },
+        {
+          "code": "bank_account_number_02s1tnalds",
+          "name": "Bank Account Number",
+          "value": ""
+        },
+        {
+          "code": "lob_distributor_code_mh1aux6ftm",
+          "name": "LOB Distributor Code",
+          "value": ""
+        },
+        {
+          "code": "branch_429tforo5s",
+          "name": "BranchTesting",
+          "value": ""
+        },
+        {
+          "code": "license_type",
+          "name": "License Type",
+          "value": "INTERNAL_ADMIN"
+        },
+        {
+          "code": "licensed",
+          "name": "Licensed",
+          "value": "No"
+        },
+        {
+          "code": "type",
+          "name": "User Type Testing",
+          "value": "branch"
+        },
+        {
+          "code": "role",
+          "name": "User Role Testing",
+          "value": "BDR"
+        },
+        {
+          "code": "pincode",
+          "name": "Pincode Testing",
+          "value": ""
+        },
+        {
+          "code": "testvalidation_sszjcfnfkq",
+          "name": "TestValidation",
+          "value": ""
+        },
+        {
+          "code": "userpincodes_il4q06bmbi",
+          "name": "User Pincodes Testing",
+          "value": ""
+        },
+        {
+          "code": "lob_type_m92mulk4kn",
+          "name": "Lob Type",
+          "value": ""
+        },
+        {
+          "code": "lob_name_puw3rvrt5",
+          "name": "Lob Name",
+          "value": ""
+        },
+        {
+          "code": "tier",
+          "name": "Tier",
+          "value": "Gold"
+        }
+      ]
+    },
+    {
+      "action_type": "User Account Enable",
+      "date": "2023-12-12T10:32:22.709Z",
+      "history": [
+        {
+          "code": "created_by",
+          "name": "Created By",
+          "value": "Vymo Superuser"
+        },
+        {
+          "code": "user_id",
+          "name": "User Id",
+          "value": "SU"
+        },
+        {
+          "code": "ip_address",
+          "name": "IP Address",
+          "value": "14.98.179.18:32858"
+        },
+        {
+          "code": "source",
+          "name": "Source",
+          "value": "Web"
+        }
+      ]
+    },
+    {
+      "action_type": "User Account Disable",
+      "date": "2023-05-17T07:38:44.364Z",
+      "history": [
+        {
+          "code": "created_by",
+          "name": "Created By",
+          "value": "Vymo Superuser"
+        },
+        {
+          "code": "user_id",
+          "name": "User Id",
+          "value": "SU"
+        },
+        {
+          "code": "user_time_zone",
+          "name": "User Time Zone",
+          "value": "+05:30"
+        },
+        {
+          "code": "ip_address",
+          "name": "IP Address",
+          "value": "14.98.179.18"
+        },
+        {
+          "code": "source",
+          "name": "Source",
+          "value": "Web"
+        }
+      ]
+    },
+    {
+      "action_type": "User Account Disable",
+      "date": "2023-05-17T07:38:39.533Z",
+      "history": [
+        {
+          "code": "created_by",
+          "name": "Created By",
+          "value": "Vymo Superuser"
+        },
+        {
+          "code": "user_id",
+          "name": "User Id",
+          "value": "SU"
+        },
+        {
+          "code": "user_time_zone",
+          "name": "User Time Zone",
+          "value": "+05:30"
+        },
+        {
+          "code": "ip_address",
+          "name": "IP Address",
+          "value": "14.98.179.18"
+        },
+        {
+          "code": "source",
+          "name": "Source",
+          "value": "Web"
+        }
+      ]
+    },
+    {
+      "action_type": "User Field Update",
+      "date": "2022-07-18T12:01:22.605Z",
+      "history": [
+        {
+          "code": "created_by",
+          "name": "Created By",
+          "value": "Vymo Superuser"
+        },
+        {
+          "code": "user_id",
+          "name": "User Id",
+          "value": "SU"
+        },
+        {
+          "code": "ip_address",
+          "name": "IP Address",
+          "value": "157.45.199.199:64715"
+        },
+        {
+          "code": "source",
+          "name": "Source",
+          "value": "Web"
+        },
+        {
+          "code": "type",
+          "name": "User Type Testing",
+          "value": "branch"
+        },
+        {
+          "code": "role",
+          "name": "User Role Testing",
+          "value": "sm"
+        },
+        {
+          "code": "city",
+          "name": "City 1 Testing",
+          "value": "Goa"
+        },
+        {
+          "code": "state",
+          "name": "State New Testing",
+          "value": "Goa"
+        }
+      ]
+    },
+    {
+      "action_type": "User Field Update",
+      "date": "2022-06-30T10:19:20.691Z",
+      "history": [
+        {
+          "code": "created_by",
+          "name": "Created By",
+          "value": "Vymo Superuser"
+        },
+        {
+          "code": "user_id",
+          "name": "User Id",
+          "value": "SU"
+        },
+        {
+          "code": "ip_address",
+          "name": "IP Address",
+          "value": "171.76.118.235:53222"
+        },
+        {
+          "code": "source",
+          "name": "Source",
+          "value": "Web"
+        },
+        {
+          "code": "type",
+          "name": "User Type Testing",
+          "value": "branch"
+        },
+        {
+          "code": "role",
+          "name": "User Role Testing",
+          "value": "sm"
+        },
+        {
+          "code": "branchcodeuser_uq8m92efdc",
+          "name": "Branch Code User Testing",
+          "value": "789"
+        }
+      ]
+    },
+    {
+      "action_type": "User Field Update",
+      "date": "2022-06-30T10:19:17.062Z",
+      "history": [
+        {
+          "code": "created_by",
+          "name": "Created By",
+          "value": "Vymo Superuser"
+        },
+        {
+          "code": "user_id",
+          "name": "User Id",
+          "value": "SU"
+        },
+        {
+          "code": "ip_address",
+          "name": "IP Address",
+          "value": "171.76.118.235:53222"
+        },
+        {
+          "code": "source",
+          "name": "Source",
+          "value": "Web"
+        },
+        {
+          "code": "type",
+          "name": "User Type Testing",
+          "value": "branch"
+        },
+        {
+          "code": "role",
+          "name": "User Role Testing",
+          "value": "sm"
+        },
+        {
+          "code": "branchcodeuser_uq8m92efdc",
+          "name": "Branch Code User Testing",
+          "value": "789"
+        }
+      ]
+    },
+    {
+      "action_type": "Create",
+      "date": "2022-06-30T10:18:46.062Z",
+      "history": [
+        {
+          "code": "created_by",
+          "name": "Created By",
+          "value": "Vymo Superuser"
+        },
+        {
+          "code": "user_id",
+          "name": "User Id",
+          "value": "SU"
+        },
+        {
+          "code": "user_time_zone",
+          "name": "User Time Zone",
+          "value": "+05:30"
+        },
+        {
+          "code": "ip_address",
+          "name": "IP Address",
+          "value": "171.76.118.235:53222"
+        },
+        {
+          "code": "source",
+          "name": "Source",
+          "value": "Web"
+        },
+        {
+          "code": "code",
+          "name": "Emp Id Testing",
+          "value": "SM3"
+        },
+        {
+          "code": "name",
+          "name": "Name Testing",
+          "value": "SM3"
+        },
+        {
+          "code": "email",
+          "name": "Login Id Testing",
+          "value": "SM3@getvymo.com"
+        },
+        {
+          "code": "phone",
+          "name": "Phone Test",
+          "value": "+919999999999"
+        },
+        {
+          "code": "type",
+          "name": "User Type Testing",
+          "value": "branch"
+        },
+        {
+          "code": "role",
+          "name": "User Role Testing",
+          "value": "sm"
+        },
+        {
+          "code": "parent",
+          "name": "Reporting manager",
+          "value": "all"
+        },
+        {
+          "code": "auth_type",
+          "name": "Authentication Type",
+          "value": "VYMO_LOGIN"
+        }
+      ]
+    }
+  ]
+}

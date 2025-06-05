@@ -1,0 +1,189 @@
+{
+  "message": "success",
+  "result": {
+    "visitor": {
+      "code": "kPLjA9Vca3"
+    },
+    "template": {
+      "title": "Contract",
+      "description": "Please complete this action",
+      "type": "custom",
+      "code": "recruitment_contract",
+      "actionCategory": "esignAction",
+      "actionType": "esignAction",
+      "milestones": {
+        "checklist": [
+          {
+            "code": "absli_bp7m6i-recruitment_leads_124r3a_new",
+            "name": "Getting Started",
+            "status": "completed",
+            "steps": []
+          },
+          {
+            "code": "absli_bp7m6i-recruitment_leads_124r3a_agent_recruitment_application",
+            "name": "Application",
+            "status": "enabled",
+            "steps": [
+              {
+                "status": "enabled",
+                "code": "basic_details",
+                "name": "Basic Details",
+                "description": "",
+                "type": "conditional",
+                "actions": [
+                  {
+                    "name": "Contract",
+                    "code": "recruitment_contract",
+                    "description": "Please complete this action",
+                    "status": "enabled",
+                    "type": "portal_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://abc-staging.lms.getvymo.com/web-platform/branch/abc/onboarding/#/stepper/absli/action/recruitment_contract?vo=kPLjA9Vca3",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "name": "Basic Details",
+                    "code": "basic_details",
+                    "description": "",
+                    "status": "enabled",
+                    "type": "portal_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://abc-staging.lms.getvymo.com/web-platform/branch/abc/onboarding/#/stepper/absli/action/basic_details?vo=kPLjA9Vca3",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "name": "Consent",
+                    "code": "recruitment_consent",
+                    "description": "",
+                    "status": "locked",
+                    "type": "portal_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://abc-staging.lms.getvymo.com/web-platform/branch/abc/onboarding/#/stepper/absli/action/recruitment_consent?vo=kPLjA9Vca3",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  }
+                ],
+                "stepStatusMessage": ""
+              },
+              {
+                "status": "locked",
+                "code": "kyc",
+                "name": "KYC Verification",
+                "description": "",
+                "type": "conditional",
+                "actions": [],
+                "stepStatusMessage": ""
+              },
+              {
+                "status": "locked",
+                "code": "bank_details",
+                "name": "Bank Details",
+                "description": "",
+                "type": "conditional",
+                "actions": [],
+                "stepStatusMessage": ""
+              },
+              {
+                "status": "locked",
+                "code": "additional_details",
+                "name": "Additional Details",
+                "description": "",
+                "type": "conditional",
+                "actions": [],
+                "stepStatusMessage": ""
+              },
+              {
+                "status": "locked",
+                "code": "application_submission",
+                "name": "Application Submission",
+                "description": "",
+                "type": "conditional",
+                "actions": [],
+                "stepStatusMessage": ""
+              }
+            ],
+            "progress": {
+              "label": "0% completed",
+              "percentage": 0
+            }
+          },
+          {
+            "code": "absli_bp7m6i-recruitment_leads_124r3a_agent_recruitment_onboarding",
+            "name": "Onboarding",
+            "status": "locked",
+            "steps": []
+          },
+          {
+            "code": "absli_bp7m6i-recruitment_leads_124r3a_agent_recruited",
+            "name": "Onboarding Complete",
+            "status": "locked",
+            "steps": []
+          }
+        ]
+      },
+      "form": {
+        "inputs": [
+          {
+            "code": "contract_document_1",
+            "hint": "Contract document 1",
+            "type": "multimedia",
+            "required": false,
+            "read_only": true,
+            "value": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Acknowledgement</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            text-align: center;\n        }\n        h1 {\n            color: #333;\n        }\n        p {\n            color: #666;\n            margin-bottom: 20px;\n        }\n        .signature-area {\n            border-bottom: 1px solid #ccc;\n            margin-top: 20px;\n        }\n    </style>\n</head>\n<body>\n    <h1>Acknowledgement</h1>\n    <p>This is to acknowledge the receipt of your application for [Purpose of Application].</p>\n    <p>We are currently processing your application and will get back to you shortly.</p>\n    <p>Thank you for your patience.</p>\n    <div class=\"signature-area\">\n        <p>Signature</p>\n        <p>Date</p>\n    </div>\n</body>\n</html>"
+          },
+          {
+            "code": "contract_document_2",
+            "hint": "Contract document 2",
+            "type": "multimedia",
+            "required": false,
+            "read_only": true,
+            "value": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Acknowledgement</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            text-align: center;\n        }\n        h1 {\n            color: #333;\n        }\n        p {\n            color: #666;\n            margin-bottom: 20px;\n        }\n        .signature-area {\n            border-bottom: 1px solid #ccc;\n            margin-top: 20px;\n        }\n    </style>\n</head>\n<body>\n    <h1>Acknowledgement</h1>\n    <p>This is to acknowledge the receipt of your application for [Purpose of Application].</p>\n    <p>We are currently processing your application and will get back to you shortly.</p>\n    <p>Thank you for your patience.</p>\n    <div class=\"signature-area\">\n        <p>Signature</p>\n        <p>Date</p>\n    </div>\n</body>\n</html>"
+          }
+        ],
+        "inputs_map": {
+          "contract_document_1": "{\"items\":[{\"path\":\"lms/abcapital/all/contract_document_1.pdf\",\"label\":\"contract_document_1.pdf\",\"filename\":\"contract_document_1.pdf\",\"bucket\":\"vymo-uploads-staging\",\"presigned_url\":\"https://vymo-uploads-staging.s3.amazonaws.com/lms/abcapital/all/contract_document_1.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIASWADCQKWXAFCDAXP%2F20241223%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20241223T064048Z&X-Amz-Expires=604800&X-Amz-Signature=fa69d5aefda9d684229f56f1b7c0d9533934ab25ddedb7bfff55ab151f11784d&X-Amz-SignedHeaders=host\"}],\"bucket\":\"vymo-uploads-staging\",\"media_type\":\"pdf\"}",
+          "contract_document_2": "{\"items\":[{\"path\":\"lms/abcapital/all/contract_document_2.pdf\",\"label\":\"contract_document_2.pdf\",\"filename\":\"contract_document_2.pdf\",\"bucket\":\"vymo-uploads-staging\",\"presigned_url\":\"https://vymo-uploads-staging.s3.amazonaws.com/lms/abcapital/all/contract_document_2.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIASWADCQKWXAFCDAXP%2F20241223%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20241223T064048Z&X-Amz-Expires=604800&X-Amz-Signature=3c30ff0272ac7eb175f1d0734e61655027d1d3e6fe4deeb98dc309d273e3913f&X-Amz-SignedHeaders=host\"}],\"bucket\":\"vymo-uploads-staging\",\"media_type\":\"pdf\"}"
+        },
+        "viewMode": false
+      },
+      "cta": null,
+      "meta": {
+        "verifyCta": {
+          "type": "action",
+          "title": "Verify and continue",
+          "action": "verify_consent"
+        },
+
+        "referenceId": "23b47216-9912-4ea0-b944-4aada0691b02",
+        "esignUrl": "https://demo.docusign.net/Signing/MTRedeem/v1/ccd69147-08f1-48be-9284-6672d458f9cd?slt=eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQYAAAABAAMABwAAzPfAHCPdSAgAAGwJSD4j3UgYAAEAAAAAAAAAIQDsAgAAeyJUb2tlbklkIjoiYzMyZjkwZDAtOGYyMy00MzZhLWFlNTctN2Q1MDgxZGRkZjAxIiwiRXhwaXJhdGlvbiI6IjIwMjQtMTItMjNUMDY6NDU6NTYrMDA6MDAiLCJJc3N1ZWRBdCI6IjIwMjQtMTItMjNUMDY6NDA6NTYuNTM4NDk0MyswMDowMCIsIlJlc291cmNlSWQiOiIyM2I0NzIxNi05OTEyLTRlYTAtYjk0NC00YWFkYTA2OTFiMDIiLCJSZXNvdXJjZXMiOiJ7XCJFbnZlbG9wZUlkXCI6XCIyM2I0NzIxNi05OTEyLTRlYTAtYjk0NC00YWFkYTA2OTFiMDJcIixcIkFjdG9yVXNlcklkXCI6XCI5NmRlY2Y0OC01MmQzLTQwODItYmNkMy1lZjVlZGM4ZmQ3NGRcIixcIlJlY2lwaWVudElkXCI6XCJmMDE3NzQzMS0xNGQ2LTQ3ZmItYWRjOC0wODhlODJjZDRlNTBcIixcIkZha2VRdWVyeVN0cmluZ1wiOlwidD05YWEyNDBiZC00M2NjLTQ5OTQtYmVjYy0yNDI4ODVhNzhmNmRcIixcIkludGVncmF0b3JLZXlcIjpcImQxNWQ3NDY1LTAxODUtNDAyYy05ZjkyLWFhZWMzZTFhOWJmMlwiLFwiQ3JlYXRlZEF0XCI6XCIyMDI0LTEyLTIzVDA2OjQwOjU2LjUxMDIwMTNaXCJ9IiwiVG9rZW5UeXBlIjoxLCJBdWRpZW5jZSI6IjI1ZTA5Mzk4LTAzNDQtNDkwYy04ZTUzLTNhYjJjYTU2MjdiZiIsIlJlZGlyZWN0VXJpIjoiaHR0cHM6Ly9kZW1vLmRvY3VzaWduLm5ldC9TaWduaW5nL1N0YXJ0SW5TZXNzaW9uLmFzcHgiLCJIYXNoQWxnb3JpdGhtIjowLCJIYXNoUm91bmRzIjowLCJUb2tlblN0YXR1cyI6MCwiSXNTaW5nbGVVc2UiOmZhbHNlfT8AgJMvcx0j3Ug.Jr3cXXW-F-BVuOrzi1n92L7SYUtKdmZACBk-RmcXKHjWAqjzOZEeYrocDp-7TIe2gB6zEolV5FD5RnIY2yVvMv-HDGrSh3vHFZXPfFMDYloyXIvpbxObLbumht3s27M4kV7Z6jW2TdBWbwRXACH6HAcmLQxXxpa-vISanBYDsaql7XaZcyevRJpkEfP-dBnI093gFB5TQTQqV_nN2DH9hrQHRSiir6EHyeZXmTI0GKKnOAU2U34VlThmLkGHOQjiaADbUtuKndU72Aq8pEpI5IyP2LqMHsRK3fdtvjUHDOb7ONjzUNfpQBm5QrX36rfueb5D9OEMNHJitr-7rWONwA"
+      }
+    }
+  },
+  "statusCode": 200
+}

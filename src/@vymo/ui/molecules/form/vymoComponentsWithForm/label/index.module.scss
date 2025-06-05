@@ -1,0 +1,10 @@
+.label {
+  &__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    color: #0e2da2;
+    font-weight: var(--font-weight-bold);
+  }
+}

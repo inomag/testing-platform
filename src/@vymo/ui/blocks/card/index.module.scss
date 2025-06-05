@@ -1,0 +1,13 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-l-16);
+  padding: 16px;
+  transition: 0.3s;
+
+  &__has_error {
+    border-color: var(--text-status-error);
+  }
+}

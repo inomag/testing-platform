@@ -1,0 +1,17 @@
+.modalWrapper {
+  max-height: 80vh;
+  width: 60vw;
+  margin: 24px 8px;
+
+  &__footer {
+    display: flex;
+    gap: 8px;
+    justify-content: end;
+  }
+}
+
+.licenseWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

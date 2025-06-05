@@ -1,0 +1,41 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.rightPane {
+  border-left: var(--border);
+  position: relative;
+  padding: var(--spacing-m);
+  background-color: var(--background-subtle);
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+  > div:last-child {
+    flex: 1;
+    overflow: scroll;
+  }
+  &__form {
+    grid-column-gap: var(--spacing-s);
+    grid-template-columns: repeat(3, minmax(100px, 3fr));
+    &__formItem {
+      position: relative;
+      &__span {
+        grid-column: span 3;
+      }
+
+      &__button {
+        position: absolute;
+        top: -4px;
+        left: -38px;
+        svg {
+          height: 16px;
+          width: 16px;
+        }
+      }
+    }
+  }
+}

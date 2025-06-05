@@ -1,0 +1,11 @@
+<svg width="24" height="24" viewBox="0 0 24
+    24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" stroke-linecap="round"
+    stroke-linejoin="round">
+    <g>
+        <g fill="currentColor">
+            <rect opacity="0.3" x="2" y="4" width="10" height="18" rx="1"></rect>
+            <rect opacity="0.5" x="4" y="8" width="14" height="14" rx="1"></rect>
+            <rect opacity="0.9" x="6" y="12" width="17" height="10" rx="1"></rect>
+        </g>
+    </g>
+</svg>

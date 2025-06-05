@@ -1,0 +1,95 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.checkbox {
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    font-size: var(--s-font-size);
+    cursor: pointer;
+    user-select: none;
+    gap: var(--spacing-s);
+
+    &__disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    &__small {
+      font-size: var(--xs-font-size);
+    }
+
+    &__medium {
+      font-size: var(--s-font-size);
+    }
+
+    &__large {
+      font-size: var(--l-font-size);
+    }
+
+    &__input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+      height: 0;
+      width: 0;
+      margin: var(--spacing-s);
+    }
+
+    &__checkmark {
+      height: 20px;
+      width: 20px;
+      border: 1px solid var(--border-bold);
+      background-color: #fff;
+      border-radius: 6px;
+      transition: border-color 0.3s ease-out, background-color 0.3s ease-out;
+      svg {
+        display: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 4px;
+      }
+    }
+
+    &__input:checked + &__checkmark svg {
+      background-color: var(--background-bold);
+      display: block;
+    }
+
+    &__input:checked + &__checkmark {
+      border: none;
+      background-color: var(--background-bold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__input:indeterminate + &__checkmark {
+      background-color: gray;
+    }
+
+    &:not(.checkbox__wrapper__disabled):not(
+        :has(.checkbox__wrapper__input:checked)
+      ):hover
+      .checkbox__wrapper__checkmark {
+      border-color: var(--border-solid-bold);
+      background-color: var(--background-interactions-default-hover);
+    }
+
+    &__label {
+      font-size: var(--s-font-size);
+      color: var(--text-default);
+      cursor: pointer;
+    }
+  }
+
+  &-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-s);
+    &__horizontal {
+      flex-direction: row;
+    }
+  }
+}

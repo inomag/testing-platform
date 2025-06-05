@@ -1,0 +1,177 @@
+{
+  "_id": "66335a7a22529914cddb1eed",
+  "code": "998",
+  "name": "TestMayUser03",
+  "email": "testmayuser03@getvymo.com",
+  "phone": "+919999999988",
+  "region": "998",
+  "region_type": "branch",
+  "region_hierarchy": ["all", "998"],
+  "auth_type": "VYMO_LOGIN",
+  "inputs": [
+    {
+      "type": "text",
+      "code": "code",
+      "name": "Emp Id Testing",
+      "value": "998",
+      "_id": "66335a7b22529914cddb1eef"
+    },
+    {
+      "type": "email",
+      "code": "email",
+      "name": "Login Id Testing",
+      "value": "testmayuser03@getvymo.com",
+      "_id": "66335a7b22529914cddb1ef1"
+    },
+    {
+      "type": "text",
+      "code": "name",
+      "name": "Name Testing",
+      "value": "TestMayUser03",
+      "_id": "66335a7b22529914cddb1ef0"
+    },
+    {
+      "type": "phone",
+      "code": "phone",
+      "name": "Phone Test",
+      "value": "9999999988",
+      "_id": "66335a7b22529914cddb1ef2"
+    },
+    {
+      "type": "code_name_spinner",
+      "code": "tier",
+      "name": "Tier",
+      "value": "Silver",
+      "data": {
+        "code": "silver"
+      },
+      "_id": "66335a7b22529914cddb1f01"
+    },
+    {
+      "type": "code_name_spinner",
+      "code": "role",
+      "name": "User Role Testing",
+      "value": "Field Agent",
+      "_id": "66335b6f4fcd54c7961c3a56"
+    },
+    {
+      "type": "code_name_spinner",
+      "code": "vymo_user",
+      "name": "Vymo User",
+      "value": "Yes",
+      "_id": "66335a7b22529914cddb1eff"
+    },
+    {
+      "type": "code_name_spinner",
+      "code": "vymo_user_category",
+      "name": "Vymo User Category",
+      "value": "INTERNAL",
+      "_id": "66335a7b22529914cddb1f00"
+    }
+  ],
+  "disabled": false,
+  "locked": false,
+  "inputs_map": {
+    "type": "branch",
+    "role": "Field Agent",
+    "branch_429tforo5s": "",
+    "code": "998",
+    "name": "TestMayUser03",
+    "email": "testmayuser03@getvymo.com",
+    "phone": "9999999988",
+    "auth_type": "VYMO_LOGIN",
+    "branchcodeuser_uq8m92efdc": "",
+    "city": "",
+    "state": "",
+    "pincode": "",
+    "testvalidation_sszjcfnfkq": "",
+    "userpincodes_il4q06bmbi": "",
+    "lob_type_m92mulk4kn": "",
+    "lob_name_puw3rvrt5": "",
+    "tier": "Silver",
+    "vymo_user_channel": "[{\"name\":\"ALL\",\"code\":\"ALL\"}]",
+    "vymo_user_category": "INTERNAL",
+    "vymo_user": "Yes"
+  },
+  "profile_overview": [],
+  "microSite_links": [],
+  "user_360_inputs": [
+    {
+      "type": "text",
+      "code": "name",
+      "name": "Name Testing",
+      "value": "TestMayUser03",
+      "_id": "66335a7b22529914cddb1ef0"
+    },
+    {
+      "type": "email",
+      "code": "email",
+      "name": "Login Id Testing",
+      "value": "testmayuser03@getvymo.com",
+      "_id": "66335a7b22529914cddb1ef1"
+    },
+    {
+      "type": "phone",
+      "code": "phone",
+      "name": "Phone Test",
+      "value": "9999999988",
+      "_id": "66335a7b22529914cddb1ef2"
+    }
+  ],
+  "user_profile_header_inputs": [
+    {
+      "type": "text",
+      "code": "name",
+      "name": "Name Testing",
+      "value": "TestMayUser03",
+      "_id": "66335a7b22529914cddb1ef0"
+    },
+    {
+      "type": "text",
+      "code": "code",
+      "name": "Emp Id Testing",
+      "value": "998",
+      "_id": "66335a7b22529914cddb1eef"
+    },
+    {
+      "type": "code_name_spinner",
+      "code": "role",
+      "name": "User Role Testing",
+      "value": "Field Agent",
+      "_id": "66335b6f4fcd54c7961c3a56"
+    },
+    {
+      "type": "phone",
+      "code": "phone",
+      "name": "Phone Test",
+      "value": "9999999988",
+      "_id": "66335a7b22529914cddb1ef2"
+    },
+    {
+      "type": "email",
+      "code": "email",
+      "name": "Login Id Testing",
+      "value": "testmayuser03@getvymo.com",
+      "_id": "66335a7b22529914cddb1ef1"
+    }
+  ],
+  "business_card": {
+    "actions": [
+      {
+        "code": "share",
+        "name": "Share"
+      },
+      {
+        "code": "download",
+        "name": "Download"
+      }
+    ],
+    "access_link": "https://vymo-uploads-staging.s3.amazonaws.com/lms/testmay/998/?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIASWADCQKW2G7ZQCAE%2F20250306%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250306T195348Z&X-Amz-Expires=1800&X-Amz-Signature=e8c63d563b6eae86c1b4d0a18369df14841012d3d42db52a802b3c514bc6248a&X-Amz-SignedHeaders=host",
+    "blob_details": {
+      "filename": "",
+      "mime": "jpeg"
+    },
+    "share_message": "Hi I'm TestMayUser03, your financial advisor from Aditya Birla Capital. Here is my digital Business Card. Feel free to reach out to me for any financial support you may need.\nYou can contact me at:\n9999999988\ntestmayuser03@getvymo.com"
+  },
+  "visitor_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IkFQUWlnd1VDT3ciLCJpYXQiOjE3NDEyOTA4MjgsImV4cCI6MTc0MTI5MTEyOCwibGFzdF9hY3Rpdml0eV9kYXRlIjoxNzQxMjkwODI4LCJjbGllbnQiOiJ0ZXN0bWF5IiwibG9iIjoiIiwibWVkaXVtIjoiQVBQIiwiZmlyc3RfdGltZV9sb2dpbiI6ZmFsc2V9.csMewE9MjG44_gQ_8Omtm5C2RpVuyzPvEz_uqPJSQK0"
+}

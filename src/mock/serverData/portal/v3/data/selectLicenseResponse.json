@@ -1,0 +1,621 @@
+{
+  "message": "success",
+  "result": {
+    "visitor": {
+      "code": "173763845"
+    },
+    "template": {
+      "type": "custom",
+      "code": "select_license",
+      "actionCategory": "SelectLicenseActionCategory",
+      "milestones": {
+        "checklist": [
+          {
+            "code": "absli_bp7m6i-recruitment_leads_124r3a_new",
+            "name": "Getting Started",
+            "status": "completed",
+            "steps": []
+          },
+          {
+            "code": "absli_bp7m6i-recruitment_leads_124r3a_agent_recruitment_application",
+            "name": "Application",
+            "status": "enabled",
+            "steps": [
+              {
+                "status": "completed",
+                "code": "basic_details",
+                "name": "Basic Details",
+                "description": "Basic Details",
+                "type": "conditional",
+                "actions": [
+                  {
+                    "name": "Basic Details",
+                    "code": "basic_details",
+                    "description": "Please fill your basic details",
+                    "status": "completed",
+                    "type": "portal_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://abc-staging.lms.getvymo.com/web-platform/branch/abc/onboarding/#/stepper/absli/action/basic_details?vo=k2Fxit97Jw",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  }
+                ],
+                "stepStatusMessage": ""
+              },
+              {
+                "status": "enabled",
+                "code": "kyc",
+                "name": "KYC Verification",
+                "description": "KYC",
+                "type": "conditional",
+                "actions": [
+                  {
+                    "name": "CKYC Verification",
+                    "code": "ckyc",
+                    "description": "Please verify using CKYC",
+                    "status": "failed",
+                    "type": "portal_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://abc-staging.lms.getvymo.com/web-platform/branch/abc/onboarding/#/stepper/absli/action/ckyc?vo=k2Fxit97Jw",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "name": "Manual KYC",
+                    "code": "manual_kyc",
+                    "description": "Please proceed with manual KYC and provide your permanent address details",
+                    "status": "enabled",
+                    "type": "portal_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://abc-staging.lms.getvymo.com/web-platform/branch/abc/onboarding/#/stepper/absli/action/manual_kyc?vo=k2Fxit97Jw",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  }
+                ],
+                "stepStatusMessage": ""
+              },
+              {
+                "status": "enabled",
+                "code": "bank_details",
+                "name": "Bank Details",
+                "description": "Bank Details",
+                "type": "conditional",
+                "actions": [
+                  {
+                    "name": "Bank Account Details",
+                    "code": "validate_bank_account",
+                    "description": "Validate your bank account details",
+                    "status": "enabled",
+                    "type": "portal_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://abc-staging.lms.getvymo.com/web-platform/branch/abc/onboarding/#/stepper/absli/action/validate_bank_account?vo=k2Fxit97Jw",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  }
+                ],
+                "stepStatusMessage": ""
+              },
+              {
+                "status": "enabled",
+                "code": "additional_details",
+                "name": "Additional Details",
+                "description": "Additional Details",
+                "type": "conditional",
+                "actions": [
+                  {
+                    "name": "Additional Information",
+                    "code": "additional_profile_details",
+                    "description": "Please fill additional information",
+                    "status": "enabled",
+                    "type": "portal_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://abc-staging.lms.getvymo.com/web-platform/branch/abc/onboarding/#/stepper/absli/action/additional_profile_details?vo=k2Fxit97Jw",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "name": "Education Details",
+                    "code": "education_details",
+                    "description": "Please fill education details",
+                    "status": "enabled",
+                    "type": "portal_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://abc-staging.lms.getvymo.com/web-platform/branch/abc/onboarding/#/stepper/absli/action/education_details?vo=k2Fxit97Jw",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "name": "Nominee Details",
+                    "code": "nominee_details",
+                    "description": "Please fill nominee details",
+                    "status": "enabled",
+                    "type": "portal_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://abc-staging.lms.getvymo.com/web-platform/branch/abc/onboarding/#/stepper/absli/action/nominee_details?vo=k2Fxit97Jw",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "name": "Exam Preference",
+                    "code": "exam_preference",
+                    "description": "Exam Preference",
+                    "status": "completed",
+                    "type": "portal_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://abc-staging.lms.getvymo.com/web-platform/branch/abc/onboarding/#/stepper/absli/action/exam_preference?vo=k2Fxit97Jw",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "name": "Declaration",
+                    "code": "declaration",
+                    "description": "Please declare the following items",
+                    "status": "enabled",
+                    "type": "portal_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://abc-staging.lms.getvymo.com/web-platform/branch/abc/onboarding/#/stepper/absli/action/declaration?vo=k2Fxit97Jw",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  }
+                ],
+                "stepStatusMessage": ""
+              },
+              {
+                "status": "locked",
+                "code": "application_submission",
+                "name": "Application Submission",
+                "description": "Application Submission",
+                "type": "conditional",
+                "actions": [],
+                "stepStatusMessage": ""
+              }
+            ]
+          },
+          {
+            "code": "absli_bp7m6i-recruitment_leads_124r3a_agent_recruitment_onboarding",
+            "name": "Onboarding",
+            "status": "locked",
+            "steps": []
+          },
+          {
+            "code": "absli_bp7m6i-recruitment_leads_124r3a_agent_recruited",
+            "name": "Onboarding Complete",
+            "status": "locked",
+            "steps": []
+          }
+        ]
+      },
+      "title": "Select License",
+      "description": "Please select license",
+      "meta": {
+        "cta": [
+          {
+            "type": "action",
+            "title": "Verify and continue",
+            "action": "demo_action",
+            "autoCallable": false
+          }
+        ],
+        "tables": [
+          {
+            "tableName": "License Table",
+            "rows": [
+              {
+                "code": "a",
+                "inputs_map": {
+                  "license": "Health",
+                  "state": "TX",
+                  "expiration_date": "2021-12-31",
+                  "tier": "Gold",
+                  "status": "Active"
+                }
+              },
+              {
+                "code": "b",
+                "inputs_map": {
+                  "license": "Life",
+                  "state": "TX",
+                  "expiration_date": "2021-12-31",
+                  "tier": "Silver",
+                  "status": "Active"
+                }
+              },
+              {
+                "code": "c",
+                "inputs_map": {
+                  "license": "Health",
+                  "state": "CA",
+                  "expiration_date": "2021-12-31",
+                  "tier": "Bronze",
+                  "status": "Inactive"
+                }
+              },
+              {
+                "code": "d",
+                "inputs_map": {
+                  "license": "Life",
+                  "state": "CA",
+                  "expiration_date": "2021-12-31",
+                  "tier": "Gold",
+                  "status": "Active"
+                }
+              },
+              {
+                "code": "e",
+                "inputs_map": {
+                  "license": "Health",
+                  "state": "NY",
+                  "expiration_date": "2021-12-31",
+                  "tier": "Silver",
+                  "status": "Active"
+                }
+              },
+              {
+                "code": "f",
+                "inputs_map": {
+                  "license": "Life",
+                  "state": "NY",
+                  "expiration_date": "2021-12-31",
+                  "tier": "Bronze",
+                  "status": "Inactive"
+                }
+              },
+              {
+                "code": "g",
+                "inputs_map": {
+                  "license": "Health",
+                  "state": "FL",
+                  "expiration_date": "2021-12-31",
+                  "tier": "Gold",
+                  "status": "Active"
+                }
+              },
+              {
+                "code": "h",
+                "inputs_map": {
+                  "license": "Life",
+                  "state": "FL",
+                  "expiration_date": "2021-12-31",
+                  "tier": "Silver",
+                  "status": "Active"
+                }
+              },
+              {
+                "code": "i",
+                "inputs_map": {
+                  "license": "Health",
+                  "state": "GA",
+                  "expiration_date": "2021-12-31",
+                  "tier": "Bronze",
+                  "status": "Inactive"
+                }
+              },
+              {
+                "code": "j",
+                "inputs_map": {
+                  "license": "Life",
+                  "state": "GA",
+                  "expiration_date": "2021-12-31",
+                  "tier": "Gold",
+                  "status": "Active"
+                }
+              },
+              {
+                "code": "k",
+                "inputs_map": {
+                  "license": "Health",
+                  "state": "NJ",
+                  "expiration_date": "2021-12-31",
+                  "tier": "Silver",
+                  "status": "Active"
+                }
+              },
+              {
+                "code": "l",
+                "inputs_map": {
+                  "license": "Life",
+                  "state": "NJ",
+                  "expiration_date": "2021-12-31",
+                  "tier": "Bronze",
+                  "status": "Inactive"
+                }
+              },
+              {
+                "code": "m",
+                "inputs_map": {
+                  "license": "Health",
+                  "state": "PA",
+                  "expiration_date": "2021-12-31",
+                  "tier": "Gold",
+                  "status": "Active"
+                }
+              },
+              {
+                "code": "n",
+                "inputs_map": {
+                  "license": "Life",
+                  "state": "PA",
+                  "expiration_date": "2021-12-31",
+                  "tier": "Silver",
+                  "status": "Active"
+                }
+              },
+              {
+                "code": "o",
+                "inputs_map": {
+                  "license": "Health",
+                  "state": "IL",
+                  "expiration_date": "2021-12-31",
+                  "tier": "Bronze",
+                  "status": "Inactive"
+                }
+              },
+              {
+                "code": "p",
+                "inputs_map": {
+                  "license": "Life",
+                  "state": "IL",
+                  "expiration_date": "2021-12-31",
+                  "tier": "Gold",
+                  "status": "Active"
+                }
+              }
+            ],
+            "metaData": {
+              "columnConfig": [
+                {
+                  "title": "Code",
+                  "field": "code",
+                  "sortable": true,
+                  "filter": false,
+                  "type": "text",
+                  "visible": false,
+                  "export": true,
+                  "filters": ["Select"]
+                },
+                {
+                  "title": "License",
+                  "field": "inputs_map.license",
+                  "sortable": true,
+                  "filter": false,
+                  "type": "text",
+                  "visible": true,
+                  "export": true,
+                  "filters": ["Select"]
+                },
+                {
+                  "title": "State",
+                  "field": "inputs_map.state",
+                  "sortable": true,
+                  "filter": false,
+                  "type": "text",
+                  "visible": true,
+                  "export": true,
+                  "filters": ["Select"]
+                },
+                {
+                  "title": "Expiration Date",
+                  "field": "inputs_map.expiration_date",
+                  "sortable": true,
+                  "filter": false,
+                  "type": "date",
+                  "visible": true,
+                  "export": true,
+                  "filters": ["Select"]
+                },
+                {
+                  "title": "Tier",
+                  "field": "inputs_map.tier",
+                  "sortable": true,
+                  "filter": true,
+                  "type": "spinner",
+                  "visible": true,
+                  "export": true,
+                  "filters": ["Select", "Gold", "Silver", "Bronze"]
+                },
+                {
+                  "title": "Status",
+                  "field": "inputs_map.status",
+                  "sortable": true,
+                  "filter": true,
+                  "type": "spinner",
+                  "visible": true,
+                  "export": true,
+                  "filters": ["Select", "Active", "Inactive"]
+                }
+              ],
+              "groupByAttribute": "inputs_map.state",
+              "filters": ["inputs_map.state", "inputs_map.tier"],
+              "pageSize": 16,
+              "primaryGroup": "",
+              "selectionAttribute": "code",
+              "enableSelection": true
+            }
+          }
+        ]
+      }
+    }
+  },
+  "portalConfig": {
+    "branding": {
+      "code": "absli-recruitment-portal",
+      "deleted": false,
+      "domain": "https://absli-recruitment-portal.lms.getvymo.com",
+      "logo": {
+        "height": 48,
+        "url": "https://i.postimg.cc/wjpYzyr7/240131-ABC-Life-Insurance-Identity-RGB-Lockup-White-V1-01-1.png",
+        "width": 90
+      },
+      "logoBackgroundColor": "#ffffff",
+      "banner": [
+        {
+          "height": 400,
+          "url": "https://i.postimg.cc/zB9Yp0Wt/Frame-1420.png",
+          "width": 700
+        },
+        {
+          "height": 400,
+          "url": "https://i.postimg.cc/8PW3gYvg/Screenshot-2024-09-16-at-12-57-37-PM.png",
+          "width": 700
+        },
+        {
+          "height": 400,
+          "url": "https://i.postimg.cc/N04ML5vB/2b30bec61651a302655253b1a9b2ee2fc6c54b0ef8d8745ceb89ed7e9df2dbbe-Aditya-Birla-Group-Logo-Vector-600x.jpg",
+          "width": 700
+        }
+      ],
+      "theme": {
+        "background": "#ffffff",
+        "primary": "#bf3743",
+        "secondary": "#f8e7ea",
+        "tertiary": "#44546F",
+        "font": "#44546F",
+        "heading": "#172B4D",
+        "error": "#f44336",
+        "warning": "#ffa726",
+        "info": "#29b6f6",
+        "success": "#66bb6a"
+      },
+      "loader": "spinner",
+      "email": "email",
+      "phone": "phone",
+      "bannerTitle": "Hey there! Welcome to Aditya Birla Sun Life Insurance.",
+      "bannerDescription": "Begin your journey to success as an agent today!"
+    },
+    "i18nSettings": {
+      "enabled": true,
+      "standardised_iana_timezone": "UTC",
+      "iana_timezone": "Asia/Kolkata",
+      "locale": "en-IN",
+      "language": "en",
+      "country": "IN",
+      "currency": "₹",
+      "currency_iso": "INR",
+      "quantity": "KLC",
+      "country_calling_code": "91",
+      "client_date_time_config": {
+        "date_in_curr_year": {
+          "dateTimeFormat": "DD_MMM_YYYY",
+          "relativeFormat": false
+        },
+        "date": {
+          "dateTimeFormat": "DD_MMM_YYYY",
+          "relativeFormat": false
+        },
+        "meeting_date_time_in_curr_year": {
+          "dateTimeFormat": "DAY_DD_MMM-TIME",
+          "relativeFormat": true
+        },
+        "meeting_date_not_in_curr_year": {
+          "dateTimeFormat": "DD_MMM_YYYY-TIME",
+          "relativeFormat": false
+        },
+        "date_range": {
+          "dateTimeFormat": "DD_MMM_YYYY",
+          "relativeFormat": false
+        },
+        "date_in_chart": {
+          "dateTimeFormat": "MMM_YY",
+          "relativeFormat": false
+        },
+        "time_range": {
+          "dateTimeFormat": "HH_MM_A",
+          "relativeFormat": false
+        },
+        "month_day_in_cal": {
+          "dateTimeFormat": "MMM_DD",
+          "relativeFormat": false
+        },
+        "month_year_in_cal": {
+          "dateTimeFormat": "MMM_YYYY",
+          "relativeFormat": false
+        },
+        "date_time_with_seconds": {
+          "dateTimeFormat": "DD_MM_YYYY_HH_MM_SS_SLASH",
+          "relativeFormat": false
+        },
+        "day_month_date": {
+          "dateTimeFormat": "DAY_MMM_DD",
+          "relativeFormat": true
+        },
+        "time": {
+          "dateTimeFormat": "H_MM_A",
+          "relativeFormat": false
+        }
+      }
+    },
+    "loginType": "PAN"
+  }
+}

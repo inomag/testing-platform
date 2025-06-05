@@ -1,0 +1,166 @@
+{
+  "message": "success",
+  "result": {
+    "visitor": {},
+    "page": {
+      "component": {
+        "type": "StepperForm",
+        "title": "Document Collection",
+        "description": "",
+        "meta": {
+          "journey": [
+            {
+              "name": "Application",
+              "code": "application",
+              "order": 0,
+              "status": "close"
+            },
+            {
+              "name": "Internal Interview",
+              "code": "internal_interview",
+              "description": "Please go through the following set of assessments.",
+              "order": 1,
+              "status": "closed"
+            },
+            {
+              "name": "Bop Seminar",
+              "code": "bop_seminar",
+              "order": 2,
+              "status": "closed"
+            },
+            {
+              "name": "Physchometric Test",
+              "code": "physchometric_test",
+              "order": 3,
+              "status": "closed"
+            },
+            {
+              "name": "Documents Submitted Pan",
+              "code": "documents_submitted_pan",
+              "order": 4,
+              "status": "open"
+            },
+            {
+              "name": "Final Interview",
+              "code": "final_Interview",
+              "order": 5,
+              "status": "locked"
+            }
+          ],
+          "current_step": "documents_submitted_pan",
+          "sections": [
+            {
+              "title": "Submit your documents",
+              "description": "",
+              "code": "docs_collection",
+              "action": "submit",
+              "component": {
+                "type": "groupedFields",
+                "meta": {
+                  "groups": [
+                    {
+                      "title": "Group 1",
+                      "code": "group1",
+                      "fields": ["provider1", "provider2"],
+                      "status": { "state": "APPROVED", "label": "Success" }
+                    },
+                    {
+                      "title": "Group 2",
+                      "code": "group2",
+                      "fields": ["provider3", "provider4"],
+                      "status": {
+                        "state": "PENDING_APPROVAL",
+                        "label": "Pending Approval"
+                      }
+                    },
+                    {
+                      "title": "Group 3",
+                      "code": "group3",
+                      "fields": ["provider5", "provider6", "provider7"]
+                    }
+                  ],
+                  "inputs": [
+                    {
+                      "code": "provider1",
+                      "name": "PAN",
+                      "type": "multimedia",
+                      "options": [],
+                      "value": "",
+                      "isMulti": false,
+                      "readOnly": false,
+                      "required": true,
+                      "validations": {
+                        "max_size": 10,
+                        "formats": ["png", "jpeg", "jpg"]
+                      }
+                    },
+                    {
+                      "code": "provider2",
+                      "name": "First Name",
+                      "type": "text",
+                      "value": "John",
+                      "options": [],
+                      "isMulti": false,
+                      "readOnly": false,
+                      "required": true
+                    },
+                    {
+                      "code": "provider3",
+                      "name": "Last Name",
+                      "type": "text",
+                      "value": "Doe",
+                      "options": [],
+                      "isMulti": false,
+                      "readOnly": false,
+                      "required": true
+                    },
+                    {
+                      "code": "provider4",
+                      "name": "Last Name2",
+                      "type": "text",
+                      "value": "Doe",
+                      "options": [],
+                      "isMulti": false,
+                      "readOnly": false,
+                      "required": true
+                    },
+                    {
+                      "code": "provider5",
+                      "name": "Last Name",
+                      "type": "text",
+                      "value": "Doe",
+                      "options": [],
+                      "isMulti": false,
+                      "readOnly": false,
+                      "required": true
+                    },
+                    {
+                      "code": "provider6",
+                      "name": "Last Name",
+                      "type": "text",
+                      "value": "Doe",
+                      "options": [],
+                      "isMulti": false,
+                      "readOnly": false,
+                      "required": true
+                    },
+                    {
+                      "code": "provider7",
+                      "name": "Last Name",
+                      "type": "text",
+                      "value": "Doe",
+                      "options": [],
+                      "isMulti": false,
+                      "readOnly": false,
+                      "required": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

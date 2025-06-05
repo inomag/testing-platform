@@ -1,0 +1,24 @@
+.imageLoaderWrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    display: block;
+    transition: opacity 0.2s ease-in-out;
+
+    &__visible {
+      opacity: 1;
+    }
+
+    &__hidden {
+      opacity: 0;
+      display: none;
+    }
+  }
+}

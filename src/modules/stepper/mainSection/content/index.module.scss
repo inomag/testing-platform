@@ -1,0 +1,27 @@
+@import '../../../../designTokens/scssVariables.scss';
+@import '../../../../designTokens/cssVariables.scss';
+
+.mainSectionContent {
+  &__grow {
+    flex: 1 1 auto;
+  }
+}
+
+//TODO: Remove this after payment changes
+.htmlContentContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  button {
+    cursor: pointer;
+    display: flex;
+    padding: 6px 16px;
+    margin-top: auto;
+    font-size: calc(var(--s-font-size) - 1.5px);
+    color: var(--background-flat);
+    border: none;
+    border-radius: var(--radius-xs-4);
+    background-color: var(--brand-primary);
+  }
+}

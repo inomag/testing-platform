@@ -1,0 +1,291 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+@mixin buttonBase {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--s-font-size);
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+@mixin buttonVariant(
+  $background-color,
+  $color,
+  $border-color: $background-color
+) {
+  background-color: $background-color;
+  color: $color;
+  border: 1px solid $border-color;
+  border-radius: var(--radius-s-8);
+
+  &:disabled {
+    opacity: 0.65;
+    pointer-events: none;
+  }
+
+  svg {
+    * {
+      color: $color;
+    }
+  }
+}
+
+@mixin buttonInteraction($property, $hover, $pressed) {
+  &:hover,
+  &:focus {
+    #{$property}: $hover;
+  }
+
+  &:active {
+    #{$property}: $pressed;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--border-solid-bold);
+    outline-offset: 2px;
+    @if $property == color {
+      background-color: transparent;
+    }
+  }
+}
+
+@mixin buttonSize($font-size, $padding-y, $padding-x) {
+  font-size: $font-size;
+  padding: $padding-y $padding-x;
+}
+
+@mixin buttonRounded($border-radius) {
+  border-radius: $border-radius;
+}
+
+@mixin buttonIcon($margin) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > span {
+    margin: $margin;
+  }
+}
+
+.button {
+  @include buttonBase;
+
+  &__primary {
+    @include buttonVariant(var(--background-brand-brand), var(--text-inverse));
+    @include buttonInteraction(
+      background-color,
+      var(--background-interactions-brand-hover),
+      var(--background-interactions-brand-pressed)
+    );
+  }
+
+  &__success {
+    @include buttonVariant(
+      var(--background-status-success),
+      var(--text-status-success)
+    );
+  }
+
+  &__warning {
+    @include buttonVariant(
+      var(--background-status-warning),
+      var(--text-status-warning)
+    );
+  }
+
+  &__danger {
+    @include buttonVariant(
+      var(--background-status-error),
+      var(--text-status-error)
+    );
+    @include buttonInteraction(
+      background-color,
+      var(--background-interactions-status-accent-hover),
+      var(--background-interactions-status-accent-pressed)
+    );
+  }
+
+  &__info {
+    @include buttonVariant(
+      var(--background-status-info),
+      var(--text-status-info)
+    );
+  }
+
+  &__filled {
+    @include buttonVariant(var(--text-default), var(--text-inverse));
+  }
+
+  &__subtle {
+    @include buttonVariant(
+      var(--background-alpha-default),
+      var(--text-default),
+      var(--border-default)
+    );
+    @include buttonInteraction(
+      background-color,
+      var(--background-interactions-default-hover),
+      var(--background-interactions-default-pressed)
+    );
+  }
+
+  &__small {
+    @include buttonSize(calc(var(--xs-font-size)), 2px, 9px);
+  }
+
+  &__medium {
+    @include buttonSize(calc(var(--s-font-size)), 5px, 16px);
+  }
+
+  &__large {
+    @include buttonSize(calc(var(--m-font-size)), 5px, 25px);
+  }
+
+  &__xLarge {
+    @include buttonSize(calc(var(--s-font-size)), 9px, 25px);
+  }
+
+  &__link {
+    @include buttonVariant(transparent, var(--text-brand-default));
+    text-decoration: underline;
+    @include buttonInteraction(
+      color,
+      var(--text-brand-default),
+      var(--background-interactions-brand-pressed)
+    );
+  }
+
+  &__text {
+    @include buttonVariant(transparent, var(--text-subtle));
+    @include buttonInteraction(
+      background-color,
+      var(--background-interactions-default-hover),
+      var(--background-interactions-default-pressed)
+    );
+    &__success {
+      @include buttonVariant(transparent, var(--text-status-success));
+    }
+
+    &__warning {
+      @include buttonVariant(transparent, var(--text-status-warning));
+    }
+
+    &__danger {
+      @include buttonVariant(transparent, var(--text-status-error));
+      @include buttonInteraction(
+        background-color,
+        var(--background-interactions-status-accent-hover),
+        var(--background-interactions-status-accent-pressed)
+      );
+    }
+    &__info {
+      @include buttonVariant(transparent, var(--text-status-info));
+    }
+    &__filled {
+      @include buttonVariant(transparent, var(--text-default));
+    }
+    &__subtle {
+      @include buttonVariant(
+        var(--background-alpha-default),
+        var(--text-default),
+        var(--border-default)
+      );
+    }
+  }
+
+  &__outlined {
+    @include buttonInteraction(
+      background-color,
+      var(--background-interactions-default-hover),
+      var(--background-interactions-default-pressed)
+    );
+    @include buttonVariant(
+      transparent,
+      var(--text-brand-default),
+      var(--border-default)
+    );
+    &__success {
+      @include buttonVariant(
+        transparent,
+        var(--text-status-success),
+        var(--border-status-success)
+      );
+    }
+
+    &__warning {
+      @include buttonVariant(
+        transparent,
+        var(--text-status-warning),
+        var(--border-status-warning)
+      );
+    }
+
+    &__danger {
+      @include buttonVariant(
+        transparent,
+        var(--text-status-error),
+        var(--border-status-error)
+      );
+      @include buttonInteraction(
+        background-color,
+        var(--background-interactions-status-accent-hover),
+        var(--background-interactions-status-accent-pressed)
+      );
+    }
+    &__info {
+      @include buttonVariant(
+        transparent,
+        var(--text-status-info),
+        var(--border-status-info)
+      );
+    }
+    &__filled {
+      @include buttonVariant(
+        transparent,
+        var(--text-default),
+        var(--border-default)
+      );
+    }
+    &__subtle {
+      @include buttonVariant(
+        var(--background-alpha-default),
+        var(--text-default),
+        var(--border-default)
+      );
+      &:focus-visible {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__rounded {
+    @include buttonRounded(var(--radius-l-16));
+  }
+
+  &__disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  &__iconLeft {
+    @include buttonIcon(0 var(--spacing-s) 0 0);
+  }
+
+  &__iconRight {
+    @include buttonIcon(0 0 0 var(--spacing-s));
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+  }
+}

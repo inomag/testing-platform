@@ -1,0 +1,25 @@
+.redirect-modal {
+  max-width: 395px;
+  max-height: 190px;
+  border: solid 1px #e8eaed;
+  border-radius: 6px;
+  margin-top: 15%;
+
+  @media only screen and (max-width: 480px) {
+    width: 95%;
+  }
+
+  .modal-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px 24px 16px 24px;
+
+    .modal-text {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+}

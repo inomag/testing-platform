@@ -1,0 +1,66 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.popup {
+  position: relative;
+  display: inline-block;
+
+  &__before::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  &__bottom {
+    &::before {
+      bottom: -10px;
+      left: var(--arrow-offset-left, 50%);
+      transform: translateX(-50%);
+      border-width: 0 10px 10px 10px;
+      border-color: transparent transparent #fff transparent;
+      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15));
+    }
+  }
+
+  &__top {
+    &::before {
+      top: -10px;
+      left: var(--arrow-offset-left, 50%);
+      transform: translateX(-50%);
+      border-width: 10px 10px 0 10px;
+      border-color: #fff transparent transparent transparent;
+      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15));
+    }
+  }
+
+  &__left {
+    &::before {
+      top: 50%;
+      left: -10px;
+      transform: translateY(-50%);
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent #fff;
+      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15));
+    }
+  }
+
+  &__right {
+    &::before {
+      top: 50%;
+      right: -10px;
+      transform: translateY(-50%);
+      border-width: 10px 10px 10px 0;
+      border-color: transparent #fff transparent transparent;
+      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15));
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    background-color: white;
+    border-radius: var(--radius-xs-4);
+    @include baseBoxShadow;
+    z-index: 1000;
+  }
+}

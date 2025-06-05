@@ -1,0 +1,71 @@
+{
+  "message": "success",
+  "result": {
+    "visitor": {},
+    "page": {
+      "component": {
+        "type": "StepperForm",
+        "title": "Document Collection",
+        "description": "",
+        "meta": {
+          "journey": [
+            {
+              "name": "Application",
+              "code": "application",
+              "order": 0,
+              "status": "close"
+            },
+            {
+              "name": "Internal Interview",
+              "code": "internal_interview",
+              "description": "Please go through the following set of assessments.",
+              "order": 1,
+              "status": "closed"
+            },
+            {
+              "name": "Bop Seminar",
+              "code": "bop_seminar",
+              "order": 2,
+              "status": "closed"
+            },
+            {
+              "name": "Physchometric Test",
+              "code": "physchometric_test",
+              "order": 3,
+              "status": "closed"
+            },
+            {
+              "name": "Documents Submitted Pan",
+              "code": "documents_submitted_pan",
+              "order": 4,
+              "status": "open"
+            },
+            {
+              "name": "Final Interview",
+              "code": "final_Interview",
+              "order": 5,
+              "status": "locked"
+            }
+          ],
+          "current_step": "documents_submitted_pan",
+          "sections": [
+            {
+              "title": "Registration status",
+              "description": "",
+              "code": "docs_collection",
+              "action": "submit",
+              "component": {
+                "type": "infoSection",
+                "meta": {
+                  "inputs": [],
+                  "title": "Document collected",
+                  "description": "Documents will be reviewed by our team"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

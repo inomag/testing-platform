@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .startPortal {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+        text-align: center;
+      }
+
+      .startPortal .vymoLogo {
+        margin-top: 20px;
+        height: 50px;
+      }
+
+      .startPortal h2 {
+        color: #333;
+        margin-top: 20px;
+      }
+
+      .startPortal form {
+        max-width: 400px;
+        margin: 10px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .startPortal label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .startPortal select,
+      .startPortal input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .startPortal input:focus,
+      .startPortal select:focus {
+        border: 1px solid #d31622;
+        outline: none;
+      }
+
+      .startPortal button {
+        background-color: #d31622;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 12px 20px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+      }
+
+      .startPortal button:hover {
+        opacity: 0.8;
+      }
+
+      .startPortal .resetButton {
+        background-color: transparent;
+        border: 2px solid #d31622;
+        color: #d31622;
+        margin-left: 10px;
+        transition: background-color 0.2s, color 0.2s;
+      }
+
+      .startPortal .resetButton:hover {
+        background-color: #d31622;
+        color: #fff;
+      }
+
+      .startPortal #result {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      .startPortal #loader {
+        display: none;
+      }
+
+      /* Proxy CSS */
+      .connected {
+        color: #28a745;
+        background-color: #d4edda;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-weight: bold;
+      }
+
+      .disconnected {
+        color: #dc3545;
+        background-color: #f8d7da;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    </style>
+    <script>
+      function errorScriptLoad() {
+        removeLoader();
+        const result = document.getElementById('result');
+        result.innerHTML = `App build does not exist. Please build your respective app.`;
+      }
+
+      function embedApp(selectedApp, selectedClientId) {
+        window.selectedClientId = selectedClientId;
+
+        let currentUrl = window.location.origin + window.location.pathname;
+        let baseUrl = currentUrl.replace('index.html', '');
+        let finalUrl = `${baseUrl}${selectedApp}/`;
+        window.open(finalUrl);
+        result.innerHTML = '';
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="startPortal">
+        <img
+          src="https://staging.lms.getvymo.com/v2/selfserve/vymo.png"
+          alt="Vymo Storybook"
+          class="vymoLogo"
+        />
+
+        <h2>Select the App to Load</h2>
+
+        <form>
+          <label for="portalSelect">Select App:</label>
+          <select id="portalSelect" name="portalSelect"></select>
+
+          <label id="clientIdLabel" for="clientId">Client Portal ID:</label>
+          <select id="clientId" name="clientId"></select>
+
+          <button type="button" onclick="loadPortalApp()">Load App</button>
+          <button
+            type="button"
+            class="resetButton"
+            onclick="removeLocalStorage()"
+          >
+            Reset
+          </button>
+        </form>
+
+        <form>
+          <label for="proxySelect">Lms Proxy:</label>
+          <select id="proxySelect"></select>
+        </form>
+
+        <div id="result"></div>
+        <div id="loader">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+          >
+            <circle
+              cx="25"
+              cy="25"
+              r="20"
+              fill="none"
+              stroke="#d31622"
+              stroke-width="5"
+            >
+              <animate
+                attributeName="r"
+                from="10"
+                to="20"
+                dur="0.8s"
+                begin="0s"
+                repeatCount="indefinite"
+              />
+              <animate
+                attributeName="opacity"
+                from="1"
+                to="0"
+                dur="0.8s"
+                begin="0s"
+                repeatCount="indefinite"
+              />
+            </circle>
+          </svg>
+        </div>
+
+        <div id="status" class="disconnected">Connecting to Proxy API...</div>
+      </div>
+    </div>
+
+    <script>
+      const clientIdsPerApp = [];
+      function appendLoader() {
+        const loader = document.getElementById('loader');
+        loader.style.display = 'block';
+      }
+
+      function removeLoader() {
+        const loader = document.getElementById('loader');
+        loader.style.display = 'none';
+
+        const result = document.getElementById('result');
+        result.innerHTML = '';
+      }
+
+      // JavaScript function to handle loading the selected app
+      function loadPortalApp() {
+        appendLoader();
+        const portalSelect = document.getElementById('portalSelect');
+        const clientId = document.getElementById('clientId');
+        const result = document.getElementById('result');
+
+        const selectedApp = portalSelect.value;
+        const selectedClientId = clientId.value;
+
+        if (selectedApp) {
+          console.log(selectedApp);
+          embedApp(selectedApp, selectedClientId);
+          localStorage.setItem('portal_App', selectedApp);
+          localStorage.setItem('portal_ClientId', selectedClientId);
+          result.innerHTML = `Loading ${selectedApp} with Client ID: ${selectedClientId}`;
+          removeLoader();
+        } else {
+          removeLoader();
+          result.innerHTML = 'Please select an app.';
+        }
+      }
+
+      function handleAppSelection() {
+        const portalSelect = document.getElementById('portalSelect');
+        const clientSelectElement = document.getElementById('clientId');
+        const clientIdLabel = document.getElementById('clientIdLabel');
+
+        const clientIdsForSelectedApp = clientIdsPerApp[portalSelect.value];
+        clientSelectElement.style.display = 'block';
+        clientIdLabel.style.display = 'block';
+        clientSelectElement.innerHTML = '';
+        if (clientIdsForSelectedApp?.length > 0) {
+          // Add empty option at top
+          const option = document.createElement('option');
+          option.value = '';
+          option.textContent = 'Select an option';
+          clientSelectElement.appendChild(option);
+
+          clientIdsForSelectedApp.forEach((clientId) => {
+            const option = document.createElement('option');
+            option.value = clientId;
+            option.textContent = clientId;
+            clientSelectElement.appendChild(option);
+          });
+        } else {
+          setTimeout(() => {
+            clientSelectElement.style.display = 'none';
+            clientIdLabel.style.display = 'none';
+          }, 0);
+        }
+      }
+
+      function removeLocalStorage() {
+        localStorage.clear();
+        location.reload();
+      }
+
+      let socket;
+
+      function connectWebSocket() {
+        socket = new WebSocket('ws://localhost:port'); // Adjust the port if necessary
+
+        socket.onopen = function () {
+          console.log('WebSocket connection opened');
+        };
+
+        socket.onmessage = function (event) {
+          console.log('Message from server:', event.data);
+          if (event.data === 'Proxy Updated') {
+            const selectedProxyUrl =
+              document.getElementById('proxySelect').value;
+            localStorage.setItem('proxy_Url', selectedProxyUrl);
+            updateStatus(
+              `Proxy Connected to - ${selectedProxyUrl}`,
+              'connected',
+            );
+          }
+        };
+
+        socket.onclose = function () {
+          console.log('WebSocket connection closed');
+          updateStatus('Proxy WebSocket connection closed', 'disconnected');
+        };
+
+        socket.onerror = function (error) {
+          console.error('WebSocket error:', error);
+          updateStatus('Proxy WebSocket error', 'disconnected');
+        };
+      }
+
+      function updateStatus(message, statusClass) {
+        const statusElement = document.getElementById('status');
+        statusElement.textContent = message;
+        statusElement.className = statusClass;
+      }
+
+      function updateProxy() {
+        const selectedProxyUrl = document.getElementById('proxySelect').value;
+        if (socket && socket.readyState === WebSocket.OPEN) {
+          socket.send(JSON.stringify({ proxyUrl: selectedProxyUrl }));
+        }
+      }
+
+      window.onload = function () {
+        connectWebSocket();
+        const proxyUrl =
+          document.getElementById('proxySelect').value ||
+          localStorage.getItem('proxy_Url');
+
+        if (proxyUrl) {
+          updateStatus(`Proxy Connected to - ${proxyUrl}`, 'connected');
+        }
+
+        // const selectedApp = localStorage.getItem('portal_App');
+        // const selectedClientId = localStorage.getItem('portal_ClientId');
+        // if (selectedApp) {
+        //   document.getElementById('portalSelect').value = selectedApp;
+        //   document.getElementById('clientId').value = selectedClientId;
+        //   embedApp(selectedApp, selectedClientId);
+        // }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "es2020",
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "react",
+    "lib": ["es5", "dom", "ES2021.String"],
+    "types": ["cypress", "node"],
+    "outDir": "./build",
+    "rootDir": ".",
+    "baseUrl": "./src",
+    "noEmit": true,
+    "pretty": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "removeComments": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "src/*": ["./*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "custom.d.ts",
+    "scripts/**/*",
+    "cypress/**/*",
+    "cypress.config.ts",
+    "tsup.config.ts",
+    "src/react-app-env.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}

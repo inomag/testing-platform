@@ -1,0 +1,79 @@
+@import '../../../../../designTokens/scssVariables.scss';
+
+.cropImage {
+  @media screen and (min-width: $desktop-breakpoint) {
+    min-height: 80vh;
+    min-width: 40vw;
+  }
+
+  @media screen and (max-width: $desktop-breakpoint) {
+    min-height: 80vh;
+    min-width: 80vw;
+  }
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    height: 60vh;
+    width: 90vw;
+  }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    height: 100dvh;
+    width: 100vw;
+  }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    &__controls {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      &__image {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+    }
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__crop {
+      height: 100%;
+      > div {
+        height: 100%;
+        img {
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  &__rotate {
+    color: var(--text-subtle);
+    svg {
+      color: var(--text-subtle);
+    }
+  }
+  &__slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(var(--spacing-m) * 3);
+    &__radioButton {
+      > div > label {
+        font-size: calc(var(--m-font-size) - 1px);
+      }
+    }
+  }
+}

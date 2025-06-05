@@ -1,0 +1,27 @@
+@import '../../../designTokens/scssVariables.scss';
+
+.dataSync {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-xl) * 3);
+  align-items: center;
+  height: 100%;
+  &__header {
+    display: flex;
+    gap: var(--spacing-s);
+    align-items: center;
+    justify-content: center;
+    &__mobile {
+      align-self: flex-start;
+    }
+  }
+  &__content {
+    margin-top: var(--spacing-l);
+    > span:first-child {
+      text-align: center;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-l);
+  }
+}

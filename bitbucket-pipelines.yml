@@ -1,0 +1,460 @@
+image: cypress/browsers:node-20.18.0-chrome-130.0.6723.69-1-ff-131.0.3-edge-130.0.2849.52-1
+
+options:
+  max-time: 40
+
+definitions:
+  caches:
+    node-modules:
+      key:
+        files:
+          - 'yarn.lock'
+      path: node_modules
+    cypress:
+      key:
+        files:
+          - 'yarn.lock'
+      path: $HOME/.cache/Cypress
+
+  steps:
+    - step: &install_node_modules
+        name: Install dependencies
+        caches:
+          - node-modules
+          - cypress
+        script:
+          - yarn cache dir
+          - node -v
+          - npm -v
+          - yarn install --frozen-lockfile
+          - node scripts/pipeline/stopPreviousBuild
+
+    - parallel: &code_formatting
+        - step:
+            name: TS check
+            caches:
+              - node-modules
+            script:
+              - yarn ts
+        - step:
+            name: Lint check
+            caches:
+              - node-modules
+            script:
+              - yarn lint
+        - step:
+            name: Prettier
+            caches:
+              - node-modules
+            script:
+              - yarn prettier:check
+
+    - step: &unit_test
+        name: Unit Test
+        caches:
+          - node-modules
+        script:
+          - yarn test
+        artifacts:
+          - jest/coverage/**
+
+    - step: &buildChromatic
+        name: Chromatic and Storybook
+        size: 2x
+        caches:
+          - node-modules
+        script:
+          - node scripts/chromatic
+
+    - step: &buildVymoUiNodeModule
+        name: Publish @vymo/ui
+        caches:
+          - node-modules
+        script:
+          - npm run @vymo/ui:publish
+
+    - step: &checkForVymoUiNodeModule
+        name: Check for @vymo/ui new release
+        caches:
+          - node-modules
+        script:
+          - npm run @vymo/ui:ci
+
+    - step: &s3_transfer_feature
+        name: Deploy Feature Branch to PODs/AsiDev/Staging
+        size: 2x
+        caches:
+          - node-modules
+        script:
+          - yarn build:before
+          - yarn build --change
+          - yarn build:after
+          - pipe: atlassian/aws-s3-deploy:1.1.0
+            variables:
+              S3_BUCKET: 'self-serve-ui/web-platform/$BITBUCKET_BRANCH'
+              LOCAL_PATH: 'build'
+              ACL: public-read
+          - node scripts/podHome/updateCache.js featureUrls
+
+    - step: &s3_transfer_manual_staging
+        name: Deploy Branch to Staging
+        size: 2x
+        deployment: staging
+        caches:
+          - node-modules
+        script:
+          - yarn build:before
+          - yarn build --change --appEnv=staging
+          - yarn build:after
+          - pipe: atlassian/aws-s3-deploy:1.1.0
+            variables:
+              S3_BUCKET: 'self-serve-ui/staging/web-platform'
+              LOCAL_PATH: 'build'
+              ACL: public-read
+          - pipe: atlassian/aws-cloudfront-invalidate:0.11.0
+            variables:
+              DISTRIBUTION_ID: 'E28HQSA289V304'
+              PATHS: '/staging/*'
+
+    - step: &s3_transfer_manual_preprod
+        name: Deploy Branch to Pre Prod
+        trigger: manual
+        size: 2x
+        deployment: preprod
+        caches:
+          - node-modules
+        script:
+          - yarn build:before
+          - yarn build --target=all --appEnv=preprod
+          - yarn build:after
+          - pipe: atlassian/aws-s3-deploy:1.1.0
+            variables:
+              S3_BUCKET: 'self-serve-ui/preProd/web-platform'
+              LOCAL_PATH: 'build'
+              ACL: public-read
+
+    - step: &s3_transfer_manual_prod
+        name: Deploy Branch to Production
+        trigger: manual
+        size: 2x
+        deployment: production
+        caches:
+          - node-modules
+        script:
+          - yarn build:before
+          - yarn build --target=all --appEnv=production
+          - yarn build:after
+          - pipe: atlassian/aws-s3-deploy:1.1.0
+            variables:
+              S3_BUCKET: 'self-serve-ui/release/web-platform'
+              LOCAL_PATH: 'build'
+              ACL: public-read
+
+    - step: &storybook
+        name: Deploy Storybook
+        size: 2x
+        caches:
+          - node-modules
+        script:
+          - yarn build-storybook
+          - pipe: atlassian/aws-s3-deploy:1.1.0
+            variables:
+              S3_BUCKET: 'self-serve-ui/web-platform/storybook'
+              LOCAL_PATH: 'storybook-static'
+              ACL: public-read
+
+    - parallel: &cypress
+        - step:
+            name: Cypress 1
+            size: 2x
+            caches:
+              - node-modules
+              - cypress
+            script:
+              - yarn cypress:ci
+              - yarn coverage:cypress
+              # - pipe: atlassian/aws-s3-deploy:1.1.0
+              #   variables:
+              #     S3_BUCKET: 'self-serve-ui/$BITBUCKET_BRANCH/screenshots'
+              #     LOCAL_PATH: 'cypress/screenshots'
+              #     ACL: public-read
+            artifacts:
+              - cypress/coverage/**
+        - step:
+            name: Cypress 2
+            size: 2x
+            caches:
+              - node-modules
+              - cypress
+            script:
+              - yarn cypress:ci
+              - yarn coverage:cypress
+              # - pipe: atlassian/aws-s3-deploy:1.1.0
+              #   variables:
+              #     S3_BUCKET: 'self-serve-ui/$BITBUCKET_BRANCH/screenshots'
+              #     LOCAL_PATH: 'cypress/screenshots'
+              #     ACL: public-read
+            artifacts:
+              - cypress/coverage/**
+        - step:
+            name: Cypress 3
+            size: 2x
+            caches:
+              - node-modules
+              - cypress
+            script:
+              - yarn cypress:ci
+              - yarn coverage:cypress
+              # - pipe: atlassian/aws-s3-deploy:1.1.0
+              #   variables:
+              #     S3_BUCKET: 'self-serve-ui/$BITBUCKET_BRANCH/screenshots'
+              #     LOCAL_PATH: 'cypress/screenshots'
+              #     ACL: public-read
+            artifacts:
+              - cypress/coverage/**
+
+    - step: &coverage
+        name: Coverage
+        caches:
+          - node-modules
+        script:
+          - yarn coverage:combine
+          - pipe: atlassian/aws-s3-deploy:1.1.0
+            variables:
+              S3_BUCKET: 'self-serve-ui/web-platform/$BITBUCKET_BRANCH/coverage'
+              LOCAL_PATH: 'coverage/lcov-report'
+              ACL: public-read
+          - apt-get update && apt-get install curl -y
+          - yarn pr:comment
+
+    - step: &coverageReportMaster
+        name: Coverage
+        caches:
+          - node-modules
+        script:
+          - yarn coverage:combine
+          - pipe: atlassian/aws-s3-deploy:1.1.0
+            variables:
+              S3_BUCKET: 'self-serve-ui/web-platform/$BITBUCKET_BRANCH/coverage'
+              LOCAL_PATH: 'coverage/lcov-report'
+              ACL: public-read
+          - apt-get update && apt-get install curl -y
+          - yarn pr:comment
+          - yarn coverage:upload
+
+    - step: &coverageNotify
+        name: Coverage Notify
+        caches:
+          - node-modules
+        script:
+          - echo $SLACK_WEBHOOK
+          # - SLACK_WEBHOOK=$SLACK_WEBHOOK ./node_modules/.bin/istanbul-slack-notify
+
+    - parallel: &cypressE2EStep
+        - step:
+            name: Cypress E2E 1
+            caches:
+              - node-modules
+              - cypress
+            script:
+              - yarn cypress:e2e:ci
+            artifacts:
+              - cypress/coverage/**
+
+        - step:
+            name: Cypress E2E 2
+            caches:
+              - node-modules
+              - cypress
+            script:
+              - yarn cypress:e2e:ci
+            artifacts:
+              - cypress/coverage/**
+
+        - step:
+            name: Cypress E2E 3
+            caches:
+              - node-modules
+              - cypress
+            script:
+              - yarn cypress:e2e:ci
+            artifacts:
+              - cypress/coverage/**
+
+    - parallel: &cypressE2EPreProdStep
+        - step:
+            name: Cypress E2E 1
+            caches:
+              - node-modules
+              - cypress
+            script:
+              - export TEST_ENV=preprod
+              - yarn cypress:e2e:ci:preprod
+            artifacts:
+              - cypress/coverage/**
+
+        - step:
+            name: Cypress E2E 2
+            caches:
+              - node-modules
+              - cypress
+            script:
+              - export TEST_ENV=preprod
+              - yarn cypress:e2e:ci:preprod
+            artifacts:
+              - cypress/coverage/**
+
+        - step:
+            name: Cypress E2E 3
+            caches:
+              - node-modules
+              - cypress
+            script:
+              - export TEST_ENV=preprod
+              - yarn cypress:e2e:ci:preprod
+            artifacts:
+              - cypress/coverage/**
+
+    - parallel: &cypressE2EProdStep
+        - step:
+            name: Cypress E2E 1
+            caches:
+              - node-modules
+              - cypress
+            script:
+              - export TEST_ENV=prod
+              - yarn cypress:e2e:ci:prod
+            artifacts:
+              - cypress/coverage/**
+
+        - step:
+            name: Cypress E2E 2
+            caches:
+              - node-modules
+              - cypress
+            script:
+              - export TEST_ENV=prod
+              - yarn cypress:e2e:ci:prod
+            artifacts:
+              - cypress/coverage/**
+
+        - step:
+            name: Cypress E2E 3
+            caches:
+              - node-modules
+              - cypress
+            script:
+              - export TEST_ENV=prod
+              - yarn cypress:e2e:ci:prod
+            artifacts:
+              - cypress/coverage/**
+
+pipelines:
+  pull-requests:
+    'e2e/*':
+      - step: *install_node_modules
+      - parallel: *code_formatting
+      - parallel: *cypressE2EStep
+
+    '**':
+      - step: *install_node_modules
+      - step: *checkForVymoUiNodeModule
+      - step: *unit_test
+      - parallel: *cypress
+      - step: *buildChromatic
+      - step: *coverageNotify
+      # - step: *coverage
+
+  branches:
+    '**':
+      - step: *install_node_modules
+      - parallel: *code_formatting
+      - step: *s3_transfer_feature
+
+    'master':
+      - step: *install_node_modules
+      - parallel: *code_formatting
+      - step: *unit_test
+      - step: *s3_transfer_feature
+      - parallel: *cypress
+      - step: *coverageReportMaster
+      - step: *buildVymoUiNodeModule
+      - step: *buildChromatic
+      - step: *storybook
+      - step: *s3_transfer_manual_staging
+      - step: *coverageNotify
+
+    'release/*':
+      - step: *install_node_modules
+      - parallel: *code_formatting
+      - step: *unit_test
+      - parallel: *cypress
+      - step: *coverage
+      - step: *s3_transfer_feature
+      - step: *s3_transfer_manual_preprod
+      - step:
+          name: Update frontendBoard cache
+          caches:
+            - node-modules
+          script:
+            - node scripts/podHome/updateCache.js deployment
+      - step: *s3_transfer_manual_prod
+      - step:
+          name: Update frontendBoard cache
+          caches:
+            - node-modules
+          script:
+            - node scripts/podHome/updateCache.js deployment
+      - step: *coverageNotify
+
+  custom:
+    'Code Coverage':
+      - step: *install_node_modules
+      - step: *unit_test
+      - parallel: *cypress
+      - step: *coverageReportMaster
+      - step: *coverageNotify
+
+    'E2E':
+      - step: *install_node_modules
+      - parallel: *cypressE2EStep
+
+    'E2E PreProd':
+      - step: *install_node_modules
+      - parallel: *cypressE2EPreProdStep
+
+    'E2E Prod':
+      - step: *install_node_modules
+      - parallel: *cypressE2EProdStep
+
+    'Build':
+      - step: *install_node_modules
+      - step: *s3_transfer_feature
+
+    applicationDeploy:
+      - variables:
+          - name: deployEnvironment
+            default: staging
+            description: Select the Environment
+            allowed-values:
+              - staging
+              - preprod
+              - production
+          - name: buildCiApps
+            description: Add the App name to be build.For ex- recruitment, copilot. User can give "all" to build all the apps (This app name can be find in appConfig for respective app.)
+      - step: *install_node_modules
+      - step: *s3_transfer_manual_staging
+      - step: *s3_transfer_manual_preprod
+      - step:
+          name: Update frontendBoard cache
+          caches:
+            - node-modules
+          script:
+            - node scripts/podHome/updateCache.js deployment
+      - step: *s3_transfer_manual_prod
+      - step:
+          name: Update frontendBoard cache
+          caches:
+            - node-modules
+          script:
+            - node scripts/podHome/updateCache.js deployment

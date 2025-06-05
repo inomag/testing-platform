@@ -1,0 +1,7 @@
+{
+  "status": 400,
+  "error_code": "otp_verification_failed",
+  "message": "Wrong OTP entered. OTP verification failed",
+  "resend_attempts_remaining": 5,
+  "verification_attempts_remaining": 4
+}

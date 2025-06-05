@@ -1,0 +1,75 @@
+{
+  "ianaTimezone": "Asia/Kolkata",
+  "locale": "en-US",
+  "language": "en",
+  "country": "IN",
+  "currency": "₹",
+  "currency_iso": "INR",
+  "quantity": "KLC",
+  "country_calling_code": "+91",
+  "client_date_time_config": {
+    "date_in_curr_year": {
+      "relativeFormat": false,
+      "formatType": "absolute",
+      "dateTimeFormat": "DD MMM YYYY"
+    },
+    "date": {
+      "relativeFormat": false,
+      "formatType": "absolute",
+      "dateTimeFormat": "DD MMM YYYY"
+    },
+    "meeting_date_time_in_curr_year": {
+      "relativeFormat": true,
+      "formatType": "relative",
+      "dateTimeFormat": "ddd, DD MMM  h:mm a"
+    },
+    "meeting_date_not_in_curr_year": {
+      "relativeFormat": false,
+      "formatType": "absolute",
+      "dateTimeFormat": "DD MMM YYYY  h:mm a"
+    },
+    "date_range": {
+      "relativeFormat": false,
+      "formatType": "absolute",
+      "dateTimeFormat": "DD MMM YYYY"
+    },
+    "date_in_chart": {
+      "relativeFormat": false,
+      "formatType": "absolute",
+      "dateTimeFormat": "MMM YY"
+    },
+    "time_range": {
+      "relativeFormat": false,
+      "formatType": "absolute",
+      "dateTimeFormat": "hh:mm a"
+    },
+    "month_day_in_cal": {
+      "relativeFormat": false,
+      "formatType": "absolute",
+      "dateTimeFormat": "MMM DD"
+    },
+    "month_year_in_cal": {
+      "relativeFormat": false,
+      "formatType": "absolute",
+      "dateTimeFormat": "MMM YYYY"
+    },
+    "date_time_with_seconds": {
+      "relativeFormat": false,
+      "formatType": "absolute",
+      "dateTimeFormat": "DD/MM/YYYY HH:mm:ss"
+    },
+    "day_month_date": {
+      "relativeFormat": true,
+      "formatType": "relative",
+      "dateTimeFormat": "ddd, MMM DD"
+    },
+    "time": {
+      "relativeFormat": false,
+      "formatType": "absolute",
+      "dateTimeFormat": "h:mm a"
+    }
+  },
+  "multiLanguageSupported": true,
+  "supportedLanguages": ["en", "fr"],
+  "country_name": "India"
+}

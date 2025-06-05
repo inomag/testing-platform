@@ -1,0 +1,26 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.tabWrapper {
+  &__tabs {
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid var(--color-neutral-400);
+    }
+
+    &__link {
+      padding: var(--spacing-m) var(--spacing-2xl);
+      cursor: pointer;
+
+      &__selected {
+        border-bottom: 3px solid var(--brand-primary);
+        color: var(--brand-primary);
+        font-weight: var(--font-weight-bold);
+      }
+    }
+  }
+
+  &__content {
+    padding: var(--spacing-s);
+  }
+}

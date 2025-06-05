@@ -1,0 +1,49 @@
+{
+  "message": "success",
+  "result": {
+    "visitor": {},
+    "page": {
+      "component": {
+        "type": "StepperForm",
+        "title": "Table data",
+        "description": "",
+        "meta": {
+          "journey": [
+            {
+              "name": "Application",
+              "code": "application",
+              "order": 0,
+              "status": "close"
+            }
+          ],
+          "current_step": "Tabular info",
+          "sections": [
+            {
+              "title": "Application Centers",
+              "description": "Please find the details below",
+              "code": "tablular_data",
+              "action": "",
+              "component": {
+                "type": "table",
+                "meta": {
+                  "data": [
+                    {
+                      "CustomerID": 123,
+                      "Name": "John Doe",
+                      "City": "New York"
+                    },
+                    {
+                      "CustomerID": 456,
+                      "Name": "Jane Smith",
+                      "City": "London"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

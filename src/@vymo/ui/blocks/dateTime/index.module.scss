@@ -1,0 +1,217 @@
+// https://stackoverflow.com/questions/55794770/how-can-i-style-react-datepicker
+@import '../../../../designTokens/scssVariables.scss';
+
+/*
+ *
+ * Date Time Input Wrapper CSS Start
+ *
+ */
+
+@mixin datePickerbase {
+  width: 100%;
+  font-family: inherit !important;
+  > div {
+    height: 100%;
+  }
+  svg {
+    fill: var(--text-subtle);
+  }
+}
+
+/*
+ *
+ *  Date Time Input Wrapper CSS End
+ *
+ */
+
+.popper {
+  :global {
+    .react-datepicker {
+      border: none;
+      box-shadow: 0 0 4px 0 var(--color-neutral-400);
+      display: flex;
+
+      .react-datepicker__day--outside-month {
+        color: var(--color-neutral-400);
+      }
+
+      /*
+     *  --------------------------------------
+     *      Calendar 
+     *  --------------------------------------
+     */
+
+      .react-datepicker__year-wrapper {
+        max-width: 240px;
+      }
+
+      .react-datepicker__year-text,
+      .react-datepicker__month .react-datepicker__month-text,
+      .react-datepicker__month .react-datepicker__quarter-text {
+        margin: 8px;
+        padding: 2px;
+        font-size: 13px;
+      }
+
+      .react-datepicker__year-text--today,
+      .react-datepicker__month-text--today,
+      .react-datepicker__quarter-text--today {
+        font-weight: 400;
+      }
+
+      // keyboard selected should be white
+      .react-datepicker__year-text--in-range,
+      .react-datepicker__month-text--in-range,
+      .react-datepicker__day--in-range,
+      .react-datepicker__year-text--keyboard-selected,
+      .react-datepicker__quarter-text--keyboard-selected,
+      .react-datepicker__month-text--keyboard-selected,
+      .react-datepicker__day--keyboard-selected {
+        border: none;
+        background-color: white;
+        color: black;
+      }
+
+      .react-datepicker__year-text--in-selecting-range:not(
+          .react-datepicker__year-text--selecting-range-start
+        ):not(.react-datepicker__year-text--selecting-range-end),
+      .react-datepicker__quarter-text--in-selecting-range:not(
+          .react-datepicker__quarter-text--range-start
+        ):not(.react-datepicker__quarter-text--range-end),
+      .react-datepicker__month-text--in-selecting-range:not(
+          .react-datepicker__month-text--selecting-range-start
+        ):not(.react-datepicker__month-text--selecting-range-end),
+      .react-datepicker__day--in-selecting-range:not(
+          .react-datepicker__day--selecting-range-start
+        ):not(.react-datepicker__day--selecting-range-end) {
+        border: none;
+        background-color: var(--background-default);
+        color: black;
+      }
+
+      .react-datepicker__year-text--selected,
+      .react-datepicker__year-text--selecting-range-start,
+      .react-datepicker__year-text--selecting-range-end,
+      .react-datepicker__quarter-text--selected,
+      .react-datepicker__quarter-text--selecting-range-start,
+      .react-datepicker__quarter-text--selecting-range-end,
+      .react-datepicker__quarter-text--range-start,
+      .react-datepicker__quarter-text--range-end,
+      .react-datepicker__month-text--selected,
+      .react-datepicker__month-text--selecting-range-start,
+      .react-datepicker__month-text--selecting-range-end,
+      .react-datepicker__day--selected,
+      .react-datepicker__day--selecting-range-start,
+      .react-datepicker__day--selecting-range-end {
+        border: 1px solid var(--border-solid-bold);
+        border-radius: var(--radius-s-8);
+        background-color: var(--brand-primary);
+        color: white;
+      }
+
+      /*
+     *  --------------------------------------
+     *      Todays Date 
+     *  --------------------------------------
+     */
+
+      .react-datepicker__day--today:not(.react-datepicker__day--selected):not(
+          .react-datepicker__day--selecting-range-start
+        ):not(.react-datepicker__day--selecting-range-end) {
+        border-radius: var(--radius-s-8);
+        border: 1px solid var(--border-solid-bold);
+        background-color: white;
+        color: var(--brand-primary);
+      }
+
+      /*
+     *  --------------------------------------
+     *      Time Input CSS 
+     *  --------------------------------------
+     */
+
+      .react-datepicker__input-time-container {
+        width: auto;
+        margin: 0;
+        border-left: 1px solid var(--color-neutral-300);
+        :global {
+          .react-datepicker-time__caption {
+            display: block;
+            height: 72px;
+            text-align: center;
+            line-height: 62px;
+            font-size: var(--s-font-size);
+          }
+        }
+      }
+
+      .react-datepicker-time__input-container {
+        display: block;
+        width: 100%;
+        > div {
+          display: block !important;
+          width: 100%;
+          height: 100%;
+          margin-left: 0 !important;
+          > div > div > div {
+            height: 178px;
+            border-bottom: none;
+          }
+        }
+      }
+
+      /*
+     *  --------------------------------------
+     *      Header
+     *  --------------------------------------
+     */
+
+      .react-datepicker__triangle {
+        &::before {
+          border-bottom-color: var(--color-neutral-300) !important;
+        }
+        &::after {
+          border-bottom-color: white !important;
+        }
+        left: -50% !important;
+      }
+
+      .react-datepicker__header {
+        border-bottom: 1px solid var(--color-neutral-300);
+        background: white;
+      }
+
+      /*
+     *  --------------------------------------
+     *      Today Button (Footer)
+     *  --------------------------------------
+     */
+      .react-datepicker__today-button {
+        position: absolute;
+        background: white;
+        color: var(--brand-primary);
+        border: none;
+        box-shadow: 0 0 4px 0 var(--color-neutral-400);
+        font-weight: 400;
+        font-size: var(--s-font-size);
+        bottom: -25px;
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.datePicker {
+  height: calc(var(--l-font-size) * 2);
+  @include datePickerbase;
+
+  &__disabled {
+    pointer-events: none;
+    background-color: var(--background-disabled);
+  }
+
+  &__focused:not(.customSelect__disabled) {
+    @include inputFocus;
+  }
+}

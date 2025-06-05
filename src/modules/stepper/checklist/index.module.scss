@@ -1,0 +1,222 @@
+@import '../../../designTokens/scssVariables.scss';
+
+.mobileChecklistProgress {
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px 12px 16px;
+    background: var(--background-subtle);
+    position: sticky;
+    z-index: 2;
+    top: 0;
+  }
+
+  &__textContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 8px;
+  }
+}
+
+.milestone {
+  overflow: hidden;
+
+  &__progress {
+    width: calc(100% + 42px);
+    position: relative;
+    left: -13px;
+  }
+
+  &__collapse {
+    margin: 12px 0;
+    border-radius: var(--radius-m-12);
+    overflow: hidden;
+
+    > div:first-child {
+      padding: 12px 10px;
+      align-items: start;
+      background-color: var(--background-subtle);
+
+      &[aria-expanded='true'] {
+        border-radius: 12px 12px 0 0;
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-flat);
+    border-bottom: 1px solid var(--border-default);
+    font-weight: var(--font-weight-semi-bold);
+    font-size: var(--m-font-size);
+
+    &__prefixIcon {
+      margin: 0 1% 0 0;
+      display: flex;
+      align-items: center;
+    }
+
+    &__suffixIcon {
+      margin-left: 8px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__step {
+    &__content {
+      padding: 12px 10px;
+
+      &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4px;
+
+        &__prefixIcon {
+          display: flex;
+          align-items: center;
+          margin-right: 8px;
+        }
+
+        &__title {
+          flex-grow: 1;
+          font-weight: var(--font-weight-semi-bold);
+          font-size: var(--s-font-size);
+        }
+
+        &__suffixIcon {
+          margin-left: 8px;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      &__description {
+        color: var(--text-subtle);
+        margin-left: 28px;
+      }
+    }
+  }
+
+  &__action {
+    padding-left: 24px;
+
+    &__content {
+      padding: 12px 0 0 12px;
+      cursor: pointer;
+
+      &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2px;
+
+        &__prefixIcon {
+          display: flex;
+          align-items: center;
+          margin-right: 8px;
+          gap: 8px;
+        }
+
+        &__title {
+          flex-grow: 1;
+          font-weight: var(--font-weight-medium);
+          font-size: var(--s-font-size);
+        }
+
+        &__suffixIcon {
+          margin-left: 8px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+
+          svg * {
+            color: var(--text-subtle) !important;
+          }
+        }
+      }
+
+      &__description {
+        color: var(--text-subtle);
+        margin-left: 28px;
+      }
+    }
+  }
+}
+
+.checklistWrapper {
+  &__modal {
+    @media screen and (max-width: $desktop-breakpoint) {
+      min-height: 80vh;
+      min-width: 45vw;
+    }
+
+    @media screen and (max-width: $tablet-breakpoint) {
+      height: 60vh;
+      width: 351px;
+      padding: 0;
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      width: 90vw;
+      height: 65vh;
+    }
+  }
+
+  &__checklistModalHeader {
+    font-size: 16px;
+    font-weight: var(--font-weight-semi-bold);
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-default);
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: $XL-desktop-breakpoint) {
+      padding: 15px 0 30px 0px;
+    }
+
+    @media screen and (max-width: $tablet-breakpoint),
+      screen and (max-width: $mobile-breakpoint) {
+      padding: 5px 0 10px 0px;
+    }
+  }
+
+  &__sidebar {
+    width: 350px;
+    overflow: hidden;
+    padding: 0 15px 0 12px;
+    border-right: 1px solid var(--border-default);
+    height: 100%;
+    // TODO:: remove webkit, add scrollbar styles
+    &:hover {
+      overflow-y: auto;
+    }
+
+    @media screen and (max-width: $tablet-breakpoint),
+      screen and (max-width: $mobile-breakpoint) {
+      width: 327px;
+    }
+  }
+
+  &__toggleButton {
+    border-radius: var(--radius-m-12);
+    color: var(--text-default);
+    background-color: var(--background-flat);
+    font-weight: var(--font-weight-semi-bold);
+    border: 1px solid var(--border-default);
+    display: flex;
+    right: 10px;
+    top: 20px;
+    width: auto;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "result": {
+    "visitor": {
+      "code": "APmhE2pNyw"
+    },
+    "template": {
+      "type": "page",
+      "code": "online_payment",
+      "actionCategory": "PaymentActionCategory",
+      "actionType": "payment",
+      "milestones": {
+        "checklist": [
+          {
+            "code": "abslamc_z2psx7-recruitment_leads_tdhixr_new",
+            "name": "Candidate Added",
+            "status": "completed",
+            "steps": []
+          },
+          {
+            "code": "abslamc_z2psx7-recruitment_leads_tdhixr_amc_agent_recruitment_application",
+            "name": "Application",
+            "status": "in_progress",
+            "steps": [
+              {
+                "status": "in_progress",
+                "code": "basic_details",
+                "name": "Basic Details",
+                "description": "Basic Details (Description)",
+                "type": "conditional",
+                "actions": [
+                  {
+                    "name": "Online Payment",
+                    "code": "online_payment",
+                    "description": "Online Payment",
+                    "status": "enabled",
+                    "type": "profile_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://abc-staging.lms.getvymo.com/web-platform/branch/PE-7523/onboarding/#/stepper/action/online_payment?vo=APmhE2pNyw&portalId=abslamc-recruitment-portal",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "name": "Basic Details Capture",
+                    "code": "basic_details",
+                    "description": "Please fill your Basic details",
+                    "status": "enabled",
+                    "type": "profile_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://abc-staging.lms.getvymo.com/web-platform/branch/PE-7523/onboarding/#/stepper/action/basic_details?vo=APmhE2pNyw&portalId=abslamc-recruitment-portal",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  }
+                ],
+                "stepStatusMessage": ""
+              },
+              {
+                "status": "locked",
+                "code": "additional_details",
+                "name": "Additional Details",
+                "description": "Additional Details (Description)",
+                "type": "conditional",
+                "actions": [],
+                "stepStatusMessage": ""
+              },
+              {
+                "status": "locked",
+                "code": "details_for_empanelment",
+                "name": "Details For Empanelment",
+                "description": "Details For Empanelment (Description)",
+                "type": "conditional",
+                "actions": [],
+                "stepStatusMessage": ""
+              }
+            ]
+          },
+          {
+            "code": "abslamc_z2psx7-recruitment_leads_tdhixr_amc_agent_recruitment_outcome",
+            "name": "CAMS Outcome",
+            "status": "locked",
+            "steps": []
+          },
+          {
+            "code": "abslamc_z2psx7-recruitment_leads_tdhixr_amc_agent_recruited",
+            "name": "Recruited",
+            "status": "locked",
+            "steps": []
+          }
+        ]
+      },
+      "title": "Online Payment",
+      "description": "Online Payment",
+      "infoSection": {
+        "title": "Pay License Fees",
+        "description": "To complete your onboarding process, please pay the required fee to IRDAI. Click on the link below to proceed to the payment gateway",
+        "type": "info"
+      },
+      "html": null,
+      "cta": [
+        {
+          "type": "action",
+          "title": "Initiate payment",
+          "action": "online_payment"
+        }
+      ]
+    },
+    "isAssistedOnboarding": false
+  }
+}

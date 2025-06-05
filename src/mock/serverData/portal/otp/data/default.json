@@ -1,0 +1,23 @@
+{
+  "status": 200,
+  "error_code": null,
+  "message": "OTP Sent Successfully",
+  "resend_attempts_remaining": 5,
+  "verification_attempts_remaining": 5,
+  "otp_status": {
+    "isOtpSentViaSms": true,
+    "isOtpSentViaEmail": false
+  },
+  "otp": {
+    "requestId": "06d75790-6837-11ee-8ae3-1fd0207becc9",
+    "metadata": {
+      "ttl": 900000,
+      "resendOTPConfig": {
+        "enabled": true,
+        "interval": 30000,
+        "backoff": 0,
+        "max_tries": 5
+      }
+    }
+  }
+}

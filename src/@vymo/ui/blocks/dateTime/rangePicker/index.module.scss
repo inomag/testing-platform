@@ -1,0 +1,52 @@
+@import '../index.module.scss';
+
+.rangePicker {
+  :global {
+    // added div to that higher specificity so that classes can be overide the base classes defined in ../index.module.scss bt datePicker class
+    div.react-datepicker {
+      .react-datepicker__triangle {
+        left: 0 !important;
+      }
+    }
+  }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  @include inputBase();
+  padding: 0;
+  &__start {
+    :global {
+      .react-datepicker__input-container {
+        > div > div {
+          border: none;
+          &:focus-within {
+            box-shadow: none;
+            border: none;
+            outline: 0;
+          }
+        }
+      }
+    }
+    @include datePickerbase;
+  }
+  > svg {
+    width: calc(var(--xs-font-size) * 3);
+  }
+  &__end {
+    :global {
+      .react-datepicker__input-container {
+        > div > div {
+          border: none;
+          &:focus-within {
+            box-shadow: none;
+            border: none;
+            outline: 0;
+          }
+        }
+      }
+    }
+    @include datePickerbase;
+  }
+}

@@ -1,0 +1,136 @@
+@import '../../designTokens/scssVariables.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  padding: 0 12px;
+  height: 72px;
+  box-shadow: 0px 2px 4px 0px rgba(204, 204, 204, 0.32);
+
+  &__frontend {
+    height: 60px;
+    &__user {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--spacing-s);
+    }
+  }
+
+  &__popup {
+    border-radius: var(--radius-s-8);
+  }
+
+  &__menuButton {
+    padding: 0;
+  }
+
+  @media only screen and (max-width: $mobile-breakpoint) {
+    height: 56px;
+  }
+
+  &__mobileApp {
+    background: var(--background-subtle);
+    color: #ffffff;
+    &__text {
+      margin-left: var(--spacing-l);
+      color: #ffffff;
+    }
+    &__menu {
+      svg {
+        * {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    gap: 4px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .header-right-web {
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 480px) {
+    .header-right-mobile {
+      display: none;
+    }
+  }
+  .header-button {
+    display: flex;
+    align-items: center;
+  }
+  .contact-us {
+    color: var(--color-neutral-100);
+    background: var(--tertiary-color);
+    gap: 4px;
+  }
+  .logout-button {
+    padding-right: 4px;
+  }
+}
+
+.navigationHeader {
+  z-index: 90;
+  background: var(--color-neutral-100);
+  border: 1px solid var(--border-default);
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  top: 50px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__selfServeButtons {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-s);
+    height: 56px;
+  }
+
+  &__placeholder {
+    height: 56px;
+  }
+
+  &__leadStepperPlaceholder {
+    height: 35px;
+  }
+}
+
+.pageDirtyConfirmModal {
+  max-width: 350px;
+
+  &__header {
+    font-size: var(--font-l);
+    font-weight: var(--font-weight-semi-bold);
+    align-items: center;
+    gap: 5px;
+    svg {
+      * {
+        fill: var(--warning-subtle-color);
+      }
+    }
+  }
+
+  &__body {
+    width: 300px;
+  }
+
+  &__footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+}

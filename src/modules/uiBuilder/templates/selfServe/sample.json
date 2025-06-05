@@ -1,0 +1,210 @@
+{
+  "code": "sample",
+  "name": "sample",
+  "tile": {
+    "name": "sample",
+    "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8cGF0aCBkPSJNMzAsMWg0MGwyOSwyOXY0MGwtMjksMjloLTQwbC0yOS0yOXYtNDB6IiBzdHJva2U9IiMwMDAiIGZpbGw9Im5vbmUiLz4gCiAgPHBhdGggZD0iTTMxLDNoMzhsMjgsMjh2MzhsLTI4LDI4aC0zOGwtMjgtMjh2LTM4eiIgZmlsbD0iI2EyMyIvPiAKICA8dGV4dCB4PSI1MCIgeT0iNjgiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjwhW0NEQVRBWzQxMF1dPjwvdGV4dD4KPC9zdmc+Cg==",
+    "description": "sample test data"
+  },
+  "config": {
+    "name": "Swapnil",
+    "age": 25
+  },
+
+  "templateConfig": {
+    "api": {
+      "url": "",
+      "payload": {},
+      "configPath": ["modules"]
+    },
+    "ui": [
+      {
+        "id": "node-1",
+        "type": "Text",
+        "position": {
+          "x": 29.1171875,
+          "y": 43.828125
+        },
+        "data": {
+          "componentType": "atoms",
+          "elementType": "Text",
+          "key": "node-1",
+          "children": "Name"
+        },
+        "width": 53,
+        "height": 34,
+        "selected": false,
+        "positionAbsolute": {
+          "x": 29.1171875,
+          "y": 43.828125
+        },
+        "dragging": false
+      },
+      {
+        "id": "node-2",
+        "type": "Input",
+        "position": {
+          "x": 23.1171875,
+          "y": 69.828125
+        },
+        "data": {
+          "componentType": "atoms",
+          "elementType": "Input",
+          "key": "node-2",
+          "required": true,
+          "value": {
+            "path": "{{formConfig__name}}",
+            "query": "const query = (data, formData)=>{ return data.toUpperCase() }",
+            "saveQuery": "const saveQuery = (data, formData)=>{ return data.toLowerCase() }"
+          },
+          "width": 97,
+          "height": 31
+        },
+        "width": 207,
+        "height": 54,
+        "selected": false,
+        "dragging": false,
+        "positionAbsolute": {
+          "x": 23.1171875,
+          "y": 69.828125
+        }
+      },
+      {
+        "id": "node-3",
+        "type": "Text",
+        "position": {
+          "x": 29.1171875,
+          "y": 143.828125
+        },
+        "data": {
+          "componentType": "atoms",
+          "elementType": "Text",
+          "key": "node-3",
+          "children": "Age"
+        },
+        "width": 41,
+        "height": 34,
+        "selected": false,
+        "positionAbsolute": {
+          "x": 29.1171875,
+          "y": 143.828125
+        },
+        "dragging": false
+      },
+      {
+        "id": "node-4",
+        "type": "Input",
+        "position": {
+          "x": 25.1171875,
+          "y": 174.828125
+        },
+        "data": {
+          "componentType": "atoms",
+          "elementType": "Input",
+          "key": "node-4",
+          "type": "number",
+          "required": true,
+          "value": {
+            "path": "{{formConfig__age}}"
+          },
+          "test": {
+            "random": {
+              "random": {
+                "path": "{{age}}"
+              }
+            },
+            "random2": {
+              "path": "{{age}}"
+            }
+          }
+        },
+        "width": 207,
+        "height": 54,
+        "selected": false,
+        "dragging": false,
+        "positionAbsolute": {
+          "x": 25.1171875,
+          "y": 174.828125
+        }
+      },
+      {
+        "id": "node-5",
+        "type": "Select",
+        "position": {
+          "x": 32.80859375,
+          "y": 285.6171875
+        },
+        "data": {
+          "componentType": "atoms",
+          "elementType": "Select",
+          "key": "node-5",
+          "children": "Test Data",
+          "options": {
+            "path": "{{dataObject__modules}}"
+          },
+          "size": {
+            "x": 196.51953125,
+            "y": 60.5859375
+          },
+          "expandedNodesLevel": "1",
+          "value": {
+            "path": "{{formConfig__module}}",
+            "query": "const query = (data, formData)=>{ return data;}",
+            "saveQuery": "const saveQuery = (data, formData)=>{ return data;}"
+          },
+          "showDisabledIcon": true,
+          "disabled": {
+            "path": "{{formConfig__age}}",
+            "query": "const query = (data, formData)=>{ return  data > 30 ;}",
+            "saveQuery": "const saveQuery = (data, formData)=>{ return data;}"
+          }
+        },
+        "width": 197,
+        "height": 63,
+        "selected": true,
+        "positionAbsolute": {
+          "x": 32.80859375,
+          "y": 285.6171875
+        },
+        "dragging": false,
+        "style": {
+          "width": 197,
+          "height": 63
+        },
+        "resizing": false
+      },
+      {
+        "id": "node-6",
+        "type": "Text",
+        "position": {
+          "x": 32.4765625,
+          "y": 251.09375
+        },
+        "data": {
+          "componentType": "atoms",
+          "elementType": "Text",
+          "key": "node-6",
+          "children": "Select the module"
+        },
+        "width": 128,
+        "height": 34,
+        "selected": false,
+        "positionAbsolute": {
+          "x": 32.4765625,
+          "y": 251.09375
+        },
+        "dragging": false
+      }
+    ]
+  },
+
+  "project": "selfserve",
+  "source": "bitbucket",
+  "jira": { "id": "", "validated": "not_started", "error": "" },
+  "publish": {
+    "branch": "",
+    "pr": "",
+    "commitsSync": 0,
+    "status": "not_started"
+  }
+}

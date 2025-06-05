@@ -1,0 +1,30 @@
+@import '../../designTokens/scssVariables.scss';
+
+.playgroundWrapper {
+  height: 100%;
+}
+
+.playground {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  gap: 24px;
+  padding: var(--spacing-l);
+  background: #ebebeb;
+  &__container {
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+    padding: var(--spacing-xl);
+    background: var(--background-flat);
+    border-radius: var(--radius-l-16);
+    overflow-y: scroll;
+  }
+  & > div:first-child {
+    border-radius: var(--radius-l-16);
+  }
+}
+.storybook {
+  height: 100vh;
+  width: 100vw;
+}

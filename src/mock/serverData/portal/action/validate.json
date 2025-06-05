@@ -1,0 +1,230 @@
+{
+  "message": "success",
+  "result": {
+    "visitor": {},
+    "page": {
+      "component": {
+        "type": "StepperForm",
+        "title": "name of step",
+        "description": "description of step",
+        "meta": {
+          "journey": [
+            {
+              "name": "Internal Interview",
+              "code": "internal_interview",
+              "description": "Description of the step appearing in multiple lines so accommodating for that.",
+              "order": 0,
+              "status": "closed"
+            },
+            {
+              "name": "Bop Seminar",
+              "code": "bop_seminar",
+              "description": "This is Bop Seminar",
+              "order": 1,
+              "status": "closed"
+            },
+            {
+              "name": "Physchometric Test",
+              "code": "physchometric_test",
+              "description": "This is Physchometric Test",
+              "order": 2,
+              "status": "closed"
+            },
+            {
+              "name": "Documents Submitted Pan",
+              "code": "documents_submitted_pan",
+              "description": "This is Documents Submitted Pan",
+              "order": 3,
+              "status": "open"
+            },
+            {
+              "name": "Final Interview",
+              "code": "final_Interview",
+              "description": "This is Final Interview",
+              "order": 4,
+              "status": "locked"
+            }
+          ],
+          "current_step": "final_Interview",
+          "sections": [
+            {
+              "title": "Authentication",
+              "description": "this is Authentication description",
+              "action": "validate",
+              "component": {
+                "type": "identification",
+                "meta": {
+                  "type": "pan",
+                  "inputs": [
+                    {
+                      "code": "pan",
+                      "name": "Pan Number",
+                      "type": "pan",
+                      "options": [],
+                      "isMulti": false,
+                      "readOnly": false,
+                      "required": true,
+                      "value": "BNZPM2501F"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "title": "profile",
+              "description": "profile desc",
+              "action": "submit",
+              "code": "profile",
+              "component": {
+                "type": "inputform",
+                "meta": {
+                  "inputs": [
+                    {
+                      "code": "name",
+                      "name": "First Name",
+                      "type": "text",
+                      "value": "John",
+                      "options": [],
+                      "isMulti": false,
+                      "readOnly": false,
+                      "required": true
+                    },
+                    {
+                      "code": "lastname",
+                      "name": "Last Name",
+                      "type": "text",
+                      "value": "Doe",
+                      "options": [],
+                      "isMulti": false,
+                      "readOnly": true,
+                      "required": true
+                    },
+                    {
+                      "code": "date",
+                      "name": "DOB",
+                      "type": "date",
+                      "value": "01-01-2000",
+                      "options": [],
+                      "isMulti": false,
+                      "readOnly": true,
+                      "required": true
+                    },
+                    {
+                      "code": "email",
+                      "name": "Email",
+                      "type": "email",
+                      "value": "a@a.com",
+                      "isMulti": false,
+                      "readOnly": false,
+                      "required": false
+                    },
+                    {
+                      "code": "interested",
+                      "name": "Interested",
+                      "type": "radio",
+                      "value": "yes",
+                      "options": [
+                        {
+                          "label": "Yes",
+                          "value": "yes"
+                        },
+                        {
+                          "label": "No",
+                          "value": "no"
+                        }
+                      ],
+                      "isMulti": false,
+                      "readOnly": false,
+                      "required": true
+                    },
+                    {
+                      "code": "state",
+                      "name": "State",
+                      "type": "dropdown",
+                      "value": {
+                        "label": "Maharastra",
+                        "value": "Maharastra"
+                      },
+                      "options": [
+                        {
+                          "label": "Maharastra",
+                          "value": "Maharastra"
+                        },
+                        {
+                          "label": "Karnataka",
+                          "value": "Karnataka"
+                        },
+                        {
+                          "label": "Telengana",
+                          "value": "Telengana"
+                        },
+                        {
+                          "label": "UP",
+                          "value": "UP"
+                        }
+                      ],
+                      "isMulti": false,
+                      "readOnly": false,
+                      "required": true
+                    },
+                    {
+                      "code": "languages",
+                      "name": "Languages",
+                      "type": "dropdown",
+                      "value": [
+                        {
+                          "label": "English",
+                          "value": "english"
+                        }
+                      ],
+                      "options": [
+                        {
+                          "label": "English",
+                          "value": "english"
+                        },
+                        {
+                          "label": "Spanish",
+                          "value": "spanish"
+                        },
+                        {
+                          "label": "German",
+                          "value": "german"
+                        }
+                      ],
+                      "isMulti": true,
+                      "readOnly": false,
+                      "required": true
+                    },
+                    {
+                      "code": "communication",
+                      "name": "Mode of communication",
+                      "type": "checkbox",
+                      "value": ["email"],
+                      "options": [
+                        {
+                          "label": "Email",
+                          "value": "email"
+                        },
+                        {
+                          "label": "SMS",
+                          "value": "sms"
+                        },
+                        {
+                          "label": "Phone",
+                          "value": "phone"
+                        }
+                      ],
+                      "isMulti": false,
+                      "readOnly": false,
+                      "required": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

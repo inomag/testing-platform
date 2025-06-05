@@ -1,0 +1,106 @@
+@import '../../../designTokens/scssVariables.scss';
+
+.navigation {
+  &__card {
+    height: fit-content;
+    justify-content: flex-start;
+    background: white;
+    flex-shrink: 0;
+    width: 256px;
+    padding: 24px var(--spacing-xl);
+    position: fixed;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-s);
+    margin: var(--spacing-s) 0px;
+    &__title {
+      font-size: var(--xs-font-size);
+      font-weight: var(--font-weight-bold);
+      color: var(--text-subtlest);
+      text-transform: uppercase;
+      margin-left: var(--spacing-s);
+    }
+  }
+
+  &__category {
+    display: flex;
+    gap: var(--spacing-s);
+    align-items: center;
+    padding: var(--spacing-s);
+    border-radius: var(--radius-s-8);
+    cursor: pointer;
+
+    svg {
+      width: var(--spacing-2xl);
+      height: var(--spacing-2xl);
+    }
+
+    &__title {
+      font-size: var(--m-font-size);
+      font-weight: var(--font-weight-semi-bold);
+      color: var(--text-subtlest);
+    }
+
+    &:hover,
+    &__selected {
+      background: rgba(178, 24, 43, 0.08);
+      color: var(--brand-primary);
+      svg {
+        path {
+          fill: var(--icon-brand-brand);
+        }
+      }
+    }
+  }
+}
+
+.cardTitle {
+  font-size: var(--m-font-size);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-subtlest);
+  text-transform: uppercase;
+}
+
+.container {
+  &__card {
+    padding: 24px;
+    background: white;
+  }
+
+  &__category {
+    &__title {
+      font-size: var(--s-font-size);
+      font-weight: var(--font-weight-bold);
+      color: var(--text-subtlest);
+      text-transform: uppercase;
+    }
+    &__label {
+      background-color: var(--color-neutral-200);
+      border-radius: var(--spacing-m);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--spacing-m);
+      margin: var(--spacing-xl) 0;
+      width: 100%;
+
+      &__ctaWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: var(--spacing-m);
+        max-width: 50%;
+      }
+
+      &__cta {
+        background: var(--color-neutral-300);
+        border: none;
+        padding: var(--spacing-s) var(--spacing-m);
+        color: var(--text-default);
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.collapsible {
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+  width: 100%;
+  &__border {
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-s-8);
+  }
+  &__toggle {
+    cursor: pointer;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: var(--radius-s-8);
+    padding: 6px 12px;
+    &__prefixIcon {
+      display: flex;
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      width: 100%;
+    }
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      font-size: 14px;
+      font-weight: var(--font-weight-semi-bold);
+      gap: 10px;
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+    opacity: 0;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    &__show {
+      overflow: visible;
+      opacity: 1;
+      transition: ease-in-out, opacity 300ms;
+      height: auto;
+    }
+
+    &__message {
+      padding: 0 20px;
+    }
+  }
+
+  &__error {
+    color: var(--text-status-error);
+    font-size: var(--xs-font-size);
+  }
+}

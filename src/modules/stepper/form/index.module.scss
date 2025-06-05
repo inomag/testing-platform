@@ -1,0 +1,22 @@
+@import '../../../designTokens/scssVariables.scss';
+
+.form {
+  padding: 0;
+}
+
+.stepperForm {
+  &__collapsible {
+    border-radius: var(--spacing-xl);
+
+    > div:nth-child(1) {
+      padding: var(--spacing-xl);
+      color: var(--text-default);
+      @media screen and (max-width: $mobile-breakpoint) {
+        padding: var(--spacing-l) var(--spacing-m);
+      }
+      &[aria-expanded='true'] {
+        padding-bottom: var(--spacing-s);
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "message": "success",
+  "result": {
+    "visitor": {},
+    "page": {
+      "component": {
+        "type": "StepperForm",
+        "title": "Docusign E-Signature",
+        "description": "Provide your consent below",
+        "meta": {
+          "journey": [
+            {
+              "name": "E-Signature",
+              "code": "e_signature",
+              "order": 0,
+              "status": "close"
+            }
+          ],
+          "current_step": "documents_submitted_pan",
+          "sections": [
+            {
+              "title": "E Signature",
+              "description": "",
+              "code": "e_signature",
+              "component": {
+                "type": "esignature",
+                "meta": {
+                  "inputObj": {
+                    "type": "text",
+                    "name": "",
+                    "value": "",
+                    "code": ""
+                  },
+                  "title": "NDA Agreement",
+                  "description": "Review and sign the NDA agreement",
+                  "docLink": "test",
+                  "service": "docusign",
+                  "templateId": "83f62f38-e985-4503-b788-2467e33e73ac",
+                  "scriptLink": "https://js-d.docusign.com/bundle.js",
+                  "action": {
+                    "label": "Sign here"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

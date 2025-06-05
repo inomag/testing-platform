@@ -1,0 +1,195 @@
+@import '../../../designTokens/scssVariables.scss';
+
+.cardContentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.lastEngagementHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lastEngagementCard {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: var(--spacing-s);
+
+  &__icon {
+    width: 30px;
+  }
+
+  &__details {
+    display: flex;
+    gap: var(--spacing-m);
+    flex-direction: column;
+  }
+}
+
+.suggestionsWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+  gap: var(--spacing-2xl);
+  &__card {
+    padding: 0px;
+    position: relative;
+
+    &__ctaWrapper {
+      padding: var(--spacing-l) var(--spacing-s);
+      display: flex;
+      justify-content: end;
+    }
+
+    &__tag {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: var(--spacing-s);
+      height: fit-content;
+      border-radius: 0px var(--spacing-l) 0px;
+      background-color: #505ece;
+      color: white;
+      font-size: var(--spacing-m);
+    }
+    &__infoWrapper {
+      display: flex;
+      gap: var(--spacing-xl);
+      padding: var(--spacing-l);
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: var(--spacing-s);
+      }
+    }
+  }
+}
+
+.activityCardWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+}
+
+.activityCard {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--spacing-xl);
+  border-radius: var(--spacing-s);
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-xl);
+    flex: 1;
+    &__dateCard {
+      background-color: #e9f2ff;
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+      align-items: center;
+      color: #0055cc;
+      border: none;
+      padding: var(--spacing-s) 24px;
+      width: 70px;
+      border-radius: var(--spacing-s);
+
+      &__date {
+        font-size: var(--l-font-size);
+      }
+
+      &__month {
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+    }
+
+    &__name {
+      justify-content: flex-start;
+    }
+  }
+
+  &__detailsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-s);
+  }
+
+  &__navigate {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-self: flex-end;
+    align-self: flex-start;
+
+    &__button {
+      border-right: 1px solid #dcdee3;
+      border-radius: 0;
+      padding: 0 12px;
+    }
+
+    &__icon {
+      display: flex;
+      padding: 0 var(--spacing-l);
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}
+
+.tableView {
+  margin-top: var(--spacing-l);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__refresh {
+    border-right: 1px solid #dcdee3;
+    border-radius: 0;
+    padding: 0 var(--spacing-l);
+  }
+}
+
+.detailsForm {
+  padding: 0px;
+}
+
+.referralCard {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-l);
+  flex-direction: row;
+  justify-content: space-between;
+  &__header {
+    display: flex;
+    gap: var(--spacing-l);
+    align-items: center;
+  }
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

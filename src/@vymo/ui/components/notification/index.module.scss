@@ -1,0 +1,28 @@
+.notification {
+  &__container {
+    display: flex;
+    justify-content: center;
+    min-height: 200px;
+    min-width: 250px;
+    &__list {
+      display: flex;
+      flex-direction: column;
+      min-width: 350px;
+      flex: 1;
+      > div {
+        flex: 1;
+        flex-direction: column-reverse;
+      }
+      &__item {
+        padding: 0;
+        border-bottom: var(--border);
+        > div {
+          border-radius: 0;
+        }
+      }
+    }
+    > svg {
+      align-self: center;
+    }
+  }
+}

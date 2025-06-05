@@ -1,0 +1,44 @@
+{
+  "message": "success",
+  "result": {
+    "visitor": {},
+    "page": {
+      "component": {
+        "type": "StepperForm",
+        "title": "Terms and conditions",
+        "description": "",
+        "meta": {
+          "journey": [
+            {
+              "name": "Terms and condition",
+              "code": "terms_and_conditions",
+              "order": 0,
+              "status": "close"
+            }
+          ],
+          "current_step": "terms_and_conditions",
+          "sections": [
+            {
+              "title": "Application Centers",
+              "description": "Click below to accept T&C",
+              "code": "nda",
+              "action": "",
+              "component": {
+                "type": "termsAndConditions",
+                "meta": {
+                  "title": "Terms and conditions",
+                  "inputObj": { "value": "" },
+                  "action": {
+                    "type": "preview",
+                    "label": "NDA",
+                    "link": "https://vymo.com/terms-of-service/"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

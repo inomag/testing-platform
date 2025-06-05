@@ -1,0 +1,98 @@
+{
+  "client": "test",
+  "portalConfig": {
+    "branding": {
+      "logo": {
+        "height": 35,
+        "url": "https://lh3.googleusercontent.com/d/1hWiaKdH6D5ow9uanFomH1U9NczRzN-1R?authuser=0",
+        "width": 90
+      },
+      "logoBackgroundColor": "#ffffff",
+      "banner": {
+        "height": 400,
+        "url": "https://lh3.googleusercontent.com/d/1Zjf6fldOY__zjnzn8dnVMDISnPNliZML",
+        "width": 700
+      },
+      "theme": {
+        "background": "#ffffff",
+        "primary": "#bf3743",
+        "secondary": "#f8e7ea",
+        "tertiary": "#44546F",
+        "font": "#44546F",
+        "heading": "#172B4D",
+        "error": "#f44336",
+        "warning": "#ffa726",
+        "info": "#29b6f6",
+        "success": "#66bb6a"
+      },
+      "loader": "spinner",
+      "email": "email",
+      "phone": "phone",
+      "bannerTitle": "Banner title text",
+      "bannerDescription": "Banner description"
+    },
+    "i18nSettings": {
+      "locale": "en-IN",
+      "language": "en",
+      "country": "IN",
+      "currency": "₹",
+      "currency_iso": "INR",
+      "quantity": "KLC",
+      "country_calling_code": "91",
+      "client_date_time_config": {
+        "date_in_curr_year": {
+          "dateTimeFormat": "DD_MMM_YYYY",
+          "relativeFormat": false
+        },
+        "date": {
+          "dateTimeFormat": "DD_MMM_YYYY",
+          "relativeFormat": false
+        },
+        "meeting_date_time_in_curr_year": {
+          "dateTimeFormat": "DAY_DD_MMM-TIME",
+          "relativeFormat": true
+        },
+        "meeting_date_not_in_curr_year": {
+          "dateTimeFormat": "DD_MMM_YYYY-TIME",
+          "relativeFormat": false
+        },
+        "date_range": {
+          "dateTimeFormat": "DD_MMM_YYYY",
+          "relativeFormat": false
+        },
+        "date_in_chart": {
+          "dateTimeFormat": "MMM_YY",
+          "relativeFormat": false
+        },
+        "time_range": {
+          "dateTimeFormat": "HH_MM_A",
+          "relativeFormat": false
+        },
+        "month_day_in_cal": {
+          "dateTimeFormat": "MMM_DD",
+          "relativeFormat": false
+        },
+        "month_year_in_cal": {
+          "dateTimeFormat": "MMM_YYYY",
+          "relativeFormat": false
+        },
+        "date_time_with_seconds": {
+          "dateTimeFormat": "DD_MM_YYYY_HH_MM_SS_SLASH",
+          "relativeFormat": false
+        },
+        "day_month_date": {
+          "dateTimeFormat": "DAY_MMM_DD",
+          "relativeFormat": true
+        },
+        "time": {
+          "dateTimeFormat": "H_MM_A",
+          "relativeFormat": false
+        }
+      },
+      "multiLanguageSupported": false,
+      "supportedLanguages": [],
+      "timezone": "+0530",
+      "iana_timezone": "Asia/Kolkata"
+    }
+  }
+}

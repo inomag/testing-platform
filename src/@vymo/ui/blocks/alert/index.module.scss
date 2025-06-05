@@ -1,0 +1,82 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.alert {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  padding: var(--spacing-m) var(--spacing-m);
+  transition: opacity 0.3s ease;
+  color: var(--text-default);
+  z-index: 99;
+  @include overflowBoxShadow;
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__alertWrapper {
+    border-radius: var(--radius-s-8);
+    margin: 0px;
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    flex: 1 1;
+    gap: 10px;
+  }
+
+  &__action {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__success {
+    background-color: var(--background-status-success);
+  }
+
+  &__warning {
+    background-color: var(--background-status-warning);
+  }
+
+  &__info {
+    background-color: var(--background-status-info);
+  }
+
+  &__error {
+    background-color: var(--background-status-error);
+  }
+
+  &__message {
+    font-weight: bold;
+  }
+
+  &__outlined {
+    border: 1px solid #ccc;
+    background-color: var(--background-default);
+  }
+
+  &__close {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--background-subtle);
+    font-size: var(--xl-font-size);
+    font-weight: var(--font-weight-medium);
+    > span {
+      margin: 0;
+    }
+    svg * {
+      fill: var(--text-subtle);
+      color: var(--text-subtle);
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.infoSection {
+  &__icon {
+    svg {
+      height: 48px;
+      width: 48px;
+    }
+  }
+  &__header {
+    padding: 7px 0;
+  }
+  &__description {
+    color: var(--text-default);
+    margin-top: 17px;
+  }
+}

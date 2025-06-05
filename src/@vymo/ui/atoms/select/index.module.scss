@@ -1,0 +1,158 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.customSelect {
+  &__tooltip.ant-tooltip {
+    font-size: 13px;
+  }
+
+  &__disabled {
+    pointer-events: none;
+    background-color: var(--background-disabled);
+  }
+
+  &__focused:not(.customSelect__disabled) {
+    @include inputFocus;
+  }
+
+  &__simple {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+  }
+
+  &__search__multi {
+    height: auto;
+    cursor: text;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  &__search__single {
+    height: auto;
+    cursor: text;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  &__optionsList {
+    &__empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      gap: 10px;
+      background-color: var(--background-flat);
+    }
+    &__loader {
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+
+    &__hideCursor {
+      cursor: none;
+    }
+    &__item {
+      font-size: var(--s-font-size);
+      color: var(--text-default);
+      cursor: pointer;
+      &[data-selected='true'] {
+        background-color: var(--background-interactions-default-hover);
+      }
+      &[data-selected='true']:active {
+        background-color: var(--background-interactions-default-pressed);
+      }
+      &__selected {
+        background-color: var(--background-default);
+        font-weight: var(--font-weight-medium);
+        &[data-selected='true'] {
+          background-color: var(--background-default);
+          font-weight: var(--font-weight-medium);
+        }
+      }
+
+      &__disabled {
+        cursor: not-allowed;
+      }
+      &__notCollapsible {
+        display: flex;
+        padding: 5px 12px;
+        :last-child {
+          word-wrap: break-word;
+        }
+        &__icon {
+          padding-right: 10px;
+          > svg {
+            width: 14px;
+            height: 14px;
+          }
+        }
+
+        &__label {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 20px;
+          font-weight: var(--font-weight-medium);
+          &__subLabel {
+            color: var(--color-neutral-500);
+            text-align: end;
+            margin-right: 10px;
+          }
+          &__iconSelected {
+            width: 24px;
+            height: 24px;
+            path {
+              color: var(--brand-primary);
+            }
+          }
+        }
+      }
+      &__collapsible {
+        padding: 5px 12px;
+        word-wrap: break-word;
+        border-top: 1px solid #e3e3e3;
+        display: flex;
+        align-items: center;
+        color: #666666;
+        font-weight: 600;
+        > span:first-child {
+          display: inline-flex;
+          padding-right: 8px;
+        }
+      }
+    }
+    > :first-child {
+      > div {
+        border-top: 0px;
+      }
+    }
+    > :first-child {
+      > div {
+        border-top: 0px;
+      }
+    }
+
+    position: relative;
+    width: 100%;
+    border-radius: var(--radius-s-8);
+    overflow: auto;
+    max-height: 250px;
+    background-color: #fff;
+    z-index: 99;
+    box-shadow: 0px 0px 1px 0px rgba(9, 30, 66, 0.31),
+      0px 8px 12px 0px rgba(9, 30, 66, 0.15);
+
+    outline: none;
+    @include custom-scrollbar;
+  }
+}

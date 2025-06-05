@@ -1,0 +1,23 @@
+@import '../../../../designTokens/scssVariables.scss';
+@import '../../../../designTokens/cssVariables.scss';
+
+.timer {
+  padding: var(--spacing-s);
+  padding-right: var(--spacing-xl);
+  display: flex;
+  border-radius: var(--radius-l-16);
+  background: #e8eaed;
+  max-width: fit-content;
+  font-size: var(--l-font-size);
+  font-weight: var(--font-weight-bold);
+  align-items: center;
+
+  &__icon {
+    margin: 0 5px;
+    position: relative;
+    top: 2px;
+  }
+  &__text {
+    color: var(--text-subtle);
+  }
+}

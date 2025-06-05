@@ -1,0 +1,45 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.header {
+  padding: 10px;
+  border: var(--border-default);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-s);
+  &__left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__layout {
+      &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__publish {
+      &__modal {
+        &__body {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+.saveTemplate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

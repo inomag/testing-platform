@@ -1,0 +1,54 @@
+@import '../../../designTokens/scssVariables.scss';
+
+.vmDetails {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--spacing-2xl);
+
+  &__card {
+    justify-content: start;
+    align-items: stretch;
+  }
+
+  &__codeBlock {
+    background: var(--background-subtle);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-s-8);
+    overflow: scroll;
+  }
+
+  &__cypressDelete {
+    margin-top: calc(var(--spacing-2xl) * 2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: var(--spacing-2xl);
+  }
+
+  &__cacheClean {
+    margin-top: calc(var(--spacing-2xl) * 2);
+  }
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-2xl);
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-s);
+  }
+
+  &__color {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+  }
+
+  &__label {
+    display: inline-block;
+  }
+}

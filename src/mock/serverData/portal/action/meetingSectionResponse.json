@@ -1,0 +1,88 @@
+{
+  "message": "success",
+  "result": {
+    "visitor": {},
+    "page": {
+      "component": {
+        "type": "StepperForm",
+        "title": "Internal Interview",
+        "description": "Here is you meeting link",
+        "meta": {
+          "journey": [
+            {
+              "name": "Application",
+              "code": "application",
+              "order": 0,
+              "status": "closed"
+            },
+            {
+              "name": "Internal Interview",
+              "code": "internal_interview",
+              "description": "Please go through the following set of assessments.",
+              "order": 1,
+              "status": "open"
+            },
+            {
+              "name": "Bop Seminar",
+              "code": "bop_seminar",
+              "order": 2,
+              "status": "locked"
+            },
+            {
+              "name": "Physchometric Test",
+              "code": "physchometric_test",
+              "order": 3,
+              "status": "locked"
+            },
+            {
+              "name": "Documents Submitted Pan",
+              "code": "documents_submitted_pan",
+              "order": 4,
+              "status": "locked"
+            },
+            {
+              "name": "Final Interview",
+              "code": "final_Interview",
+              "order": 5,
+              "status": "locked"
+            }
+          ],
+          "current_step": "internal_interview",
+          "sections": [
+            {
+              "title": "Meeting",
+              "description": "",
+              "code": "meeting",
+              "action": "redirect",
+              "component": {
+                "type": "meeting",
+                "meta": {
+                  "start_time": "28-11-2023 23:15:00",
+                  "end_time": "28-11-2023 23:30:00",
+                  "date_format": "dd-mm-yyyy hh:mm:ss",
+                  "meeting": {
+                    "online": {
+                      "link": "https://staging.lms.getvymo.com/",
+                      "label": "Join here"
+                    },
+                    "offline": {
+                      "address": "",
+                      "link": "",
+                      "label": "Navigate"
+                    }
+                  },
+                  "info": [
+                    {
+                      "label": "URN",
+                      "value": "u9023u9320"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

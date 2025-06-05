@@ -1,0 +1,170 @@
+{
+  "enabled": true,
+  "beta": false,
+  "schedule": "BOD",
+  "suggestions": [
+    {
+      "key": "12345_K2EW04_Yv_TESTUSER01",
+      "suggestion_day_id": "9d76214d-0fe6-482f-9b48-404efcba924d",
+      "title": "Team member TESTUSER01 hasn’t visited any",
+      "suggestion_code": "external_leads",
+      "subtitle": "Team member TESTUSER01 hasn’t visited any LM prospects this month. Encourage outreach to grow the LM base and support business growth.",
+      "body": {
+        "isClickable": true,
+        "message": "Team member TESTUSER01 hasn’t visited any LM prospects this month. Encourage outreach to grow the LM base and support business growth.",
+        "title": "Team member TESTUSER01 hasn’t visited any",
+        "tag": "suggestion",
+        "displayIcon": "",
+        "cta": {
+          "code": "view-details",
+          "text": "View ALL CTA",
+          "params": {
+            "activity": "main",
+            "start_state": "leads_new",
+            "code": "leads",
+            "data": {
+              "user": "self",
+              "user_id": "12345",
+              "last_update_type": "[]",
+              "state": "[]",
+              "drilldown_filters": "{\"created_date\":{\"type\":\"standard-dimension\",\"operator\":\"RANGE\",\"operand\":{\"type\":\"range\",\"from\":\"2025-01-05 18:30:00\",\"to\":\"2025-03-06 19:57:03\"},\"standardDimension\":\"created_date\"},\"last_state\":{\"type\":\"standard-dimension\",\"operator\":\"NIN\",\"operand\":{\"type\":\"multi\",\"values\":[\"first_meeting_rescheduled_leads\"]},\"standardDimension\":\"last_state\"},\"last_state_update_date\":{\"type\":\"standard-dimension\",\"operator\":\"LTE\",\"operand\":{\"type\":\"range\",\"to\":\"2025-03-07 18:29:59\"},\"standardDimension\":\"last_state_update_date\"},\"module_code\":{\"type\":\"standard-dimension\",\"operator\":\"EQ\",\"operand\":{\"type\":\"single\",\"value\":\"leads\"},\"standardDimension\":\"module_code\"},\"region-access\":{\"type\":\"region-access\",\"region\":\"TESTUSER01\",\"hierarchy\":false,\"drillDown\":false}}",
+              "metric_cta": "metric"
+            },
+            "drilldown_filters": {
+              "created_date": {
+                "type": "standard-dimension",
+                "operator": "RANGE",
+                "operand": {
+                  "type": "range",
+                  "from": "2025-01-05 18:30:00",
+                  "to": "2025-03-06 19:57:03"
+                },
+                "standardDimension": "created_date"
+              },
+              "last_state": {
+                "type": "standard-dimension",
+                "operator": "NIN",
+                "operand": {
+                  "type": "multi",
+                  "values": ["first_meeting_rescheduled_leads"]
+                },
+                "standardDimension": "last_state"
+              },
+              "last_state_update_date": {
+                "type": "standard-dimension",
+                "operator": "LTE",
+                "operand": {
+                  "type": "range",
+                  "to": "2025-03-07 18:29:59"
+                },
+                "standardDimension": "last_state_update_date"
+              },
+              "module_code": {
+                "type": "standard-dimension",
+                "operator": "EQ",
+                "operand": {
+                  "type": "single",
+                  "value": "leads"
+                },
+                "standardDimension": "module_code"
+              },
+              "region-access": {
+                "type": "region-access",
+                "region": "TESTUSER01",
+                "hierarchy": false,
+                "drillDown": false
+              }
+            },
+            "metric_cta": "metric"
+          },
+          "positive_cta": false,
+          "accept": false
+        }
+      },
+      "ctas": [
+        {
+          "code": "view-details",
+          "text": "View ALL CTA",
+          "params": {
+            "activity": "main",
+            "start_state": "leads_new",
+            "code": "leads",
+            "data": {
+              "user": "self",
+              "user_id": "12345",
+              "last_update_type": "[]",
+              "state": "[]",
+              "drilldown_filters": "{\"created_date\":{\"type\":\"standard-dimension\",\"operator\":\"RANGE\",\"operand\":{\"type\":\"range\",\"from\":\"2025-01-05 18:30:00\",\"to\":\"2025-03-06 19:57:03\"},\"standardDimension\":\"created_date\"},\"last_state\":{\"type\":\"standard-dimension\",\"operator\":\"NIN\",\"operand\":{\"type\":\"multi\",\"values\":[\"first_meeting_rescheduled_leads\"]},\"standardDimension\":\"last_state\"},\"last_state_update_date\":{\"type\":\"standard-dimension\",\"operator\":\"LTE\",\"operand\":{\"type\":\"range\",\"to\":\"2025-03-07 18:29:59\"},\"standardDimension\":\"last_state_update_date\"},\"module_code\":{\"type\":\"standard-dimension\",\"operator\":\"EQ\",\"operand\":{\"type\":\"single\",\"value\":\"leads\"},\"standardDimension\":\"module_code\"},\"region-access\":{\"type\":\"region-access\",\"region\":\"TESTUSER01\",\"hierarchy\":false,\"drillDown\":false}}",
+              "metric_cta": "metric"
+            },
+            "drilldown_filters": {
+              "created_date": {
+                "type": "standard-dimension",
+                "operator": "RANGE",
+                "operand": {
+                  "type": "range",
+                  "from": "2025-01-05 18:30:00",
+                  "to": "2025-03-06 19:57:03"
+                },
+                "standardDimension": "created_date"
+              },
+              "last_state": {
+                "type": "standard-dimension",
+                "operator": "NIN",
+                "operand": {
+                  "type": "multi",
+                  "values": ["first_meeting_rescheduled_leads"]
+                },
+                "standardDimension": "last_state"
+              },
+              "last_state_update_date": {
+                "type": "standard-dimension",
+                "operator": "LTE",
+                "operand": {
+                  "type": "range",
+                  "to": "2025-03-07 18:29:59"
+                },
+                "standardDimension": "last_state_update_date"
+              },
+              "module_code": {
+                "type": "standard-dimension",
+                "operator": "EQ",
+                "operand": {
+                  "type": "single",
+                  "value": "leads"
+                },
+                "standardDimension": "module_code"
+              },
+              "region-access": {
+                "type": "region-access",
+                "region": "TESTUSER01",
+                "hierarchy": false,
+                "drillDown": false
+              }
+            },
+            "metric_cta": "metric"
+          },
+          "positive_cta": false,
+          "accept": false
+        }
+      ],
+      "configurationType": "LEADS",
+      "nudgeId": "n1HJ5ZrEs",
+      "validTill": "2025-03-07T00:00:00.000Z",
+      "seen": true,
+      "instrumentationAttribute": {
+        "suggestion_position": 1,
+        "overall_count": 1,
+        "experiment_tags": "",
+        "module_code": "leads",
+        "module_name": "leads",
+        "source": "playbook"
+      }
+    }
+  ],
+  "consumedSuggestionCount": 0,
+  "totalSuggestionCount": 1,
+  "screenToDisplay": "END_OF_SUGGESTION",
+  "recommendationId": "2c9db8d0-fac5-11ef-9a05-11211c0b5a19",
+  "locationRequired": false
+}

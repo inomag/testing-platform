@@ -1,0 +1,105 @@
+{
+  "prod": {
+    "environment": "production",
+    "commitHash": "0e23459",
+    "commitMessage": "No commit message",
+    "pipeline": {
+      "id": "5207",
+      "status": {
+        "state": "pipeline_state_completed",
+        "result": "FAILED"
+      }
+    },
+    "branch": "release/v1.10.2",
+    "date": "2025-04-10T04:20:19.234109183Z",
+    "links": {
+      "repository": "https://bitbucket.org/vymo/vymo-web-platform",
+      "commit": "https://bitbucket.org/vymo/vymo-web-platform/commits/0e23459d702cfae1bd76c53e27667456b7544e1d",
+      "pipeline": "https://bitbucket.org/vymo/vymo-web-platform/pipelines/results/5207",
+      "branch": "https://bitbucket.org/vymo/vymo-web-platform/branch/release%2Fv1.10.2"
+    }
+  },
+  "preProd": {
+    "environment": "preprod",
+    "commitHash": "0e23459",
+    "commitMessage": "No commit message",
+    "pipeline": {
+      "id": "5207",
+      "status": {
+        "state": "pipeline_state_completed",
+        "result": "FAILED"
+      }
+    },
+    "branch": "release/v1.10.2",
+    "date": "2025-04-10T04:07:45.69556834Z",
+    "links": {
+      "repository": "https://bitbucket.org/vymo/vymo-web-platform",
+      "commit": "https://bitbucket.org/vymo/vymo-web-platform/commits/0e23459d702cfae1bd76c53e27667456b7544e1d",
+      "pipeline": "https://bitbucket.org/vymo/vymo-web-platform/pipelines/results/5207",
+      "branch": "https://bitbucket.org/vymo/vymo-web-platform/branch/release%2Fv1.10.2"
+    }
+  },
+  "branches": [
+    {
+      "name": "release/v1.9",
+      "lastModified": "2025-03-25T08:15:34+00:00"
+    },
+    {
+      "name": "release/v1.8",
+      "lastModified": "2025-03-21T05:40:33+00:00"
+    },
+    {
+      "name": "release/v1.7",
+      "lastModified": "2025-02-17T11:29:25+00:00"
+    },
+    {
+      "name": "release/v1.6",
+      "lastModified": "2025-01-28T04:36:11+00:00"
+    },
+    {
+      "name": "release/v1.5",
+      "lastModified": "2025-01-17T06:49:01+00:00"
+    },
+    {
+      "name": "release/v1.4.1",
+      "lastModified": "2025-03-12T11:57:36+00:00"
+    },
+    {
+      "name": "release/v1.4",
+      "lastModified": "2024-12-18T08:00:49+00:00"
+    },
+    {
+      "name": "release/v1.3_backmerge",
+      "lastModified": "2024-12-18T07:58:35+00:00"
+    },
+    {
+      "name": "release/v1.3",
+      "lastModified": "2024-12-11T11:55:52+00:00"
+    },
+    {
+      "name": "release/v1.2",
+      "lastModified": "2024-10-14T14:48:35+00:00"
+    },
+    {
+      "name": "release/v1.10.2",
+      "lastModified": "2025-04-09T15:55:43+00:00"
+    },
+    {
+      "name": "release/v1.10.1",
+      "lastModified": "2025-04-09T08:56:06+00:00"
+    },
+    {
+      "name": "release/v1.10",
+      "lastModified": "2025-04-08T06:07:46+00:00"
+    },
+    {
+      "name": "release/v1.1",
+      "lastModified": "2024-10-01T14:07:19+00:00"
+    },
+    {
+      "name": "release/v1.0",
+      "lastModified": "2024-07-03T10:15:45+00:00"
+    }
+  ],
+  "lastUpdated": "2025-04-10T12:37:22.782Z"
+}

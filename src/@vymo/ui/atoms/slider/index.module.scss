@@ -1,0 +1,127 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.sliderContainer {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+/*
+ *
+ *  Linear Slider
+ *
+ */
+
+.track {
+  width: 100%;
+  fill: var(--color-neutral-300);
+  height: var(--spacing-xs);
+}
+
+.filledTrack {
+  fill: var(--brand-primary);
+  height: var(--spacing-xs);
+}
+
+.knob {
+  transform: scale(1);
+  cursor: pointer;
+  stroke: var(--brand-primary);
+  fill: var(--color-neutral-100);
+  stroke-width: 3px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.knob:hover {
+  transform: scale(1.3);
+}
+
+.hiddenInput {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  height: 30px;
+  cursor: pointer;
+}
+
+/*
+ *
+ *  Dotted Slider
+ *
+ */
+
+* {
+  --range-mask-from: 3.75%;
+  --range-mask-to: 98.75%;
+}
+.angle {
+  &__container {
+    max-width: 400px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    height: 50px;
+
+    &__svg {
+      -webkit-mask: linear-gradient(
+        90deg,
+        transparent 0,
+        #000 5px,
+        #000 calc(50% - 3em),
+        transparent 50%,
+        #000 calc(50% + 3em),
+        #000 calc(100% - 5px),
+        transparent
+      );
+      mask: linear-gradient(
+        90deg,
+        transparent 0,
+        #000 10px,
+        #000 calc(50% - 50px),
+        transparent 50%,
+        #000 calc(50% + 50px),
+        #000 calc(100% - 10px),
+        transparent
+      );
+      > svg {
+        stroke: var(--color-neutral-700);
+        fill: var(--color-neutral-700);
+      }
+    }
+    &__rect {
+      x: var(--range-mask-from);
+      // width: calc(var(--range-mask-to) - var(--range-mask-from));
+      // fill: var(--color-neutral-300);
+      height: var(--xs-font-size);
+    }
+    &__hiddenInput {
+      height: 50px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    &__reset {
+      &::after {
+        content: '';
+        position: absolute;
+        left: calc(50% - 1px);
+        top: 2px;
+        width: 1px;
+        height: 15px;
+        background: var(--text-default);
+      }
+    }
+    &__text {
+      position: absolute;
+      top: 17px;
+      left: calc(50% - 25px);
+      width: 50px;
+    }
+  }
+}

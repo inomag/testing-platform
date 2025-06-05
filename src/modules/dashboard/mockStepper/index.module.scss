@@ -1,0 +1,16 @@
+.mockStepper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 24px;
+  align-items: flex-start;
+
+  &__module {
+    width: 100%;
+    background: white;
+    flex: 1;
+    border-radius: var(--radius-l-16);
+    border: 1px solid #eee;
+    overflow: hidden;
+  }
+}

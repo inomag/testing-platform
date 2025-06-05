@@ -1,0 +1,47 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.form {
+  &__groups {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    gap: 12px;
+    &__hidden {
+      display: none;
+    }
+    &__form {
+      display: grid;
+      @media screen and (min-width: $XL-desktop-breakpoint) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 120px;
+        padding: 15px 30px;
+      }
+      @media screen and (min-width: $tablet-breakpoint) {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 80px;
+        padding: 10px 20px;
+      }
+
+      @media screen and (max-width: $tablet-breakpoint) {
+        grid-template-columns: 1fr;
+        padding: 5px 12px;
+      }
+    }
+  }
+  display: grid;
+  @media screen and (min-width: $XL-desktop-breakpoint) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 120px;
+    padding: 15px 30px;
+  }
+  @media screen and (min-width: $tablet-breakpoint) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+    padding: 10px 20px;
+  }
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    grid-template-columns: 1fr;
+    padding: 5px 10px;
+  }
+}

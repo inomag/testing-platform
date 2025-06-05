@@ -1,0 +1,10 @@
+.loginType {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__external {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}

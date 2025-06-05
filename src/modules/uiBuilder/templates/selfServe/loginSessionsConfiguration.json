@@ -1,0 +1,319 @@
+{
+  "code": "loginSessionsConfiguration",
+  "name": "Login & Sessions Configuration",
+  "project": "selfserve",
+  "tile": {
+    "icon": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/2wBDAQMDAwQDBAgEBAgQCwkLEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBD/wAARCAAYABgDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAUGBwn/xAAuEAAABQIFAgMJAQAAAAAAAAABAgMEEQUGABITITEHURQyQRUWN0JhZXGEktH/xAAaAQABBQEAAAAAAAAAAAAAAAAGAQIDBAUH/8QAJhEAAgEDBAEDBQAAAAAAAAAAAQIDBBEhAAUSMVEGI0IUFYHw8f/aAAwDAQACEQMRAD8A5qW1a1Dc0Na6bnrCrSnIuhZlSbp5lllcgHgBEIDYeR7Dxi79PqPYt7IVSnJ2sVBsxBEEl1FjGcnE+eTGMEAHkCADYN+ZxGWBbCd82I7t0Kl4JRrVyvTH0dSQFHIARJew7z6cYkvgT989ufraOj/eadX6Rl9Z2zpnLlo1J53wOv3HnXUtjoUoI6fcqmBPouPuuQHJJutiDyawfiLKo8nFzqudRemJLLaEqzOqGcNFnBUCJqEhQgiUxtxDYfLzAc8YYluo14muuwaY9WpoMTOqic6KetqCYiRDFMacpfmPGwCARzvGGLNM0jR+53oT9WQbdBuJ+1i0TKrDv5C/yyLgg21TbHvB1ZdaCpIp6yCpdJwjMZySA7djBGw/kPXGh33W7BvMtIqjq5SkZsNUyzVNM3iVRPkggFENvIMmHbjvOGGElgVnEgwdP2n1BVU9BLtjqrwkcuLA4KkHFiMEgXHR/Jvm12XJ7yVAijdmRmxaJA3ZticJJAIiE9zDMiP+YYYYnVQosNDtTUy1kzTzG7N3/OgPAGANf//Z",
+    "description": "Manage configurations related to User Logins and Sessions",
+    "name": "Login & Sessions Configuration"
+  },
+  "config": {
+    "sessionTimeout": 86422778552,
+    "multiSessionEnabled": true,
+    "adminForceResetPasswordAllowed": true,
+    "otpConfig": {
+      "enabled": true,
+      "disabledForEdit": false,
+      "message": null,
+      "otpResetPasswordMsg": "Dear ${ username }, Please enter your OTP ${ password } to Reset your password. If you have not requested, please report it to support@getvymo.com. Know more about us at www.getvymo.com VYMO TECHNOLOGIES",
+      "communicationEmail": null,
+      "$resourceStrings": null
+    },
+    "mdmAppConfig": null,
+    "externalAuthEnabled": false,
+    "apiAuthToken": null,
+    "passwordConfig": {
+      "failedAttempts": {
+        "disableUsersOnThreshold": false,
+        "thresholdLimit": 11
+      },
+      "passwordPolicy": {
+        "enabled": true,
+        "passwordContainsPolicy": {
+          "enabled": true,
+          "upperCase": false,
+          "lowerCase": true,
+          "number": true,
+          "specialChars": false
+        },
+        "passwordLengthPolicy": {
+          "minLength": 6,
+          "enabled": true
+        },
+        "passwordHistoryPolicy": {
+          "enabled": false,
+          "uniqueNewPasswords": 1
+        },
+        "passwordExpiryPolicy": {
+          "enabled": true,
+          "expiryDays": 36500,
+          "notification": false,
+          "message": "test message 組織のセキュリティ ガイドラインでは",
+          "$resourceStrings": null
+        },
+        "passwordHint": null,
+        "$resourceStrings": null
+      },
+      "hideForgetPassword": false
+    },
+    "clientSpecificAuthentication": false,
+    "samlConfig": {
+      "allowSAMLRequest": true,
+      "samlRequestParam": "testqaNewSAMLRequest"
+    },
+    "userRoles": [],
+    "userInactivityConfig": {
+      "lockOnInactivity": false,
+      "disableOnInactivity": false,
+      "inactivityLockPeriodInDays": 2,
+      "inactivityDisablePeriodInDays": 0,
+      "lockNotificationConfig": null,
+      "disableNotificationConfig": null
+    },
+    "enableOneTapForOAuth": true,
+    "enableTwoFA": true,
+    "twoFAConfig": {
+      "unlockTwoFAConfig": null,
+      "type": "VYMO_OTP",
+      "sources": ["WEB", "APP"],
+      "maxRetryThreshold": 3,
+      "lockUserOnThreshold": false,
+      "resendOtp": true,
+      "resendOtpTimerSecs": 10,
+      "maxOtpRequestThreshold": 2,
+      "otpLength": 4,
+      "otpChannels": ["SMS", "EMAIL"],
+      "smsTemplate": "The OTP to log in to Vymo is ${ otp }. VYMO TECHNOLOGIES",
+      "emailTemplate": "Hello ${ user },<br/><br/> ${ otp } is the OTP to log in to Vymo."
+    },
+    "otpAppAuth": null,
+    "bioMetricAppAuth": null,
+    "userPinAppAuth": null,
+    "deviceBasedLoginConfig": {
+      "disabled": true,
+      "order": null,
+      "$resourceStrings": null
+    },
+    "ipWhitelistingBasedLoginConfig": {
+      "disabled": true,
+      "order": null,
+      "$resourceStrings": null,
+      "whitelistedIps": [],
+      "restrictedGroups": []
+    },
+    "deviceWhitelistingConfig": {
+      "disabled": true,
+      "order": null,
+      "$resourceStrings": null
+    },
+    "installerIdBasedLoginConfig": {
+      "disabled": true,
+      "order": null,
+      "$resourceStrings": null,
+      "installerIds": []
+    },
+    "urlWhitelistingConfig": null,
+    "deviceConfig": {
+      "binding": {
+        "enabled": false,
+        "excludedUserCodes": ["SU", "SELFSERVE_ADMIN"],
+        "platforms": ["app"],
+        "sudoDeviceEnabled": false,
+        "maxDevicesPerUser": 3
+      },
+      "registration": {
+        "allowed": true,
+        "enableFirstTimeUserAutoRegistration": false,
+        "whitelistOnRegistration": false,
+        "minTimeBetweenRegistrationsInHours": 0,
+        "otp": {
+          "expiryTimeInMins": 10,
+          "maxRetries": 5,
+          "maxAttempts": 5
+        }
+      }
+    },
+    "deepLinkPwdReset": {
+      "enabled": true,
+      "defaultDeepLink": "testUrl",
+      "domainDeepLink": [
+        {
+          "url": null,
+          "domain": "tataaia.com"
+        },
+        {
+          "url": "https://italic.co.in/wps/portal/italic/login",
+          "domain": "talicngpa.com"
+        }
+      ]
+    },
+    "userLicenseConfig": {
+      "enabled": true,
+      "includedUserCodes": ["SU", "SELFSERVE_ADMIN", "ADMIN"]
+    },
+    "allowedTimeDiffForDeviceTime": 300000
+  },
+
+  "templateConfig": {
+    "api": {
+      "url": "authConfig",
+      "payload": {},
+      "configPath": []
+    },
+    "ui": [
+      {
+        "id": "node-1",
+        "type": "Text",
+        "position": {
+          "x": 24.19921875,
+          "y": 48.109375
+        },
+        "data": {
+          "componentType": "atoms",
+          "elementType": "Text",
+          "key": "node-1",
+          "children": "Login & Sessions Configuration",
+          "type": "h2"
+        },
+        "width": 323,
+        "height": 43,
+        "selected": false,
+        "dragging": false,
+        "positionAbsolute": {
+          "x": 24.19921875,
+          "y": 48.109375
+        }
+      },
+      {
+        "id": "node-2",
+        "type": "Text",
+        "position": {
+          "x": 23.15234375,
+          "y": 78.47265625
+        },
+        "data": {
+          "componentType": "atoms",
+          "elementType": "Text",
+          "key": "node-2",
+          "children": "Manage configurations related to User Logins and Sessions"
+        },
+        "width": 401,
+        "height": 38,
+        "selected": false,
+        "positionAbsolute": {
+          "x": 23.15234375,
+          "y": 78.47265625
+        },
+        "dragging": false
+      },
+      {
+        "id": "node-3",
+        "type": "Text",
+        "position": {
+          "x": 30.21875,
+          "y": 211.36328125
+        },
+        "data": {
+          "componentType": "atoms",
+          "elementType": "Text",
+          "key": "node-3",
+          "children": "Login Session Timeout (in ms)"
+        },
+        "width": 210,
+        "height": 38,
+        "selected": false,
+        "positionAbsolute": {
+          "x": 30.21875,
+          "y": 211.36328125
+        },
+        "dragging": false
+      },
+      {
+        "id": "node-4",
+        "type": "Input",
+        "position": {
+          "x": 25.33203125,
+          "y": 238.04296875
+        },
+        "data": {
+          "componentType": "atoms",
+          "elementType": "Input",
+          "key": "node-4",
+          "children": "Test Data",
+          "value": {
+            "path": "{{formConfig__sessionTimeout}}",
+            "query": "const query = (data, formData)=>{ return data;}",
+            "saveQuery": "const saveQuery = (data, formData) => { return parseInt(data); }"
+          }
+        },
+        "width": 209,
+        "height": 54,
+        "selected": false,
+        "positionAbsolute": {
+          "x": 25.33203125,
+          "y": 238.04296875
+        },
+        "dragging": false
+      },
+      {
+        "id": "node-5",
+        "type": "Switch",
+        "position": {
+          "x": 30.5234375,
+          "y": 157.5546875
+        },
+        "data": {
+          "componentType": "atoms",
+          "elementType": "Switch",
+          "key": "node-5",
+          "children": "Test Data",
+          "value": {
+            "path": "{{formConfig__adminForceResetPasswordAllowed}}",
+            "query": "const query = (data, formData)=>{ return data;}",
+            "saveQuery": "const saveQuery = (data, formData)=>{ return data;}"
+          }
+        },
+        "width": 63,
+        "height": 38,
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "node-3-copy-1739857910805",
+        "type": "Text",
+        "position": {
+          "x": 31.21875,
+          "y": 125.36328125
+        },
+        "data": {
+          "componentType": "atoms",
+          "elementType": "Text",
+          "key": "node-3-copy-1739857910805",
+          "children": "Allow admin to reset the OTP / password for user"
+        },
+        "width": 336,
+        "height": 38,
+        "selected": false,
+        "positionAbsolute": {
+          "x": 31.21875,
+          "y": 125.36328125
+        },
+        "dragging": false
+      }
+    ]
+  },
+  "lastSaved": "11:24:36",
+  "jira": {
+    "id": "",
+    "validated": "not_started",
+    "error": ""
+  },
+  "publish": {
+    "branch": "",
+    "pr": "",
+    "prId": "",
+    "commitsSync": 1335,
+    "status": "not_started"
+  },
+  "isDraft": true
+}

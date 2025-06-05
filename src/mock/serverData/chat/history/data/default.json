@@ -1,0 +1,37 @@
+{
+  "status": "SUCCESS",
+  "chat_history": [
+    {
+      "sender": "USER",
+      "message_type": "TEXT",
+      "text": "Which contacts have policies about to lapse in the next 30 days?",
+      "leads_data": [],
+      "tabular_data": null
+    },
+    {
+      "sender": "AI",
+      "message_type": "TEXT",
+      "text": "58",
+      "leads_data": [],
+      "tabular_data": null
+    },
+    {
+      "sender": "AI",
+      "message_type": "LEADS",
+      "text": "These are following leads",
+      "leads_data": [{ "lead_name": "Lead -1", "lead_code": "123" }],
+      "tabular_data": null
+    },
+    {
+      "sender": "AI",
+      "message_type": "TABLE",
+      "text": "",
+      "leads_data": [],
+      "tabular_data": [
+        ["A1", "A2"],
+        ["B1", "B2"],
+        ["C1", "C2"]
+      ]
+    }
+  ]
+}

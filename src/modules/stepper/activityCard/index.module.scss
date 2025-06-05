@@ -1,0 +1,17 @@
+.card {
+  gap: 20px;
+  &__cardItem {
+    display: flex;
+    align-items: flex-start;
+
+    &__text {
+      padding: 0 10px;
+      flex: 1;
+    }
+
+    &__icon {
+      flex-shrink: 0;
+      margin-right: 12px;
+    }
+  }
+}

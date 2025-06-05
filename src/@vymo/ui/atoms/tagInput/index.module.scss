@@ -1,0 +1,86 @@
+@mixin tagVariant($background-color, $font-color) {
+  background-color: $background-color;
+  color: $font-color;
+  svg {
+    path {
+      color: $font-color;
+    }
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.tagInput {
+  &__tag {
+    padding: calc(var(--spacing-xxs) - 2px) var(--spacing-xxs);
+    font-size: var(--xs-font-size);
+    line-height: 1.2;
+    display: inline-flex;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    color: var(--text-default);
+    font-weight: var(--font-weight-semi-bold);
+    transition: all 0.3s;
+    text-transform: uppercase;
+    width: fit-content;
+    &__close {
+      margin-left: 5px;
+      color: rgba(0, 0, 0, 0.45);
+      font-size: var(--xs-font-size);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    &__bold {
+      font-weight: var(--font-weight-bold);
+    }
+
+    &__default {
+      @include tagVariant(var(--background-subtle), var(--text-subtle));
+    }
+
+    &__success {
+      @include tagVariant(
+        var(--background-status-success),
+        var(--text-status-success)
+      );
+    }
+
+    &__error {
+      @include tagVariant(
+        var(--background-status-error),
+        var(--text-status-error)
+      );
+    }
+
+    &__warning {
+      @include tagVariant(
+        var(--background-status-warning),
+        var(--text-status-warning)
+      );
+    }
+
+    &__info {
+      @include tagVariant(
+        var(--background-status-info),
+        var(--text-status-info)
+      );
+    }
+  }
+
+  &__fontMedium {
+    font-size: var(--s-font-size);
+  }
+
+  &__input {
+    flex: 1 1;
+    outline: transparent;
+    background: transparent;
+    border: transparent;
+  }
+}

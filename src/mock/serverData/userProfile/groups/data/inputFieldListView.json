@@ -1,0 +1,493 @@
+{
+  "results": [
+    {
+      "_id": "675c0c3dfce8fe01375e9f47",
+      "code": "RAJESH809",
+      "vymo_id": "G6n95TnaUr",
+      "name": "Rajesh Balla",
+      "email": "rajesh@nam.com",
+      "phone": "+918123575679",
+      "region": "RAJESH809",
+      "region_type": "territory",
+      "region_hierarchy": ["all", "RAJESH809"],
+      "regions_length": 2,
+      "member_group_regions": [],
+      "authorised_group_regions": [],
+      "accessible_group_regions": [],
+      "hashed_password": "UIakzR60lK7ZYJpfX2twrUXLQYk+wUWwnHYjq+lv8lLL5MvQzQwnB46DLBAHC5RhAldPrJCnv5Jy5gNVfA52sg==",
+      "auth_type": "VYMO_LOGIN",
+      "mapping_login_id": "rajesh@nam.com",
+      "salt": "3mRohENm9TBRaSiuV9vZ7A==",
+      "location_tag_codes": [],
+      "inputs": [
+        {
+          "type": "text",
+          "code": "code",
+          "name": "Emp Id",
+          "value": "RAJESH809",
+          "_id": "675c0c3dfce8fe01375e9f48"
+        },
+        {
+          "type": "text",
+          "code": "first_name",
+          "name": "First Name",
+          "value": "Rajesh",
+          "_id": "675c0c3dfce8fe01375e9f49"
+        },
+        {
+          "type": "text",
+          "code": "middle_name",
+          "name": "Middle Name",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f4a"
+        },
+        {
+          "type": "text",
+          "code": "last_name",
+          "name": "Last Name",
+          "value": "Balla",
+          "_id": "675c0c3dfce8fe01375e9f4b"
+        },
+        {
+          "type": "text",
+          "code": "name",
+          "name": "Name",
+          "value": "Rajesh Balla",
+          "_id": "675c0c3dfce8fe01375e9f4c"
+        },
+        {
+          "type": "text",
+          "code": "name_suffix",
+          "name": "Name Suffix",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f4d"
+        },
+        {
+          "type": "email",
+          "code": "email",
+          "name": "Login Id",
+          "value": "rajesh@nam.com",
+          "_id": "675c0c3dfce8fe01375e9f4e"
+        },
+        {
+          "type": "email",
+          "code": "alternate_email",
+          "name": "Alternate Email",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f4f"
+        },
+        {
+          "type": "date",
+          "code": "email_update_date",
+          "name": "Email Update Date",
+          "value": "1733048651000",
+          "_id": "675c0c3dfce8fe01375e9f50"
+        },
+        {
+          "type": "phone",
+          "code": "phone",
+          "name": "Phone",
+          "value": "+918123575679",
+          "_id": "675c0c3dfce8fe01375e9f51"
+        },
+        {
+          "type": "date",
+          "code": "phone_update_date",
+          "name": "Phone Update Date",
+          "value": "1733048778000",
+          "_id": "675c0c3dfce8fe01375e9f52"
+        },
+        {
+          "type": "code_name_spinner",
+          "code": "user_gender",
+          "name": "Gender",
+          "value": "Male",
+          "data": {
+            "code": "male"
+          },
+          "_id": "675c0c3dfce8fe01375e9f53"
+        },
+        {
+          "type": "text",
+          "code": "designation",
+          "name": "Designation",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f54"
+        },
+        {
+          "type": "text",
+          "code": "designation_name",
+          "name": "Designation Name",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f55"
+        },
+        {
+          "type": "code_name_spinner",
+          "code": "type",
+          "name": "User Type",
+          "value": "territory",
+          "data": {
+            "code": "territory"
+          },
+          "_id": "675c0c3dfce8fe01375e9f56"
+        },
+        {
+          "type": "code_name_spinner",
+          "code": "role",
+          "name": "User Role",
+          "value": "AGENT",
+          "data": {
+            "code": "AGENT"
+          },
+          "_id": "675c0c3dfce8fe01375e9f57"
+        },
+        {
+          "type": "code_name_spinner",
+          "code": "parent",
+          "name": "Reporting manager",
+          "value": "all",
+          "data": {
+            "code": "all"
+          },
+          "_id": "675c0c3dfce8fe01375e9f58"
+        },
+        {
+          "type": "code_name_spinner",
+          "code": "auth_type",
+          "name": "Authentication Type",
+          "value": "VYMO_LOGIN",
+          "data": {
+            "code": "VYMO_LOGIN"
+          },
+          "_id": "675c0c3dfce8fe01375e9f59"
+        },
+        {
+          "type": "date",
+          "code": "dob",
+          "name": "DOB",
+          "value": "1354444001000",
+          "_id": "675c0c3dfce8fe01375e9f5a"
+        },
+        {
+          "type": "date",
+          "code": "date_of_joining",
+          "name": "Date of Joining",
+          "value": "1733048807000",
+          "_id": "675c0c3dfce8fe01375e9f5b"
+        },
+        {
+          "type": "text",
+          "code": "department_name",
+          "name": "Department Name",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f5c"
+        },
+        {
+          "type": "text",
+          "code": "subscription_name",
+          "name": "Subscription Name",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f5d"
+        },
+        {
+          "type": "code_name_spinner",
+          "code": "subscription_status",
+          "name": "Subscription Status",
+          "value": "Subscribed",
+          "data": {
+            "code": "subscribed"
+          },
+          "_id": "675c0c3dfce8fe01375e9f5e"
+        },
+        {
+          "type": "text",
+          "code": "npn",
+          "name": "NPN",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f5f"
+        },
+        {
+          "type": "text",
+          "code": "loa",
+          "name": "LOA",
+          "value": "Health",
+          "_id": "675c0c3dfce8fe01375e9f60"
+        },
+        {
+          "type": "text",
+          "code": "business_address_line_1",
+          "name": "Business Address Line 1",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f61"
+        },
+        {
+          "type": "text",
+          "code": "business_address_line_2",
+          "name": "Business Address Line 2",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f62"
+        },
+        {
+          "type": "text",
+          "code": "business_address_line_3",
+          "name": "Business Address Line 3",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f63"
+        },
+        {
+          "type": "text",
+          "code": "business_city",
+          "name": "Business City",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f64"
+        },
+        {
+          "type": "text",
+          "code": "business_state",
+          "name": "Business State",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f65"
+        },
+        {
+          "type": "text",
+          "code": "business_country",
+          "name": "Business Country",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f66"
+        },
+        {
+          "type": "text",
+          "code": "business_zipcode",
+          "name": "Business Zipcode",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f67"
+        },
+        {
+          "type": "text",
+          "code": "resident_address_line_1",
+          "name": "Resident Address Line 1",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f68"
+        },
+        {
+          "type": "text",
+          "code": "resident_address_line_2",
+          "name": "Resident Address Line 2",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f69"
+        },
+        {
+          "type": "text",
+          "code": "resident_address_line_3",
+          "name": "Resident Address Line 3",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f6a"
+        },
+        {
+          "type": "text",
+          "code": "resident_city",
+          "name": "Resident City",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f6b"
+        },
+        {
+          "type": "text",
+          "code": "resident_state",
+          "name": "Resident State",
+          "value": "CA",
+          "_id": "675c0c3dfce8fe01375e9f6c"
+        },
+        {
+          "type": "text",
+          "code": "resident_country",
+          "name": "Resident Country",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f6d"
+        },
+        {
+          "type": "text",
+          "code": "resident_zipcode",
+          "name": "Resident Zipcode",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f6e"
+        },
+        {
+          "type": "text",
+          "code": "resident_state_license_id",
+          "name": "Resident State License ID",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f6f"
+        },
+        {
+          "type": "text",
+          "code": "resident_state_code",
+          "name": "Resident State Code",
+          "value": "CA",
+          "_id": "675c0c3dfce8fe01375e9f70"
+        },
+        {
+          "type": "text",
+          "code": "resident_branch_id",
+          "name": "Resident Branch ID",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f71"
+        },
+        {
+          "type": "text",
+          "code": "mailing_address_line_1",
+          "name": "Mailing Address Line 1",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f72"
+        },
+        {
+          "type": "text",
+          "code": "mailing_address_line_2",
+          "name": "Mailing Address Line 2",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f73"
+        },
+        {
+          "type": "text",
+          "code": "mailing_address_line_3",
+          "name": "Mailing Address Line 3",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f74"
+        },
+        {
+          "type": "text",
+          "code": "mailing_city",
+          "name": "Mailing City",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f75"
+        },
+        {
+          "type": "text",
+          "code": "mailing_state",
+          "name": "Mailing State",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f76"
+        },
+        {
+          "type": "text",
+          "code": "mailing_country",
+          "name": "Mailing Country",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f77"
+        },
+        {
+          "type": "text",
+          "code": "mailing_zipcode",
+          "name": "Mailing Zipcode",
+          "value": "",
+          "_id": "675c0c3dfce8fe01375e9f78"
+        },
+        {
+          "type": "multi_select_auto_complete",
+          "code": "vymo_user_channel",
+          "name": "Vymo Channel",
+          "value": "[{\"name\":\"ALL\",\"code\":\"all\"},{\"name\":\"Nam Onboarding\",\"code\":\"nam_onboarding_f8uzeq\"}]",
+          "_id": "675c0c3dfce8fe01375e9f79"
+        }
+      ],
+      "disabled": false,
+      "locked": false,
+      "inputs_map": {
+        "code": "RAJESH809",
+        "first_name": "Rajesh",
+        "middle_name": "",
+        "last_name": "Balla",
+        "name": "Rajesh Balla",
+        "name_suffix": "",
+        "email": "rajesh@nam.com",
+        "alternate_email": "",
+        "email_update_date": 1733048651000,
+        "phone": "+918123575679",
+        "phone_update_date": 1733048778000,
+        "user_gender": "Male",
+        "designation": "",
+        "designation_name": "",
+        "type": "territory",
+        "role": "AGENT",
+        "parent": "all",
+        "auth_type": "VYMO_LOGIN",
+        "dob": 1354444001000,
+        "date_of_joining": 1733048807000,
+        "department_name": "",
+        "subscription_name": "",
+        "subscription_status": "Subscribed",
+        "npn": "",
+        "loa": "Health",
+        "business_address_line_1": "",
+        "business_address_line_2": "",
+        "business_address_line_3": "",
+        "business_city": "",
+        "business_state": "",
+        "business_country": "",
+        "business_zipcode": "",
+        "resident_address_line_1": "",
+        "resident_address_line_2": "",
+        "resident_address_line_3": "",
+        "resident_city": "",
+        "resident_state": "CA",
+        "resident_country": "",
+        "resident_zipcode": "",
+        "resident_state_license_id": "",
+        "resident_state_code": "CA",
+        "resident_branch_id": "",
+        "mailing_address_line_1": "",
+        "mailing_address_line_2": "",
+        "mailing_address_line_3": "",
+        "mailing_city": "",
+        "mailing_state": "",
+        "mailing_country": "",
+        "mailing_zipcode": "",
+        "vymo_user_channel": "[{\"name\":\"ALL\",\"code\":\"ALL\"}]"
+      },
+      "flags": {
+        "is_parallel": false,
+        "is_whitelisted": false,
+        "dummy": false
+      },
+      "device_whitelist": [],
+      "language": "",
+      "authenticate_constant": 1734085693212,
+      "job_id": ["f5092bd0-b93c-11ef-9806-2ded19eb21fb"],
+      "hierarchyUpdates": {
+        "history": []
+      },
+      "roles": [],
+      "tableau_license": {
+        "active": false,
+        "can_publish": false
+      },
+      "verification": {
+        "force_reset_password": false,
+        "time": "2024-12-13T10:28:13.202Z",
+        "email_skip": 0,
+        "phone_skip": 0
+      },
+      "validated": {
+        "phone": false,
+        "email": false
+      },
+      "audit": {
+        "last_password_reset_date": "2024-12-13T10:28:13.198Z",
+        "last_login_time": "2024-12-23T10:30:49.730Z"
+      },
+      "location_skip_count": 0,
+      "user_preference": {
+        "lead_scoring": {
+          "enabled_lead_modules": []
+        }
+      },
+      "date": "2024-12-13T10:28:13.212Z",
+      "last_update_date": "2024-12-13T10:28:13.270Z",
+      "member_group_regions_v2": [],
+      "entities": [],
+      "job_idV2": [],
+      "__v": 0
+    }
+  ],
+  "filters": [],
+  "value": []
+}

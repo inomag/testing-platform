@@ -1,0 +1,30 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.mainSection {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &__title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &__back_btn {
+      cursor: pointer;
+    }
+
+    &__carousel {
+      margin-bottom: 24px;
+    }
+
+    &__infoSection {
+      display: flex;
+      margin: 10px 0;
+      flex-grow: 1;
+      flex-direction: column;
+    }
+  }
+}

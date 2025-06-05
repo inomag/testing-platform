@@ -1,0 +1,29 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.debug {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  gap: 24px;
+  z-index: 1000;
+}
+.editor {
+  height: 75vh;
+  width: 480px;
+  background: var(--brand-primary);
+  overflow: hidden;
+  z-index: 1009;
+  display: flex;
+  flex-direction: column;
+  @include baseBoxShadow;
+  border: 2px solid #ffb703;
+
+  &__header {
+    padding: 12px 24px;
+    background: #ffb703;
+    color: var(--text-default);
+    font-size: var(--s-font-size);
+    font-weight: var(--font-weight-bold);
+  }
+}

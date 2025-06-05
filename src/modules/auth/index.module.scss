@@ -1,0 +1,231 @@
+@import '../../designTokens/scssVariables.scss';
+
+.authContainer {
+  &__full {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: calc(var(--spacing-xl) * 2);
+    &__card {
+      padding: calc(var(--spacing-xl) * 2);
+      padding-bottom: var(--spacing-xl);
+    }
+  }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--spacing-s);
+    margin-bottom: calc(var(--spacing-xl) * 2);
+    &__image {
+      margin-bottom: var(--spacing-xl);
+    }
+  }
+}
+
+.auth-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 90vh;
+  .container {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.02),
+      0px 6px 16px 0px rgba(0, 0, 0, 0.04), 0px 3px 6px -4px rgba(0, 0, 0, 0.08);
+    gap: 32px;
+    &__banner {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 16px;
+      overflow: hidden;
+      .image {
+        max-width: 100%;
+        overflow: hidden;
+        border-radius: 18px;
+      }
+    }
+
+    &__auth-section {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media only screen and (max-height: 860px) {
+      height: 90%;
+
+      &__banner {
+        height: 70%;
+      }
+    }
+
+    @media only screen and (max-width: 1000px) {
+      width: 80%;
+      height: 90%;
+    }
+
+    @media only screen and (max-width: 480px) {
+      width: 90%;
+      height: 90%;
+
+      &__auth-section {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.otp__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  align-items: center;
+
+  &__content {
+    width: 100%;
+  }
+
+  &__button {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  .resend__wrapper {
+    .resend__cta {
+      cursor: pointer;
+      padding: 0;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+    .resend__text {
+      font-size: 14px;
+    }
+  }
+  .otp__actions {
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    .cta__action {
+      flex: 1;
+      margin: 0.2rem;
+    }
+  }
+}
+
+.wrapper {
+  height: 100%;
+  position: relative;
+  .phone__auth {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    .auth__wrapper {
+      width: 100%;
+      height: 100%;
+      .cta__container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        .submit__cta {
+          width: 60%;
+          @media screen and (max-width: 500px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .loader {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.header {
+  text-align: center;
+  width: 100%;
+  font-size: 22px;
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+  }
+}
+
+.subheader {
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  @media screen and (max-width: 500px) {
+    font-size: 12px;
+  }
+}
+
+.phone__input {
+  font-size: 14px;
+  input {
+    &::placeholder {
+      font-size: 14px;
+      @media screen and (max-width: 500px) {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.mb_5 {
+  margin-bottom: 0.5rem;
+}
+
+.mb_32 {
+  margin-bottom: 32px;
+}
+
+.error {
+  color: var(--text-status-error);
+  border-color: var(--text-status-error);
+}
+.auth__section__error {
+  color: var(--text-status-error);
+  margin-bottom: 16px;
+  font-size: var(--xs-font-size);
+}

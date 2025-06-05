@@ -1,0 +1,34 @@
+{
+  "name": "@vymo/ui",
+  "description": "web component library for vymo UI",
+  "version": "1.0.4",
+  "homepage": "https://bitbucket.org/vymo/vymo-web-platform/src/master/",
+  "main": "index.mjs",
+  "types": "index.d.mts",
+  "typings": "index.d.mts",
+  "exports": {
+    "./atoms": {
+      "types": "./atoms/index.d.mts",
+      "import": "./atoms/index.mjs"
+    },
+    "./blocks": {
+      "types": "./blocks/index.d.mts",
+      "import": "./blocks/index.mjs"
+    },
+    "./molecules": {
+      "types": "./molecules/index.d.mts",
+      "import": "./molecules/index.mjs"
+    },
+    "./components": {
+      "types": "./components/index.d.mts",
+      "import": "./components/index.mjs"
+    },
+    "./atoms/index.css": "./atoms/index.css",
+    "./blocks/index.css": "./blocks/index.css",
+    "./molecules/index.css": "./molecules/index.css",
+    "./components/index.css": "./components/index.css",
+    "./package.json": "./package.json"
+  },
+  "author": "frontend@getvymo.com",
+  "license": "MIT"
+}

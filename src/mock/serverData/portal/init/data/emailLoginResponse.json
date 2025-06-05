@@ -1,0 +1,99 @@
+{
+  "client": "sherlock",
+  "portalConfig": {
+    "branding": {
+      "logo": {
+        "height": 48,
+        "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUEAAACdCAMAAAAdWzrjAAAA1VBMVEX///8AAACxFyvrAADsGCBgYGCtABU1NTXz8/Pt7e3tJi3sDxjitbnxZ2v95+euAB3WjJPtLDLtHyfc3NztMjitABP1mpzrAA69vb3z09byztHS0tL4+Pj6zc8wMDCjo6Ovr68LCwtvb2+EhIQ/Pz9XV1eMjIzZ2dlISEglJSUQEBAeHh7l5eWWlpa6urpsbGysrKxSUlKrAADyeHvvT1PtwcT+8PDOGSbzkJL4rK7EAAC/Q1DgGiTygITVgIasACD4ubvWAADDGCfsoqfLZ3DeoKbCVF6K69zKAAAGbklEQVR4nO2abXubNhSGkVPX0GxpEy8LCcTETuz4NS9u527L1qTduv//k2ZzJBAgCTEbnF3Xc39yQDjyLZ2jg8BxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgNfH0cef8hxneZfl0y/77vLrYvXm7E0l/ni/vNh3p18Vq7PDSgI/t1pvf9h3p18Xl59OZEMnWbIBfPzuWwsGt+LiLQxux8UpDG4HDG4LDOo4//VHI7+tqB0Majg/ODs08vsTNYRBDS8H5iK61To9ihvCoI4/zw60HH7eWIPBMo50rL48w+B2fHgPg9sBg9tSs8G5bcNQaul5dtd4btXuVGQe+FcPUeTTX+HLzzIvIR2WDZ7v2uCCMTawaRgO1i0j+hz0GOsF5dcEM8bGkvf4O9pWQ+bGTY3j5D0MOkzQ2wzV6vjgTObrM1mr06Af//t7i5btuGV38zGkTvtll9zFzYbpgQFdaKHQ7cUtH7UN5qMey7AZ0MtMUXjyrXVKpuo0GFjK4KoZTYqe1VUkkF2nR2gU2LRUoXvDZ5auN48sB8XRx7QGPFsX0U0YdO6NPU0IJ3E7HsVdZqHwitoMw/QQN8hmJVk0HPOGHeXpYJyI6w2iOz8IAjEmR5eCv54bMuhSTxYlzUZxqxvx57xfqpALbMvHhEE2MStMDCkNDsTZtm9Yp+Kd1CYMil9qDqxummuI+axE4QOdz2bYxCCbmNboNEQVBm+nPBVEYfGkRHMGeX/bFm2kjOZ4E6PCSM5OCalBWjvVDNNWRYM8H5cGTZMGu+U5jdaESWbQPdNywgVe5w7HBvs0fW90Cklzr680yFenTtf4kzY0aJDnuJm+QThVuXI7WoVc4Ch/nFdENH3H6ijkS9tcOQd56dA2B3BMkwadifr3JlwrUpqTlhx3+RMLXaCRQdejWfio8kDLxMQNVQbdqUXG4TRqkI+sbjG5pdPFqBNFR04hFxgVv4kMeo5QWGxBg7Veql2VQcvSK+Z8uTa1pNc7ajfIezbUnCVPD4ozIV81r+SDXKCqvTAoFBb+YyJQaZCP9K3dj/pyujz9m6Z5/QZdTTjGUF0yVl85LChcKKQKEoOiGsrF4ygRqDRIl1vdxW9YHfGHSw0Y5EXhTJWYPMo9usWvnRM2Mg1GalDU5BkdJJ9uWBQGPWbsiYEPsTXyWZNBXvCpFpNr7RlikFHIBWpKI8mgQiEXSOlYYZCG+capzuppebr8Tp/rMsiLwuJiQrlnYrhUVmgWmDHodElhUjNGskCVwbKxzDEfSttjR8nrbnUZ5BOgmO2oYjHuBdIv2ywd/JO2dcZgTmEkhbCjNDjM5osSqIgt3tTUZtDpKPNXVMxWRYRCPgP1a2XWoFAYzyoK0XTfS2FwbJzfedZZs99n00JqXy2fW8/LOl5ipXDtZ/8jT95lW/VcHUkwZPqcQZE7FkJgP80iOzDYXxtULI4X/zw/fbf8kmpcZ9NSzMAycBapQNMmT96gKNYjPy9QH8WqOlMFfXVPVV5Y3BP+J8J+IQZpXuq32lOEQvPeacGgUEjI8rUrSX63QgfNat1dQj3QRJAXk07hh2mhhDk1x3vRoKSwnwl/hUG+Q2TTG0eET+km2G5p58IkqtAJSmklxZrCYKowmz/1FbXFM8Lkets7wF1BO0p9MY+84o/Q07VprDIoFOYWIP1dnU1S0VdnNZOtXe4rDPkWBp3bnmLL1LCzoL5jzEKTwXrh3h1y/RxkdJaxhUHlGxCG3S2bxDzewzoSI3uYZEK6ypVadAYVKA26fVpMSjvFVVu+mrJTqGLYbI4urCMmphGDIo5nJbOwXWXN2TUz/iPnFcOgGYPJo7orU1c69vmyBnye/dq2GYfTkMFE4VB38xiKW8w9CRQpJI1mS5oy6PAnfYzdq4LUS26OGq4E5T6whCqbmY0ZTLaC1ivKIitx/pA8rB/Ude9rw0NisMowNmjQ6UpvbnXuR9Gd718tBunrSGy8vwkYI7piew8fc1uLQd2DzUB6f6RAez9rsATftTO8xKCAgr/kWXgcf8VNTyVxutPXAl40VuobR/soAvNsXvJljxV7EozZtCz7hIOpdYRtHnPcG0tnzx89ziR5s8eR/xr0xYT7TMTVcAN/Q/Bq3AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw/+Jfo7SAaTqzcSUAAAAASUVORK5CYII=",
+        "width": 132
+      },
+      "logoBackgroundColor": "#ffffff",
+      "banner": {
+        "height": 400,
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWlC-OKYc8BWvQbBXMtjKRX6qul4k3cM4euA&usqp=CAU",
+        "width": 700
+      },
+      "theme": {
+        "background": "#ffffff",
+        "primary": "#bf3743",
+        "secondary": "#f8e7ea",
+        "tertiary": "#44546F",
+        "font": "#44546F",
+        "heading": "#172B4D",
+        "error": "#f44336",
+        "warning": "#ffa726",
+        "info": "#29b6f6",
+        "success": "#66bb6a"
+      },
+      "loader": "spinner",
+      "email": "email",
+      "phone": "phone",
+      "bannerTitle": "Hey, there! Welcome to Vymo. Let's get started!",
+      "bannerDescription": "Short description can come here (optional)"
+    },
+    "i18nSettings": {
+      "locale": "en-IN",
+      "language": "en",
+      "country": "IN",
+      "currency": "₹",
+      "currency_iso": "INR",
+      "quantity": "KLC",
+      "country_calling_code": "91",
+      "client_date_time_config": {
+        "date_in_curr_year": {
+          "dateTimeFormat": "DD_MMM_YYYY",
+          "relativeFormat": false
+        },
+        "date": {
+          "dateTimeFormat": "DD_MMM_YYYY",
+          "relativeFormat": false
+        },
+        "meeting_date_time_in_curr_year": {
+          "dateTimeFormat": "DAY_DD_MMM-TIME",
+          "relativeFormat": true
+        },
+        "meeting_date_not_in_curr_year": {
+          "dateTimeFormat": "DD_MMM_YYYY-TIME",
+          "relativeFormat": false
+        },
+        "date_range": {
+          "dateTimeFormat": "DD_MMM_YYYY",
+          "relativeFormat": false
+        },
+        "date_in_chart": {
+          "dateTimeFormat": "MMM_YY",
+          "relativeFormat": false
+        },
+        "time_range": {
+          "dateTimeFormat": "HH_MM_A",
+          "relativeFormat": false
+        },
+        "month_day_in_cal": {
+          "dateTimeFormat": "MMM_DD",
+          "relativeFormat": false
+        },
+        "month_year_in_cal": {
+          "dateTimeFormat": "MMM_YYYY",
+          "relativeFormat": false
+        },
+        "date_time_with_seconds": {
+          "dateTimeFormat": "DD_MM_YYYY_HH_MM_SS_SLASH",
+          "relativeFormat": false
+        },
+        "day_month_date": {
+          "dateTimeFormat": "DAY_MMM_DD",
+          "relativeFormat": true
+        },
+        "time": {
+          "dateTimeFormat": "H_MM_A",
+          "relativeFormat": false
+        }
+      },
+      "multiLanguageSupported": false,
+      "supportedLanguages": [],
+      "timezone": "+0530",
+      "iana_timezone": "Asia/Kolkata"
+    },
+    "loginType": "EMAIL"
+  }
+}

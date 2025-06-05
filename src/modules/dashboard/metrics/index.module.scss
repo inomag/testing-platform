@@ -1,0 +1,41 @@
+@import '../../../designTokens/scssVariables.scss';
+
+.metrics {
+  padding: var(--spacing-l);
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  &__chartContainer {
+    display: grid;
+    gap: calc(var(--spacing-2xl) * 2);
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  }
+}
+
+.chartBox {
+  position: relative;
+  border: 0;
+  @include baseBoxShadow;
+  transition: all 0.3s ease;
+  justify-content: stretch;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.fullScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: white;
+}

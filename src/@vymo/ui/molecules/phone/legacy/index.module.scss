@@ -1,0 +1,14 @@
+.phone {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__sub_message,
+  &__error_message {
+    color: var(--text-status-error);
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+}

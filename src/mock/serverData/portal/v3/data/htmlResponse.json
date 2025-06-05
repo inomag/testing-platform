@@ -1,0 +1,237 @@
+{
+  "message": "success",
+  "result": {
+    "visitor": {
+      "code": "uoWMV8SwDFFhJF"
+    },
+    "template": {
+      "type": "custom",
+      "code": "recruitment_consent",
+      "actionCategory": "ConsentActionCategory",
+      "actionType": "consent",
+      "milestones": {
+        "checklist": [
+          {
+            "code": "abslamc_z2psx7-recruitment_leads_tdhixr_new",
+            "name": "Getting Started",
+            "status": "completed",
+            "steps": []
+          },
+          {
+            "code": "abslamc_z2psx7-recruitment_leads_tdhixr_amc_agent_recruitment_application",
+            "name": "Application",
+            "status": "enabled",
+            "steps": [
+              {
+                "status": "enabled",
+                "code": "details_for_empanelment",
+                "name": "Empanelment Details",
+                "description": "",
+                "type": "conditional",
+                "actions": [
+                  {
+                    "name": "Consent",
+                    "code": "recruitment_consent",
+                    "description": "",
+                    "status": "enabled",
+                    "type": "portal_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://staging.lms.getvymo.com/portal/abc-recruitment-portal#/stepper/abslamc/action/recruitment_consent",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "name": "Details for Empanelment",
+                    "code": "details_for_empanelment",
+                    "description": "",
+                    "status": "locked",
+                    "type": "portal_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://staging.lms.getvymo.com/portal/abc-recruitment-portal#/stepper/abslamc/action/details_for_empanelment",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  }
+                ],
+                "stepStatusMessage": ""
+              }
+            ]
+          },
+          {
+            "code": "abslamc_z2psx7-recruitment_leads_tdhixr_amc_agent_recruitment_outcome",
+            "name": "Onboarding",
+            "status": "locked",
+            "steps": []
+          },
+          {
+            "code": "abslamc_z2psx7-recruitment_leads_tdhixr_amc_agent_recruited",
+            "name": "Empanelment Complete",
+            "status": "locked",
+            "steps": []
+          }
+        ]
+      },
+      "title": "Consent",
+      "form": null,
+      "meta": {},
+      "html": "<div><script src=\"https://example.com/external-script1.js\"></script><script>console.log(\"Inline Script 1\");</script><script src=\"https://example.com/external-script2.js\"></script><script>console.log(\"Inline Script 2\");</script></div>",
+      "cta": [
+        {
+          "type": "action",
+          "title": "Save and continue",
+          "action": "recruitment_consent"
+        }
+      ]
+    },
+    "isAssistedOnboarding": false
+  },
+  "portalConfig": {
+    "branding": {
+      "logo": {
+        "height": 48,
+        "url": "https://i.postimg.cc/fLkKqYzm/abslamc.png",
+        "width": 90
+      },
+      "logoBackgroundColor": "#ffffff",
+      "carousel": [
+        {
+          "height": 400,
+          "url": "https://i.postimg.cc/qRfSD413/Banner-1.jpg",
+          "width": 700
+        },
+        {
+          "height": 400,
+          "url": "https://i.postimg.cc/13fd9fTF/Banner-2.jpg",
+          "width": 700
+        },
+        {
+          "height": 400,
+          "url": "https://i.postimg.cc/y8tbW74b/Banner-3.jpg",
+          "width": 700
+        }
+      ],
+      "theme": {
+        "background": "#ffffff",
+        "primary": "#b2182b",
+        "secondary": "#f8e7ea",
+        "tertiary": "#3458b9",
+        "font": "#44546F",
+        "heading": "#172B4D",
+        "error": "#ae2e24",
+        "warning": "#7f5f01",
+        "info": "#0055cc",
+        "success": "#216e4e"
+      },
+      "loader": "spinner",
+      "email": "email",
+      "phone": "phone",
+      "bannerTitle": "Hey there! Welcome to Aditya Birla Sun Life Insurance.",
+      "bannerDescription": "Begin your journey to success as an agent today!",
+      "banner": [
+        {
+          "height": 400,
+          "url": "https://i.postimg.cc/qRfSD413/Banner-1.jpg",
+          "width": 700
+        },
+        {
+          "height": 400,
+          "url": "https://i.postimg.cc/13fd9fTF/Banner-2.jpg",
+          "width": 700
+        },
+        {
+          "height": 400,
+          "url": "https://i.postimg.cc/y8tbW74b/Banner-3.jpg",
+          "width": 700
+        }
+      ]
+    },
+    "i18nSettings": {
+      "enabled": true,
+      "standardised_iana_timezone": "UTC",
+      "iana_timezone": "Asia/Kolkata",
+      "locale": "en-IN",
+      "language": "en",
+      "country": "IN",
+      "currency": "₹",
+      "currency_iso": "INR",
+      "quantity": "KLC",
+      "country_calling_code": "91",
+      "client_date_time_config": {
+        "date_in_curr_year": {
+          "dateTimeFormat": "DD MMM YYYY",
+          "relativeFormat": false
+        },
+        "date": {
+          "dateTimeFormat": "DD MMM YYYY",
+          "relativeFormat": false
+        },
+        "meeting_date_time_in_curr_year": {
+          "dateTimeFormat": "DAY_DD_MMM-TIME",
+          "relativeFormat": true
+        },
+        "meeting_date_not_in_curr_year": {
+          "dateTimeFormat": "DD_MMM_YYYY-TIME",
+          "relativeFormat": false
+        },
+        "date_range": {
+          "dateTimeFormat": "DD_MMM_YYYY",
+          "relativeFormat": false
+        },
+        "date_in_chart": {
+          "dateTimeFormat": "MMM_YY",
+          "relativeFormat": false
+        },
+        "time_range": {
+          "dateTimeFormat": "HH_MM_A",
+          "relativeFormat": false
+        },
+        "month_day_in_cal": {
+          "dateTimeFormat": "MMM_DD",
+          "relativeFormat": false
+        },
+        "month_year_in_cal": {
+          "dateTimeFormat": "MMM_YYYY",
+          "relativeFormat": false
+        },
+        "date_time_with_seconds": {
+          "dateTimeFormat": "DD_MM_YYYY_HH_MM_SS_SLASH",
+          "relativeFormat": false
+        },
+        "day_month_date": {
+          "dateTimeFormat": "DAY_MMM_DD",
+          "relativeFormat": true
+        },
+        "time": {
+          "dateTimeFormat": "H_MM_A",
+          "relativeFormat": false
+        }
+      }
+    },
+    "loginType": "PAN",
+    "otpPolicy": {
+      "numberOfDigits": 6,
+      "verificationAttemptsRemaining": 3,
+      "resendAttemptsRemaining": 5,
+      "resendOTPConfig": {
+        "enabled": false,
+        "interval": 60000,
+        "backoff": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+.otp__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 10px;
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  .otp__actions {
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    .cta__action {
+      flex: 1;
+      margin: 0.2rem;
+    }
+  }
+}
+
+.resend__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  &__cta {
+    cursor: pointer;
+    padding: 4px 0;
+    font-size: 14px;
+  }
+  &__text {
+    font-size: 14px;
+  }
+}
+
+.box__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .otp__box {
+    height: 2.5rem;
+    margin: 5px;
+    margin-left: 0px;
+    text-align: center;
+    font-size: var(--xl-font-size);
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-s-8);
+  }
+
+  .error {
+    color: var(--text-status-error);
+    border-color: var(--text-status-error);
+  }
+
+  /* Placeholder style */
+  .otp__box::placeholder {
+    color: #aaa;
+  }
+  input {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+.otp__error {
+  color: var(--text-status-error);
+  margin-bottom: 16px;
+  font-size: var(--xs-font-size);
+}
+
+.otp__success {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  &__alert {
+    display: flex;
+    justify-content: center;
+    background-color: #f3f8ff;
+    margin-top: 65px;
+  }
+
+  &__color {
+    color: #1f60ad;
+    font-size: 14px;
+  }
+}
+
+.header {
+  font-weight: var(--font-weight-bold);
+  font-size: 22px;
+  color: #172b4d;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.subheader {
+  font-weight: var(--font-weight-medium);
+  font-size: 14px;
+  color: #44546f;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+}
+
+.enter_otp_text {
+  font-size: 14px;
+  &__required:after {
+    content: ' *';
+    color: var(--text-status-error);
+  }
+}
+
+.mb_8 {
+  margin-bottom: 0.5rem;
+}
+
+.mb_32 {
+  margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 560px) {
+  .header {
+    font-size: var(--m-font-size);
+    margin-bottom: 4px;
+  }
+
+  .subheader {
+    font-size: var(--xs-font-size);
+  }
+
+  .otp_text {
+    font-size: var(--xs-font-size);
+  }
+}

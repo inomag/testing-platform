@@ -1,0 +1,67 @@
+@import '../../designTokens/scssVariables.scss';
+
+.builderHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    > span:first-child {
+      font-size: 45px;
+    }
+    > span:last-child {
+      font-size: 30px;
+    }
+  }
+  &__content {
+    padding: calc(3 * var(--spacing-xl)) 0;
+    display: flex;
+    gap: calc(10 * var(--spacing-xl));
+    &__section {
+      display: flex;
+      flex-direction: column;
+      &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: var(--spacing-xl) var(--spacing-xs);
+        > button {
+          padding-left: 0px;
+        }
+
+        &__title {
+          font-size: 20px;
+          padding: var(--spacing-s) 0;
+        }
+      }
+    }
+  }
+}
+
+.projectSetting {
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      > div {
+        width: 100%;
+      }
+    }
+    &__jira {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+}

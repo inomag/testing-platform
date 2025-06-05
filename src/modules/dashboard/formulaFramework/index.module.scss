@@ -1,0 +1,22 @@
+.formulaFramework {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  gap: 24px;
+
+  &__queryWrapper {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__editorWrapper {
+    flex: 1;
+    border-radius: var(--radius-l-16);
+    overflow: hidden;
+    height: 100%;
+    background: white;
+  }
+}

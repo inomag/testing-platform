@@ -1,0 +1,70 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.componentBannerWrapper {
+  position: relative;
+  height: 100%;
+}
+
+.componentBanner {
+  position: absolute !important;
+}
+
+.rootBanner {
+  position: fixed;
+}
+
+.banner {
+  border-radius: var(--radius-m-12);
+  margin: 8px;
+  width: fit-content;
+  z-index: 100;
+
+  &__top {
+    top: 0px;
+    width: calc(100% - 32px);
+  }
+
+  &__bottom {
+    bottom: 0px;
+    width: calc(100% - 32px);
+  }
+  &__topCenter {
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__bottomCenter {
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__topRight {
+    top: 0px;
+    right: 0px;
+  }
+
+  &__topLeft {
+    top: 0px;
+    left: 0px;
+  }
+
+  &__bottomLeft {
+    bottom: 0px;
+    left: 0px;
+  }
+
+  &__bottomRight {
+    bottom: 0px;
+    right: 0px;
+  }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    border-radius: 0px !important;
+    margin: 0px;
+  }
+}

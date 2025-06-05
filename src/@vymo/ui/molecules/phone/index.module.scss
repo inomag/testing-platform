@@ -1,0 +1,35 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.phone {
+  &__countryCode {
+    border-right: 1px solid var(--border-default);
+    margin-right: var(--spacing-s);
+    &__popup {
+      height: 250px;
+      width: 180px;
+      overflow: scroll;
+      border-radius: var(--radius-s-8);
+
+      &__item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: var(--spacing-l);
+      }
+    }
+    &__tag {
+      border-radius: var(--spacing-l);
+      color: var(--text-subtle);
+      margin-right: var(--spacing-s);
+    }
+  }
+
+  &__input {
+    flex: 1 1;
+    outline: transparent;
+    background: transparent;
+    border: transparent;
+    font-size: var(--s-font-size);
+    font-weight: var(--font-weight-semi-bold);
+  }
+}

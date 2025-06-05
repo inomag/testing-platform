@@ -1,0 +1,130 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.input__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-s);
+
+  .input__label {
+    font-size: var(--s-font-size);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-subtle);
+  }
+
+  .input__errors {
+    margin-top: 8px;
+
+    .input__error {
+      color: var(--text-status-error);
+      font-size: var(--xs-font-size);
+      margin-bottom: 4px;
+    }
+  }
+
+  .input__success {
+    color: var(--text-status-success);
+    font-size: var(--xs-font-size);
+    margin-top: 8px;
+  }
+
+  .input__sub__message {
+    margin-top: 8px;
+  }
+}
+input {
+  color: var(--text-default);
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-s-8);
+  padding: var(--spacing-xs) var(--spacing-m);
+  background-color: var(--background-flat);
+  transition: border-color 0.2s ease-in-out;
+
+  &__icon__left {
+    padding-right: var(--spacing-s);
+  }
+
+  &__icon__right {
+    padding-left: var(--spacing-s);
+  }
+
+  &__error {
+    border-color: var(--text-status-error);
+  }
+
+  &__success {
+    border-color: var(--text-status-success);
+  }
+
+  &__disabled {
+    cursor: not-allowed;
+    background-color: var(--background-disabled);
+  }
+
+  .input__icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    path {
+      color: var(--text-subtle);
+    }
+
+    &__close {
+      path {
+        stroke-width: 2px;
+      }
+    }
+  }
+
+  .input__field {
+    width: 100%;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: var(--s-font-size);
+    padding: 0;
+    margin: 0;
+    font-weight: var(--font-weight-semi-bold);
+    height: calc(var(--xs-font-size) * 2);
+    &::placeholder {
+      color: var(--text-subtlest);
+    }
+    &__block {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      &__placeholder {
+        color: var(--text-subtlest);
+      }
+    }
+    &__custom {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      min-height: calc(var(--xs-font-size) * 2);
+      height: auto;
+      &__placeholder {
+        color: var(--text-subtlest);
+      }
+    }
+    &__notSelectable {
+      user-select: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.input:focus-within {
+  @include inputFocus;
+}

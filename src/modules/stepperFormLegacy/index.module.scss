@@ -1,0 +1,176 @@
+.stepper-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 800px;
+  height: min-content;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-text {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+
+    .description {
+      color: var(--text-default);
+    }
+  }
+
+  .stepper-sections {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    gap: 24px;
+    height: 100%;
+
+    .dropdown {
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
+
+    .meeting-section {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      a {
+        text-decoration: none;
+      }
+    }
+    .meeting-details {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .meeting-schedule-container {
+      display: flex;
+      gap: 16px;
+    }
+    .meeting-schedule {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .calendar-icon-container {
+      display: flex;
+      padding: 6px 8px;
+      width: 32px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      background: #eff4f9;
+      border-radius: 200px;
+
+      .calendar-icon {
+        height: 16px;
+        width: 16px;
+      }
+    }
+    .stepper-section-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      &__status {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      &__grouped_input {
+        gap: 0px;
+        &__chip {
+          border-radius: 4px !important;
+        }
+        &__fields {
+          padding-bottom: 24px;
+        }
+      }
+      &__form {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+      }
+      &__action {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      &__collapsible {
+        padding: 0px;
+      }
+    }
+    .section-field-checkbox {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    &__info-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      width: 100%;
+      gap: 14px;
+      &__modal-container {
+        min-width: 90%;
+        max-height: 90vh;
+      }
+      &__modal {
+        height: 80vh;
+        overflow: scroll;
+      }
+    }
+  }
+
+  .stepper-radio {
+    display: flex;
+    justify-content: left;
+  }
+
+  .stepper-modal {
+    width: 80%;
+  }
+  .section-button {
+    width: 100%;
+  }
+  .section-field {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .form-section-field > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__action {
+    width: inherit;
+    position: sticky;
+    background-color: #fff;
+    z-index: 100;
+    bottom: 4px;
+    &__btn {
+      width: 100%;
+    }
+  }
+}
+
+.steps-info {
+  display: flex;
+  width: 140px;
+  height: 30px;
+  border-radius: 2000px;
+  background-color: #e8eaed;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

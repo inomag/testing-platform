@@ -1,0 +1,346 @@
+{
+  "extends": [
+    "airbnb",
+    "eslint-config-prettier",
+    "plugin:jest-dom/recommended",
+    "plugin:testing-library/dom",
+    "plugin:testing-library/react",
+    "plugin:import/react",
+    "plugin:react-hooks/recommended",
+    "plugin:storybook/recommended"
+  ],
+  "ignorePatterns": [
+    "scripts/dev/initializeNewApp/template/*",
+    "packages/eslint"
+  ],
+  "plugins": [
+    "prettier",
+    "testing-library",
+    "jest-dom",
+    "react",
+    "react-hooks",
+    "import",
+    "vymo-ui"
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "settings": {},
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "babelOptions": {
+      "presets": [["babel-preset-react-app", false]]
+    }
+  },
+  "rules": {
+    "import/no-cycle": "error",
+    "require-jsdoc": [
+      "warn",
+      {
+        "require": {
+          "FunctionDeclaration": false,
+          "MethodDefinition": false,
+          "ClassDeclaration": false,
+          "ArrowFunctionExpression": false,
+          "FunctionExpression": false
+        }
+      }
+    ],
+    "vymo-ui/restrict-import": [
+      "error",
+      {
+        "rootAlias": "src",
+        "universalAllow": [
+          "src/workspace/axios",
+          "src/workspace/utils",
+          "src/workspace/selectors",
+          "src/workspace/constants",
+          "src/designTokens/themes",
+          "src/featureFlags",
+          "src/assets",
+          "src/logger",
+          "src/hooks",
+          "src/indexDb/db",
+          "src/i18n"
+        ],
+        "universalDisallow": [],
+        "rules": {
+          "@vymo/ui/atoms": {
+            "relativeImportDepth": 1,
+            "allow": ["src/@vymo/ui/atoms/.+"],
+            "disallow": []
+          },
+          "@vymo/ui/blocks": {
+            "relativeImportDepth": 1,
+            "allow": ["src/@vymo/ui/blocks/.+", "src/@vymo/ui/atoms"],
+            "disallow": []
+          },
+          "@vymo/ui/molecules": {
+            "relativeImportDepth": 1,
+            "allow": [
+              "src/@vymo/ui/molecules/.+",
+              "src/@vymo/ui/blocks",
+              "src/@vymo/ui/atoms"
+            ],
+            "disallow": []
+          },
+          "@vymo/ui/components": {
+            "relativeImportDepth": 1,
+            "allow": [
+              "src/@vymo/ui/molecules",
+              "src/@vymo/ui/blocks",
+              "src/@vymo/ui/atoms"
+            ],
+            "disallow": []
+          },
+          "modules": {
+            "relativeImportDepth": 1,
+            "allow": [
+              "src/@vymo/ui",
+              "src/models",
+              "src/store",
+              "src/localStorage",
+              "src/featureFlags",
+              "src/workspace/slice",
+              "src/modules/constants",
+              "src/modules/types",
+              "src/workspace/childComponent"
+            ],
+            "disallow": []
+          },
+          "models": {
+            "allow": [
+              "src/models",
+              "src/store",
+              "src/localStorage",
+              "src/featureFlags",
+              "src/workspace/slice"
+            ],
+            "disallow": []
+          }
+        }
+      }
+    ],
+    "vymo-ui/enforce-component-export-style": "error",
+    "testing-library/await-async-query": "error",
+    "testing-library/no-await-sync-query": "error",
+    "testing-library/no-debugging-utils": 1,
+    "jsx-a11y/href-no-hash": ["off"],
+    "react/jsx-props-no-spreading": ["off"],
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "tabWidth": 2,
+        "ignoreComments": true,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "max-lines": [
+      "error",
+      {
+        "max": 600,
+        "skipComments": true
+      }
+    ],
+    "max-lines-per-function": [
+      "error",
+      {
+        "max": 80,
+        "skipComments": true
+      }
+    ],
+    "import/prefer-default-export": ["off"],
+    "no-plusplus": ["off"],
+    "curly": ["error", "all"],
+    "complexity": ["error", 11],
+    "max-depth": ["error", 5],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "indent": "off",
+    "@typescript-eslint/indent": "off",
+    "no-param-reassign": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "plugins": [
+        "@typescript-eslint",
+        "prettier",
+        "testing-library",
+        "jest-dom",
+        "react",
+        "react-hooks",
+        "import"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "extends": [
+        "airbnb-typescript",
+        "eslint-config-prettier",
+        "plugin:jest-dom/recommended",
+        "plugin:testing-library/dom",
+        "plugin:testing-library/react",
+        "plugin:import/react"
+      ],
+      "parserOptions": {
+        "project": ["./tsconfig.json"]
+      },
+      "rules": {
+        "import/no-extraneous-dependencies": ["off"],
+        "react/react-in-jsx-scope": 2,
+        "react/prop-types": "off",
+        "react/require-default-props": "off",
+        "no-param-reassign": ["off"],
+        "no-restricted-imports": [
+          "error",
+          {
+            "paths": ["modules"],
+            "patterns": ["src/pages/**/*"]
+          }
+        ],
+        "@typescript-eslint/indent": "off"
+      }
+    },
+    {
+      "files": ["*.jsx", "*.tsx"],
+      "rules": {
+        "max-lines-per-function": [
+          "error",
+          {
+            "max": 500
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "src/module/**",
+        "src/workspace/**",
+        "src/apps/**",
+        "src/store/**"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    },
+    {
+      "files": ["**/*.spec.**"],
+      "plugins": ["jest"],
+      "extends": ["plugin:jest/recommended"],
+      "rules": {
+        "import/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": true
+          }
+        ],
+        "jest/prefer-expect-assertions": "off",
+        "max-lines-per-function": "off",
+        "max-lines": [
+          "error",
+          {
+            "max": 1000,
+            "skipComments": true
+          }
+        ]
+      }
+    },
+    {
+      "files": ["**/integration/*.spec.**"],
+      "rules": {
+        "import/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": true
+          }
+        ],
+        "jest/expect-expect": "off",
+        "jest/valid-expect": "off",
+        "max-lines-per-function": "off",
+        "max-lines": [
+          "error",
+          {
+            "max": 1000,
+            "skipComments": true
+          }
+        ]
+      }
+    },
+    {
+      "files": ["**/*.stories.**"],
+      "rules": {
+        "react/function-component-definition": ["off"],
+        "import/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": true
+          }
+        ],
+        "max-lines-per-function": "off",
+        "max-lines": [
+          "error",
+          {
+            "max": 1000,
+            "skipComments": true
+          }
+        ]
+      }
+    },
+    {
+      "files": ["scripts/**", "**/*.stories.*"],
+      "rules": {
+        "no-console": "off"
+      }
+    },
+    {
+      "files": ["cypress/**", "cypress.config.ts", "config/**", "scripts/**"],
+      "rules": {
+        "testing-library/await-async-utils": ["off"],
+        "testing-library/prefer-screen-queries": ["off"],
+        "import/no-extraneous-dependencies": ["off"],
+        "no-restricted-imports": "off",
+        "no-console": "off"
+      }
+    },
+    {
+      "files": ["src/mock/serverData/**"],
+      "rules": {
+        "no-param-reassign": ["off"],
+        "global-require": ["off"]
+      }
+    },
+    {
+      "files": ["src/i18n/translations/**", "src/i18n/keys.js"],
+      "rules": {
+        "max-lines": "off"
+      }
+    }
+  ]
+}

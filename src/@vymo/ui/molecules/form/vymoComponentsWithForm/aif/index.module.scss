@@ -1,0 +1,31 @@
+.aifWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  font-size: 10px;
+  align-items: center;
+  &__addButton {
+  }
+}
+.groupCollapsible {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+  }
+  &__text {
+    font-size: calc(var(--xs-font-size) - 1px);
+    font-weight: 200;
+    margin: 0 2%;
+  }
+  &__icon {
+    margin: 0 1.5%;
+    width: 16px;
+    position: relative;
+    top: 1px;
+  }
+}

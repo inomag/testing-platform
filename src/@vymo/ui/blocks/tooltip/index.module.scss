@@ -1,0 +1,24 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.tooltip {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tooltip_content {
+  font-size: var(--m-font-size);
+  color: var(--text-subtle);
+  padding: 8px;
+  @media screen and (max-width: $desktop-breakpoint) {
+    font-size: var(--m-font-size);
+  }
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    font-size: var(--xs-font-size);
+  }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    font-size: var(--xs-font-size);
+  }
+}

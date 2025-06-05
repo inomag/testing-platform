@@ -1,0 +1,184 @@
+{
+  "message": "success",
+  "result": {
+    "visitor": {
+      "code": "173763845"
+    },
+    "template": {
+      "type": "custom",
+      "code": "lob_select",
+      "actionType": "lob_select",
+      "actionCategory": "MultiLobCardCategory",
+      "title": "Choose your interests",
+      "description": "Please select one to get started",
+      "meta": {
+        "ongoing_lob_cards": [
+          {
+            "title": "Aditya Birla Sun Life Insurance",
+            "bullet_list": ["Test 1", "Test 2"],
+            "multimedia": [
+              {
+                "thumbnail": "",
+                "resourceUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+              },
+              {
+                "thumbnail": "",
+                "resourceUrl": "https://fastly.picsum.photos/id/466/200/300.jpg?hmac=_8Qj7TNFwkiL8YxUhAgf6TvYTucTPN-IIT0yy-4F9AE"
+              },
+              {
+                "thumbnail": "",
+                "resourceUrl": "https://media.w3.org/2010/05/sintel/trailer.mp4"
+              },
+              {
+                "thumbnail": "",
+                "resourceUrl": "https://podcasts.ceu.edu/sites/podcasts.ceu.edu/files/sample.doc"
+              }
+            ],
+            "lob_code": "absli_company",
+            "module": "absli_bp7m6i-recruitment_leads_124r3a"
+          }
+        ],
+        "recommended_lob_cards": [
+          {
+            "title": "Aditya Birla Asset Management",
+            "bullet_list": ["Test 1", "Test 2"],
+            "multimedia": [
+              {
+                "thumbnail": "",
+                "resourceUrl": ""
+              }
+            ],
+            "lob_code": "amc_company",
+            "module": "abslamc_z2psx7-recruitment_leads_tdhixr"
+          }
+        ],
+        "active_lob_cards": [
+          {
+            "title": "test active entity",
+            "tag": "primary",
+            "lob_branch_name": "Test branch",
+            "relationship_manager": "Test Manager",
+            "lob_code": "test"
+          }
+        ]
+      },
+      "cta": [
+        {
+          "type": "action",
+          "title": "Continue",
+          "action": "lob_select"
+        }
+      ]
+    }
+  },
+  "portalConfig": {
+    "branding": {
+      "code": "absli-recruitment-portal",
+      "deleted": false,
+      "domain": "https://absli-recruitment-portal.lms.getvymo.com",
+      "logo": {
+        "height": 48,
+        "url": "https://i.postimg.cc/wjpYzyr7/240131-ABC-Life-Insurance-Identity-RGB-Lockup-White-V1-01-1.png",
+        "width": 90
+      },
+      "logoBackgroundColor": "#ffffff",
+      "banner": [
+        {
+          "height": 400,
+          "url": "https://i.postimg.cc/zB9Yp0Wt/Frame-1420.png",
+          "width": 700
+        },
+        {
+          "height": 400,
+          "url": "https://i.postimg.cc/8PW3gYvg/Screenshot-2024-09-16-at-12-57-37-PM.png",
+          "width": 700
+        },
+        {
+          "height": 400,
+          "url": "https://i.postimg.cc/N04ML5vB/2b30bec61651a302655253b1a9b2ee2fc6c54b0ef8d8745ceb89ed7e9df2dbbe-Aditya-Birla-Group-Logo-Vector-600x.jpg",
+          "width": 700
+        }
+      ],
+      "theme": {
+        "background": "#ffffff",
+        "primary": "#bf3743",
+        "secondary": "#f8e7ea",
+        "tertiary": "#44546F",
+        "font": "#44546F",
+        "heading": "#172B4D",
+        "error": "#f44336",
+        "warning": "#ffa726",
+        "info": "#29b6f6",
+        "success": "#66bb6a"
+      },
+      "loader": "spinner",
+      "email": "email",
+      "phone": "phone",
+      "bannerTitle": "Hey there! Welcome to Aditya Birla Sun Life Insurance.",
+      "bannerDescription": "Begin your journey to success as an agent today!"
+    },
+    "i18nSettings": {
+      "enabled": true,
+      "standardised_iana_timezone": "UTC",
+      "iana_timezone": "Asia/Kolkata",
+      "locale": "en-IN",
+      "language": "en",
+      "country": "IN",
+      "currency": "₹",
+      "currency_iso": "INR",
+      "quantity": "KLC",
+      "country_calling_code": "91",
+      "client_date_time_config": {
+        "date_in_curr_year": {
+          "dateTimeFormat": "DD_MMM_YYYY",
+          "relativeFormat": false
+        },
+        "date": {
+          "dateTimeFormat": "DD_MMM_YYYY",
+          "relativeFormat": false
+        },
+        "meeting_date_time_in_curr_year": {
+          "dateTimeFormat": "DAY_DD_MMM-TIME",
+          "relativeFormat": true
+        },
+        "meeting_date_not_in_curr_year": {
+          "dateTimeFormat": "DD_MMM_YYYY-TIME",
+          "relativeFormat": false
+        },
+        "date_range": {
+          "dateTimeFormat": "DD_MMM_YYYY",
+          "relativeFormat": false
+        },
+        "date_in_chart": {
+          "dateTimeFormat": "MMM_YY",
+          "relativeFormat": false
+        },
+        "time_range": {
+          "dateTimeFormat": "HH_MM_A",
+          "relativeFormat": false
+        },
+        "month_day_in_cal": {
+          "dateTimeFormat": "MMM_DD",
+          "relativeFormat": false
+        },
+        "month_year_in_cal": {
+          "dateTimeFormat": "MMM_YYYY",
+          "relativeFormat": false
+        },
+        "date_time_with_seconds": {
+          "dateTimeFormat": "DD_MM_YYYY_HH_MM_SS_SLASH",
+          "relativeFormat": false
+        },
+        "day_month_date": {
+          "dateTimeFormat": "DAY_MMM_DD",
+          "relativeFormat": true
+        },
+        "time": {
+          "dateTimeFormat": "H_MM_A",
+          "relativeFormat": false
+        }
+      }
+    },
+    "loginType": "PAN"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "message": "success",
+  "result": {
+    "visitor": {
+      "code": "abcd1234d"
+    },
+    "template": {
+      "title": "Contract",
+      "description": "This will redirect to another page",
+      "type": "custom",
+      "code": "callback_action",
+      "actionCategory": "PortalCallbackIntegrationActionCategory",
+      "cta": null,
+      "meta": {
+        "url": "https://staging.lms.getvymo.com/"
+      }
+    }
+  },
+  "statusCode": 200
+}

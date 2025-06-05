@@ -1,0 +1,34 @@
+{
+  "message": "success",
+  "result": {
+    "visitor": {},
+    "page": {
+      "component": {
+        "type": "identification",
+        "title": "How do you want to proceed?",
+        "description": "Choose a way in which you want to proceed with your application filling.",
+        "meta": {
+          "title": "Authentication",
+          "description": "Authentication desc",
+          "component": {
+            "type": "identification",
+            "meta": {
+              "type": "pan",
+              "inputs": [
+                {
+                  "code": "pan",
+                  "name": "Pan Number",
+                  "type": "input",
+                  "options": [],
+                  "isMulti": false,
+                  "readOnly": false,
+                  "required": true
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

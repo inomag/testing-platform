@@ -1,0 +1,64 @@
+@import '../../../../designTokens/scssVariables.scss';
+@import '../../../../designTokens/cssVariables.scss';
+
+.assessment {
+  &__card {
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--spacing-xl);
+
+      &__title {
+        font-size: var(--s-font-size);
+        font-weight: var(--font-weight-bold);
+        word-wrap: break-word;
+        white-space: normal;
+        overflow: hidden;
+      }
+
+      &__timer {
+        margin-top: var(--spacing-s);
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      &__question {
+        font-size: var(--s-font-size);
+        font-weight: var(--font-weight-bold);
+        word-wrap: break-word;
+        white-space: normal;
+        margin-bottom: var(--spacing-m);
+      }
+      &__radioGroup {
+        &__option {
+          margin: var(--spacing-m);
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-s);
+    margin-top: var(--spacing-xl);
+    width: 100%;
+
+    button:only-child {
+      width: 100%;
+    }
+
+    button {
+      &:first-child {
+        width: 30%;
+      }
+
+      &:last-child {
+        width: 100%;
+      }
+    }
+  }
+}

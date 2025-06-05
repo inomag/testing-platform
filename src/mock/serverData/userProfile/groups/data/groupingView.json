@@ -1,0 +1,60 @@
+{
+  "results": [
+    {
+      "group_name": "Personal Info",
+      "data": [
+        {
+          "inputs": [
+            {
+              "type": "text",
+              "code": "code",
+              "name": "Emp Id",
+              "value": "RAJESH809",
+              "_id": "675c0c3dfce8fe01375e9f48"
+            },
+            {
+              "type": "text",
+              "code": "name",
+              "name": "Name",
+              "value": "Rajesh Balla",
+              "_id": "675c0c3dfce8fe01375e9f4c"
+            },
+            {
+              "type": "code_name_spinner",
+              "code": "role",
+              "name": "User Role",
+              "value": "AGENT",
+              "data": {
+                "code": "AGENT"
+              },
+              "_id": "675c0c3dfce8fe01375e9f57"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group_name": "Contact Info",
+      "data": [
+        {
+          "inputs": [
+            {
+              "type": "email",
+              "code": "email",
+              "name": "Login Id",
+              "value": "rajesh@nam.com",
+              "_id": "675c0c3dfce8fe01375e9f4e"
+            },
+            {
+              "type": "phone",
+              "code": "phone",
+              "name": "Phone",
+              "value": "+918123575679",
+              "_id": "675c0c3dfce8fe01375e9f51"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

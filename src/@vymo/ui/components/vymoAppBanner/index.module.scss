@@ -1,0 +1,24 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.appBanner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-l) var(--spacing-s);
+  background-color: #f5f6f9;
+  &__icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-s);
+    &__close {
+      margin-right: var(--spacing-s);
+      height: var(--l-font-size);
+      > path {
+        color: var(--color-neutral-500);
+        stroke-width: 2px;
+      }
+    }
+  }
+}

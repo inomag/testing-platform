@@ -1,0 +1,22 @@
+@import '../../../designTokens/scssVariables.scss';
+
+.userAction {
+  background: var(--color-neutral-300);
+  color: var(--text-default);
+  border: none;
+  border-radius: var(--spacing-xs);
+
+  &__activity {
+    border-radius: var(--spacing-xs);
+  }
+}
+
+.userActionWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  &__customActions {
+    display: flex;
+    gap: var(--spacing-s);
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "code": "sample1",
+  "name": "sample1",
+  "tile": {
+    "name": "sample 1 Feature",
+    "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8cGF0aCBkPSJNMzAsMWg0MGwyOSwyOXY0MGwtMjksMjloLTQwbC0yOS0yOXYtNDB6IiBzdHJva2U9IiMwMDAiIGZpbGw9Im5vbmUiLz4gCiAgPHBhdGggZD0iTTMxLDNoMzhsMjgsMjh2MzhsLTI4LDI4aC0zOGwtMjgtMjh2LTM4eiIgZmlsbD0iI2EyMyIvPiAKICA8dGV4dCB4PSI1MCIgeT0iNjgiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjwhW0NEQVRBWzQxMF1dPjwvdGV4dD4KPC9zdmc+Cg==",
+    "description": "sample1 test data"
+  },
+  "config": {},
+  "templateConfig": {
+    "api": {
+      "url": "",
+      "payload": {},
+      "configPath": []
+    },
+    "ui": [
+      {
+        "id": "node-1",
+        "type": "Text",
+        "position": {
+          "x": 27.1171875,
+          "y": 40.828125
+        },
+        "data": {
+          "componentType": "atoms",
+          "elementType": "Text",
+          "key": "node-1",
+          "children": "Name"
+        },
+        "width": 55,
+        "height": 38
+      },
+      {
+        "id": "node-2",
+        "type": "Input",
+        "position": {
+          "x": 23.1171875,
+          "y": 69.828125
+        },
+        "data": {
+          "componentType": "atoms",
+          "elementType": "Input",
+          "key": "node-2",
+          "required": true,
+          "value": {
+            "path": "{{formConfig__name}}",
+            "query": "const query = (data, formData)=>{ return data.toUpperCase() }",
+            "saveQuery": "const saveQuery = (data, formData)=>{ return data.toLowerCase() }"
+          },
+          "width": 97,
+          "height": 31
+        },
+        "width": 209,
+        "height": 54,
+        "selected": false,
+        "dragging": false,
+        "positionAbsolute": {
+          "x": 23.1171875,
+          "y": 69.828125
+        }
+      }
+    ]
+  },
+  "project": "selfserve",
+  "source": "bitbucket",
+  "jira": { "id": "", "validated": "not_started", "error": "" },
+  "publish": {
+    "branch": "",
+    "pr": "",
+    "commitsSync": 0,
+    "status": "not_started"
+  }
+}

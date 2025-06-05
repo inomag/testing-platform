@@ -1,0 +1,29 @@
+.customLoader {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    &__statusText {
+      font-size: var(--m-font-size);
+      font-weight: var(--font-weight-semi-bold);
+      color: var(--text-default);
+    }
+
+    &__description {
+      font-size: var(--s-font-size);
+      font-weight: var(--font-weight-medium);
+      color: var(--text-subtlest);
+    }
+  }
+}

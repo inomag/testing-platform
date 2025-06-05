@@ -1,0 +1,96 @@
+# git-cliff configuration file
+
+[changelog]
+header = """
+# Vymo UI Components
+
+## Install
+
+```bash
+yarn add @vymo/ui
+```
+
+## How to use
+
+### Import Css at global level
+
+```bash
+import '@vymo/ui/atoms/index.css';
+import '@vymo/ui/blocks/index.css';
+import '@vymo/ui/components/index.css';
+```
+
+### Import required component
+
+```bash
+import { Checkbox, Chip } from '@vymo/ui/atoms';
+import { Card, Loader } from '@vymo/ui/blocks';
+import {Form} from @vymo/ui/components';
+```
+
+## Components Supported
+
+All ui elements under **atoms** and **blocks** are supported.
+
+Supported elements can be checked on [Storybook](https://staging.lms.getvymo.com/web-platform/branch/storybook/index.html?path=/docs/design-tokens-border--docs)
+
+## Changelog
+"""
+
+body = """
+
+{% if version %}\
+    ### [{{ version | trim_start_matches(pat="v") }}] - {{ timestamp | date(format="%Y-%m-%d") }}
+{% else %}\
+    ### [unreleased]
+{% endif %}
+{% for group, commits in [commits.0] | group_by(attribute="group") %}
+    {% if version and commits | length > 0 %}\
+        <details>
+        <summary>{{ group | upper_first }} {% if group == "Breaking Changes" %}⚡{% elif group == "Features" %}🚀{% elif group == "Bug Fixes" %}🐛{% elif group == "Infra" %}🏗️{% elif group == "Tech Debt" %}🔧{% elif group == "Others" %}⚙️{% elif group == "Security" %}🔒{% endif %}</summary>
+        {% for commit in commits %}
+            - {{ commit.message | upper_first }} ([{{ commit.id | truncate(length=7, end="") }}]({{ commit.id }}))
+        {% endfor %}
+        </details>
+    {% endif %}
+{% endfor %}\n
+"""
+
+footer = """
+## More About Web Platform
+
+Refer this link [Web Platform](https://teamvymo.atlassian.net/wiki/spaces/ENGG/pages/3216146466/Web+Platform)
+"""
+
+trim = true
+
+[git]
+conventional_commits = true
+filter_unconventional = false
+split_commits = false
+
+commit_preprocessors = [
+   { pattern = "^(.*\\(pull request #(\\d+)\\))(?:\r?\n(.*(?:\r?\n.*\\)*)))?\r?\n([\\s\\S]*)", replace = " ${3} in PR [#${2}](https://bitbucket.org/vymo/vymo-web-platform/pull-requests/${2}) " },
+
+]
+
+commit_parsers = [
+    { message = "scope!", group = "Breaking Changes" },
+    { message = "feat", group = "Features" },
+    { message = "fix", group = "Bug Fixes" },
+    { message = "^*", group = "Others" },
+]
+
+protect_breaking_commits = false
+filter_commits = true
+tag_pattern = "@vymo/ui"
+skip_tags = ""
+ignore_tags = ""
+topo_order = false
+sort_commits = "newest"
+
+
+[bump]
+initial_tag = "1.0.0"
+
+

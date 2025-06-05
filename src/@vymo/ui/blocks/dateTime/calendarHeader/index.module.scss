@@ -1,0 +1,29 @@
+.customHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__content {
+    font-weight: 550;
+    > button {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+  }
+  &__nav__left {
+    display: flex;
+    &__button {
+      padding-left: 12px;
+      padding-right: 0px;
+      color: var(--color-neutral-500);
+    }
+  }
+
+  &__nav__right {
+    display: flex;
+    &__button {
+      padding-right: 12px;
+      padding-left: 0px;
+      color: var(--color-neutral-500);
+    }
+  }
+}

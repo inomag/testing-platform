@@ -1,0 +1,23 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.listItem {
+  @include basePadding;
+  cursor: pointer;
+  outline: none;
+  font-size: var(--s-font-size);
+  display: flex;
+  flex-direction: column;
+
+  &__hover {
+    background-color: var(--background-interactions-default-hover);
+  }
+
+  &__selected {
+    background-color: var(--background-default);
+    font-weight: 600;
+
+    &:hover {
+      background-color: var(--background-interactions-default-hover);
+    }
+  }
+}

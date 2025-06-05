@@ -1,0 +1,45 @@
+@import '../../../designTokens/scssVariables.scss';
+
+.item_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  margin: var(--spacing-m) 0;
+  color: var(--text-filled);
+  &__error {
+    width: 100%;
+    border: var(--border-status-error);
+    border-radius: var(--radius-m-12);
+    &:focus-within {
+      border: inherit;
+    }
+  }
+
+  &:focus-within .item__errors {
+    display: none;
+  }
+
+  &__item__error {
+    font-size: var(--s-font-size);
+    display: flex;
+    align-items: center;
+    font-weight: var(--font-weight-semi-bold);
+    gap: 4px;
+  }
+  &__item__error_msg {
+    flex-basis: fit-content;
+    color: var(--text-status-error);
+  }
+}
+.code_editor_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  &__codeEditor {
+    height: 30vh;
+  }
+}

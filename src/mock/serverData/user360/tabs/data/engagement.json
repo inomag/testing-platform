@@ -1,0 +1,1655 @@
+{
+  "last_engagement": {
+    "total": 2,
+    "results": [
+      {
+        "_id": "665059301b6f78e4a52abc91",
+        "external_id": "RYpU9ka4n",
+        "name": "Internal reviews",
+        "category": "USER_CALENDAR_ITEM",
+        "data": {
+          "vo": {
+            "vo_module": {
+              "type": "",
+              "code": "",
+              "name": ""
+            },
+            "referral": {},
+            "relationship": {
+              "code": "",
+              "primary": false
+            },
+            "code": "",
+            "start_state": "",
+            "state": "",
+            "state_on_activity_completion": "",
+            "external_id": "",
+            "name": "",
+            "pii": []
+          },
+          "task": {
+            "content_share": {
+              "template_meta": {
+                "name": "",
+                "language": ""
+              },
+              "message": {
+                "body": "",
+                "preview_body": "",
+                "type": ""
+              },
+              "email": {
+                "body": "",
+                "preview_body": "",
+                "subject": "",
+                "bcc_recipients": [],
+                "to_recipients": [],
+                "cc_recipients": [],
+                "type": ""
+              },
+              "medium": "",
+              "medium_type": "",
+              "template_vars": [],
+              "preview_content_map": "",
+              "contents": []
+            },
+            "attributes": {
+              "scheduled_time": {
+                "date": "2024-05-24T19:00:00+05:30",
+                "duration": "1800000",
+                "code": "BPe4KaUbKj"
+              },
+              "notes": "",
+              "internal_reviews_purpose": "Monthly 1:1",
+              "new_g2b4aksej5": "Option_1",
+              "address_line_2": "",
+              "recurring": false,
+              "engagement": true,
+              "multi_assignee": true,
+              "newlogs_for_check_h35rpvb7ufh": "B",
+              "activity_reason_for_cancellation": "ssss"
+            },
+            "type": "meeting",
+            "code": "internal_reviews-iy0",
+            "hierarchy": ["internal_reviews-iy0"]
+          },
+          "user": {
+            "code": "TEST890",
+            "name": "TEST890 Unlicensed",
+            "region_hierarchy": ["all", "TEST890"],
+            "region": "TEST890",
+            "hierarchy_key": "APBKVrWx1RV",
+            "member_regions": ["all", "TEST890"],
+            "attributes": {
+              "email": "test890@mail.com"
+            }
+          },
+          "participants": [
+            {
+              "code": "998",
+              "name": "TestMayUser03",
+              "region": "998",
+              "region_hierarchy": ["all", "998"],
+              "member_regions": ["all", "998"],
+              "hierarchy_key": "kox9GFJLNu",
+              "planned": true,
+              "attributes": {
+                "email": "testmayuser03@getvymo.com"
+              },
+              "primary": false,
+              "_id": "665059301b6f78e4a52abc92",
+              "attended": true
+            },
+            {
+              "code": "TEST890",
+              "name": "TEST890 Unlicensed",
+              "region": "TEST890",
+              "region_hierarchy": ["all", "TEST890"],
+              "member_regions": ["all", "TEST890"],
+              "hierarchy_key": "APBKVrWx1RV",
+              "planned": true,
+              "attributes": {
+                "email": "test890@mail.com"
+              },
+              "primary": false,
+              "_id": "665059301b6f78e4a52abc93",
+              "attended": true
+            }
+          ],
+          "other_participants": [],
+          "vos": [],
+          "dimension_attributes": []
+        },
+        "schedule": {
+          "end_date": "2024-05-24T14:00:00.000Z",
+          "date": "2024-05-24T13:30:00.000Z",
+          "duration": 1800000,
+          "code": "BPe4KaUbKj"
+        },
+        "planned_subtasks": [],
+        "sub_tasks": [],
+        "approvals": [],
+        "create_inputs": [
+          {
+            "type": "meeting",
+            "code": "scheduled_time",
+            "name": "Scheduled time",
+            "value": "May 24 at 01:30 pm for 30.0 mins",
+            "data": {
+              "date": "2024-05-24T13:30:00.000Z",
+              "duration": "1800000"
+            },
+            "_id": "665059301b6f78e4a52abc94"
+          },
+          {
+            "type": "text",
+            "code": "notes",
+            "name": "Notes",
+            "value": "",
+            "_id": "665059301b6f78e4a52abc95"
+          },
+          {
+            "type": "code_name_spinner",
+            "code": "internal_reviews_purpose",
+            "name": "Internal Reviews Purpose",
+            "value": "Monthly 1:1",
+            "data": {
+              "code": "monthly1:1"
+            },
+            "_id": "665059301b6f78e4a52abc96"
+          },
+          {
+            "type": "code_name_spinner",
+            "code": "new_g2b4aksej5",
+            "name": "NEW",
+            "value": "Option_1",
+            "data": {
+              "code": "option_1"
+            },
+            "_id": "665059301b6f78e4a52abc97"
+          },
+          {
+            "type": "text",
+            "code": "address_line_2",
+            "name": "Address line 2",
+            "value": "",
+            "_id": "665059301b6f78e4a52abc98"
+          }
+        ],
+        "meeting_link": [],
+        "completed": {
+          "start_date": "2024-05-24T09:09:36.974Z",
+          "server_date": "2024-05-24T09:09:36.974Z",
+          "previous_sub_tasks": [],
+          "present_sub_tasks": []
+        },
+        "created": {
+          "code": "TEST890",
+          "name": "TEST890 Unlicensed",
+          "date": "2024-05-24T09:09:04.159Z",
+          "region": "TEST890",
+          "region_hierarchy": ["all", "TEST890"],
+          "hierarchy_key": "APBKVrWx1RV",
+          "server_date": "2024-05-24T09:09:04.159Z"
+        },
+        "last_updated": {
+          "code": "TEST890",
+          "name": "TEST890 Unlicensed",
+          "date": "2024-05-24T09:09:36.974Z",
+          "region": "TEST890",
+          "region_hierarchy": ["all", "TEST890"],
+          "hierarchy_key": "APBKVrWx1RV",
+          "server_date": "2024-05-24T09:09:36.974Z"
+        },
+        "assigned_by": {
+          "code": "TEST890",
+          "name": "TEST890 Unlicensed",
+          "date": "2024-05-24T09:09:04.159Z",
+          "region": "TEST890",
+          "region_hierarchy": ["all", "TEST890"],
+          "hierarchy_key": "APBKVrWx1RV",
+          "server_date": "2024-05-24T09:09:04.159Z"
+        },
+        "source": "USER",
+        "state": "COMPLETED",
+        "history": [
+          {
+            "event_id": "1c149228-5184-4ca7-b98e-4a560742a5b1",
+            "event_source": "",
+            "event_type": "calendar-created",
+            "last_updated": {
+              "code": "TEST890",
+              "name": "TEST890 Unlicensed",
+              "date": "2024-05-24T09:09:04.159Z",
+              "region": "TEST890",
+              "region_hierarchy": ["all", "TEST890"],
+              "hierarchy_key": "APBKVrWx1RV",
+              "server_date": "2024-05-24T09:09:04.159Z"
+            },
+            "participants": [
+              {
+                "code": "998",
+                "name": "TestMayUser03",
+                "region": "998",
+                "region_hierarchy": ["all", "998"],
+                "member_regions": ["all", "998"],
+                "hierarchy_key": "kox9GFJLNu",
+                "planned": true,
+                "attributes": {
+                  "email": "testmayuser03@getvymo.com"
+                },
+                "primary": false,
+                "_id": "665059301b6f78e4a52abc9a"
+              },
+              {
+                "code": "TEST890",
+                "name": "TEST890 Unlicensed",
+                "region": "TEST890",
+                "region_hierarchy": ["all", "TEST890"],
+                "member_regions": ["all", "TEST890"],
+                "hierarchy_key": "APBKVrWx1RV",
+                "planned": true,
+                "attributes": {
+                  "email": "test890@mail.com"
+                },
+                "primary": false,
+                "_id": "665059301b6f78e4a52abc9b"
+              }
+            ],
+            "user": {
+              "code": "TEST890",
+              "name": "TEST890 Unlicensed",
+              "region": "TEST890",
+              "region_hierarchy": ["all", "TEST890"],
+              "hierarchy_key": "APBKVrWx1RV",
+              "member_regions": ["all", "TEST890"]
+            },
+            "vos": [],
+            "pending_kafka_push": false,
+            "order": 1,
+            "_id": "665059301b6f78e4a52abc99"
+          },
+          {
+            "event_id": "2952f2bb-dbbd-48b6-9057-67f1db2dcf83",
+            "event_source": "",
+            "event_type": "calendar-completed",
+            "last_updated": {
+              "code": "TEST890",
+              "name": "TEST890 Unlicensed",
+              "date": "2024-05-24T09:09:36.974Z",
+              "region": "TEST890",
+              "region_hierarchy": ["all", "TEST890"],
+              "hierarchy_key": "APBKVrWx1RV",
+              "server_date": "2024-05-24T09:09:36.974Z"
+            },
+            "participants": [
+              {
+                "code": "998",
+                "name": "TestMayUser03",
+                "region": "998",
+                "region_hierarchy": ["all", "998"],
+                "member_regions": ["all", "998"],
+                "hierarchy_key": "kox9GFJLNu",
+                "planned": true,
+                "attended": true,
+                "attributes": {
+                  "email": "testmayuser03@getvymo.com"
+                },
+                "primary": false,
+                "_id": "665059301b6f78e4a52abc92"
+              },
+              {
+                "code": "TEST890",
+                "name": "TEST890 Unlicensed",
+                "region": "TEST890",
+                "region_hierarchy": ["all", "TEST890"],
+                "member_regions": ["all", "TEST890"],
+                "hierarchy_key": "APBKVrWx1RV",
+                "planned": true,
+                "attended": true,
+                "attributes": {
+                  "email": "test890@mail.com"
+                },
+                "primary": false,
+                "_id": "665059301b6f78e4a52abc93"
+              }
+            ],
+            "user": {
+              "code": "TEST890",
+              "name": "TEST890 Unlicensed",
+              "region": "TEST890",
+              "region_hierarchy": ["all", "TEST890"],
+              "hierarchy_key": "APBKVrWx1RV",
+              "member_regions": ["all", "TEST890"]
+            },
+            "vos": [],
+            "pending_kafka_push": false,
+            "order": 2,
+            "_id": "665059501b6f78e4a52abd13"
+          }
+        ],
+        "info": {
+          "inputs": [
+            {
+              "type": "meeting",
+              "code": "scheduled_time",
+              "name": "Scheduled time",
+              "value": "May 24 at 01:30 pm for 30.0 mins",
+              "data": {
+                "date": "2024-05-24T13:30:00.000Z",
+                "duration": "1800000"
+              },
+              "_id": "665059301b6f78e4a52abc9c"
+            },
+            {
+              "type": "text",
+              "code": "notes",
+              "name": "Notes",
+              "value": "",
+              "_id": "665059301b6f78e4a52abc9d"
+            },
+            {
+              "type": "code_name_spinner",
+              "code": "internal_reviews_purpose",
+              "name": "Internal Reviews Purpose",
+              "value": "Monthly 1:1",
+              "data": {
+                "code": "monthly1:1"
+              },
+              "_id": "665059301b6f78e4a52abc9e"
+            },
+            {
+              "type": "code_name_spinner",
+              "code": "new_g2b4aksej5",
+              "name": "NEW",
+              "value": "Option_1",
+              "data": {
+                "code": "option_1"
+              },
+              "_id": "665059301b6f78e4a52abc9f"
+            },
+            {
+              "type": "text",
+              "code": "address_line_2",
+              "name": "Address line 2",
+              "value": "",
+              "_id": "665059301b6f78e4a52abca0"
+            }
+          ]
+        },
+        "mode": "SCHEDULED",
+        "group_id": "fe8f6e23-cd93-4791-a633-c3aea4f8b174",
+        "source_context": {
+          "id": "",
+          "type": ""
+        },
+        "origin": "vymo",
+        "detect_ids": [],
+        "hierarchyUpdates": {
+          "history": []
+        },
+        "granted_regions": [],
+        "authorised_regions": ["all", "998", "TEST890"],
+        "relationships": [],
+        "code": "RYpU9ka4n",
+        "reschedules": [],
+        "reassigns": [],
+        "edits": [],
+        "complete_inputs": [
+          {
+            "type": "code_name_spinner",
+            "code": "newlogs_for_check_h35rpvb7ufh",
+            "name": "newlogs for check",
+            "value": "B",
+            "data": {
+              "code": "ssty55drak"
+            },
+            "_id": "665059501b6f78e4a52abd10"
+          },
+          {
+            "type": "text",
+            "code": "notes",
+            "name": "Notes",
+            "value": "",
+            "_id": "665059501b6f78e4a52abd11"
+          },
+          {
+            "type": "text",
+            "code": "activity_reason_for_cancellation",
+            "name": "Reason for cancellation",
+            "value": "ssss",
+            "_id": "665059501b6f78e4a52abd12"
+          }
+        ],
+        "cancel_inputs": [],
+        "_version": 2,
+        "__v": 1,
+        "description": ""
+      },
+      {
+        "_id": "663b170a28a5bd3b2e45b5b9",
+        "external_id": "786q9s91T",
+        "name": "Internal reviews",
+        "category": "USER_CALENDAR_ITEM",
+        "data": {
+          "vo": {
+            "vo_module": {
+              "type": "",
+              "code": "",
+              "name": ""
+            },
+            "referral": {},
+            "relationship": {
+              "code": "",
+              "primary": false
+            },
+            "code": "",
+            "start_state": "",
+            "state": "",
+            "state_on_activity_completion": "",
+            "external_id": "",
+            "name": "",
+            "pii": []
+          },
+          "task": {
+            "content_share": {
+              "template_meta": {
+                "name": "",
+                "language": ""
+              },
+              "message": {
+                "body": "",
+                "preview_body": "",
+                "type": ""
+              },
+              "email": {
+                "body": "",
+                "preview_body": "",
+                "subject": "",
+                "bcc_recipients": [],
+                "to_recipients": [],
+                "cc_recipients": [],
+                "type": ""
+              },
+              "medium": "",
+              "medium_type": "",
+              "template_vars": [],
+              "preview_content_map": "",
+              "contents": []
+            },
+            "attributes": {
+              "internal_reviews_purpose": "Monthly 1:1",
+              "new_g2b4aksej5": "Option_1",
+              "scheduled_time": "May 08 at 05:30 pm for 5.0 mins",
+              "notes": "",
+              "address_line_2": "test",
+              "recurring": false,
+              "engagement": true,
+              "multi_assignee": true,
+              "engagement_frequency": "Weekly",
+              "activity_reason_for_reschedule": "gyfhf",
+              "aadhaar": "777888888899",
+              "activity_reason_for_cancellation": "7777ghgh",
+              "newlogs_for_check_h35rpvb7ufh": "D",
+              "meeting": "May 09 at 05:30 am for 30.0 mins"
+            },
+            "type": "meeting",
+            "code": "internal_reviews-iy0",
+            "hierarchy": ["internal_reviews-iy0"]
+          },
+          "user": {
+            "code": "user360",
+            "name": "user360",
+            "region_hierarchy": ["all", "user360"],
+            "region": "user360",
+            "hierarchy_key": "koirVxZnDV",
+            "member_regions": ["all", "user360"],
+            "attributes": {
+              "email": "user360@testmay.com"
+            }
+          },
+          "participants": [
+            {
+              "code": "998",
+              "name": "TestMayUser03",
+              "region": "998",
+              "region_hierarchy": ["all", "998"],
+              "member_regions": ["all", "998"],
+              "hierarchy_key": "kox9GFJLNu",
+              "planned": true,
+              "attended": true,
+              "attributes": {
+                "email": "testmayuser03@getvymo.com"
+              },
+              "primary": false,
+              "_id": "663b170a28a5bd3b2e45b5ba"
+            },
+            {
+              "code": "17272",
+              "name": "Agency automation",
+              "region": "17272",
+              "region_hierarchy": ["all", "17272"],
+              "member_regions": ["all", "17272"],
+              "hierarchy_key": "koX0ymoZhu",
+              "planned": true,
+              "attended": true,
+              "attributes": {
+                "email": "automation@c360.com"
+              },
+              "primary": false,
+              "_id": "663b170a28a5bd3b2e45b5bb"
+            },
+            {
+              "code": "UserA",
+              "name": "User A",
+              "region": "UserA",
+              "region_hierarchy": ["all", "UserA"],
+              "member_regions": ["g_testmay_mayrole_bdr", "all", "UserA"],
+              "hierarchy_key": "AouHCzYnVK",
+              "planned": true,
+              "attended": true,
+              "attributes": {
+                "email": "user_a@getvymo.com"
+              },
+              "primary": false,
+              "_id": "663b170a28a5bd3b2e45b5bc"
+            },
+            {
+              "code": "unlicensed01",
+              "name": "unlicensed01 Automation",
+              "region": "unlicensed01",
+              "region_hierarchy": ["all", "user360", "unlicensed01"],
+              "member_regions": ["all", "user360", "unlicensed01"],
+              "hierarchy_key": "AoeojU5ROV",
+              "planned": true,
+              "attended": true,
+              "attributes": {
+                "email": "unlicensed01@testmay.com"
+              },
+              "primary": false,
+              "_id": "663b170a28a5bd3b2e45b5bd"
+            },
+            {
+              "code": "licensed01",
+              "name": "licensed01",
+              "region": "licensed01",
+              "region_hierarchy": ["all", "17272", "licensed01"],
+              "member_regions": ["all", "17272", "licensed01"],
+              "hierarchy_key": "G2Rb-x5S3u",
+              "planned": true,
+              "attended": true,
+              "attributes": {
+                "email": "licensed01@testmay.com"
+              },
+              "primary": false,
+              "_id": "663b170a28a5bd3b2e45b5be"
+            },
+            {
+              "code": "user360",
+              "name": "user360",
+              "region": "user360",
+              "region_hierarchy": ["all", "user360"],
+              "member_regions": ["all", "user360"],
+              "hierarchy_key": "koirVxZnDV",
+              "planned": true,
+              "attended": true,
+              "attributes": {
+                "email": "user360@testmay.com"
+              },
+              "primary": false,
+              "_id": "663b170a28a5bd3b2e45b5bf"
+            }
+          ],
+          "other_participants": [],
+          "vos": [],
+          "dimension_attributes": []
+        },
+        "schedule": {
+          "end_date": "2024-05-08T17:35:00.000Z",
+          "date": "2024-05-08T17:30:00.000Z",
+          "duration": 300000,
+          "code": "BP1gEwGyRj",
+          "detect": {
+            "schedule_code": "",
+            "vymo_verified": false,
+            "detect_event_id": "",
+            "date": "2024-05-08T06:11:04.839Z",
+            "_id": "663b1778b0aa5d2c5064e631"
+          }
+        },
+        "planned_subtasks": [],
+        "sub_tasks": [],
+        "approvals": [],
+        "create_inputs": [
+          {
+            "type": "code_name_spinner",
+            "code": "internal_reviews_purpose",
+            "name": "Internal Reviews Purpose",
+            "value": "Monthly 1:1",
+            "data": {
+              "code": "monthly1:1"
+            },
+            "_id": "663b170a28a5bd3b2e45b5c0"
+          },
+          {
+            "type": "code_name_spinner",
+            "code": "new_g2b4aksej5",
+            "name": "NEW",
+            "value": "Option_1",
+            "data": {
+              "code": "option_1"
+            },
+            "_id": "663b170a28a5bd3b2e45b5c1"
+          },
+          {
+            "type": "meeting",
+            "code": "scheduled_time",
+            "name": "Scheduled time",
+            "value": "May 08 at 09:30 am for 30.0 mins",
+            "data": {
+              "date": "2024-05-08T09:30:00.000Z",
+              "duration": "1800000"
+            },
+            "_id": "663b170a28a5bd3b2e45b5c2"
+          },
+          {
+            "type": "text",
+            "code": "notes",
+            "name": "Notes",
+            "value": "test 280",
+            "_id": "663b170a28a5bd3b2e45b5c3"
+          },
+          {
+            "type": "text",
+            "code": "address_line_2",
+            "name": "Address line 2",
+            "value": "test",
+            "_id": "663b170a28a5bd3b2e45b5c4"
+          }
+        ],
+        "meeting_link": [],
+        "completed": {
+          "start_date": "2024-05-08T06:11:28.919Z",
+          "server_date": "2024-05-08T06:11:28.919Z",
+          "previous_sub_tasks": [],
+          "present_sub_tasks": []
+        },
+        "created": {
+          "code": "user360",
+          "name": "user360",
+          "date": "2024-05-08T06:09:13.979Z",
+          "region": "user360",
+          "region_hierarchy": ["all", "user360"],
+          "hierarchy_key": "koirVxZnDV",
+          "server_date": "2024-05-08T06:09:13.979Z"
+        },
+        "last_updated": {
+          "code": "user360",
+          "name": "user360",
+          "date": "2024-05-08T06:11:28.919Z",
+          "region": "user360",
+          "region_hierarchy": ["all", "user360"],
+          "hierarchy_key": "koirVxZnDV",
+          "server_date": "2024-05-08T06:11:28.919Z"
+        },
+        "assigned_by": {
+          "code": "user360",
+          "name": "user360",
+          "date": "2024-05-08T06:09:13.979Z",
+          "region": "user360",
+          "region_hierarchy": ["all", "user360"],
+          "hierarchy_key": "koirVxZnDV",
+          "server_date": "2024-05-08T06:09:13.979Z"
+        },
+        "source": "USER",
+        "state": "COMPLETED",
+        "history": [
+          {
+            "event_id": "9cee64e0-a589-428f-9eec-88185c9a8345",
+            "event_source": "",
+            "event_type": "calendar-created",
+            "last_updated": {
+              "code": "user360",
+              "name": "user360",
+              "date": "2024-05-08T06:09:13.979Z",
+              "region": "user360",
+              "region_hierarchy": ["all", "user360"],
+              "hierarchy_key": "koirVxZnDV",
+              "server_date": "2024-05-08T06:09:13.979Z"
+            },
+            "participants": [
+              {
+                "code": "998",
+                "name": "TestMayUser03",
+                "region": "998",
+                "region_hierarchy": ["all", "998"],
+                "member_regions": ["all", "998"],
+                "hierarchy_key": "kox9GFJLNu",
+                "planned": true,
+                "attributes": {
+                  "email": "testmayuser03@getvymo.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5c6"
+              },
+              {
+                "code": "17272",
+                "name": "Agency automation",
+                "region": "17272",
+                "region_hierarchy": ["all", "17272"],
+                "member_regions": ["all", "17272"],
+                "hierarchy_key": "koX0ymoZhu",
+                "planned": true,
+                "attributes": {
+                  "email": "automation@c360.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5c7"
+              },
+              {
+                "code": "UserA",
+                "name": "User A",
+                "region": "UserA",
+                "region_hierarchy": ["all", "UserA"],
+                "member_regions": ["g_testmay_mayrole_bdr", "all", "UserA"],
+                "hierarchy_key": "AouHCzYnVK",
+                "planned": true,
+                "attributes": {
+                  "email": "user_a@getvymo.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5c8"
+              },
+              {
+                "code": "unlicensed01",
+                "name": "unlicensed01 Automation",
+                "region": "unlicensed01",
+                "region_hierarchy": ["all", "user360", "unlicensed01"],
+                "member_regions": ["all", "user360", "unlicensed01"],
+                "hierarchy_key": "AoeojU5ROV",
+                "planned": true,
+                "attributes": {
+                  "email": "unlicensed01@testmay.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5c9"
+              },
+              {
+                "code": "licensed01",
+                "name": "licensed01",
+                "region": "licensed01",
+                "region_hierarchy": ["all", "user360", "licensed01"],
+                "member_regions": ["all", "user360", "licensed01"],
+                "hierarchy_key": "Aofjh_5KDu",
+                "planned": true,
+                "attributes": {
+                  "email": "licensed01@testmay.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5ca"
+              },
+              {
+                "code": "user360",
+                "name": "user360",
+                "region": "user360",
+                "region_hierarchy": ["all", "user360"],
+                "member_regions": ["all", "user360"],
+                "hierarchy_key": "koirVxZnDV",
+                "planned": true,
+                "attributes": {
+                  "email": "user360@testmay.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5cb"
+              }
+            ],
+            "user": {
+              "code": "user360",
+              "name": "user360",
+              "region": "user360",
+              "region_hierarchy": ["all", "user360"],
+              "hierarchy_key": "koirVxZnDV",
+              "member_regions": ["all", "user360"]
+            },
+            "vos": [],
+            "pending_kafka_push": false,
+            "order": 1,
+            "_id": "663b170a28a5bd3b2e45b5c5"
+          },
+          {
+            "event_id": "082ea1bb-850e-4b19-bf1c-38a3a3311ddc",
+            "event_source": "",
+            "event_type": "calendar-rescheduled",
+            "last_updated": {
+              "code": "user360",
+              "name": "user360",
+              "date": "2024-05-08T06:11:04.821Z",
+              "region": "user360",
+              "region_hierarchy": ["all", "user360"],
+              "hierarchy_key": "koirVxZnDV",
+              "server_date": "2024-05-08T06:11:04.821Z"
+            },
+            "participants": [
+              {
+                "code": "998",
+                "name": "TestMayUser03",
+                "region": "998",
+                "region_hierarchy": ["all", "998"],
+                "member_regions": ["all", "998"],
+                "hierarchy_key": "kox9GFJLNu",
+                "planned": true,
+                "attributes": {
+                  "email": "testmayuser03@getvymo.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5ba"
+              },
+              {
+                "code": "17272",
+                "name": "Agency automation",
+                "region": "17272",
+                "region_hierarchy": ["all", "17272"],
+                "member_regions": ["all", "17272"],
+                "hierarchy_key": "koX0ymoZhu",
+                "planned": true,
+                "attributes": {
+                  "email": "automation@c360.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5bb"
+              },
+              {
+                "code": "UserA",
+                "name": "User A",
+                "region": "UserA",
+                "region_hierarchy": ["all", "UserA"],
+                "member_regions": ["g_testmay_mayrole_bdr", "all", "UserA"],
+                "hierarchy_key": "AouHCzYnVK",
+                "planned": true,
+                "attributes": {
+                  "email": "user_a@getvymo.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5bc"
+              },
+              {
+                "code": "unlicensed01",
+                "name": "unlicensed01 Automation",
+                "region": "unlicensed01",
+                "region_hierarchy": ["all", "user360", "unlicensed01"],
+                "member_regions": ["all", "user360", "unlicensed01"],
+                "hierarchy_key": "AoeojU5ROV",
+                "planned": true,
+                "attributes": {
+                  "email": "unlicensed01@testmay.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5bd"
+              },
+              {
+                "code": "licensed01",
+                "name": "licensed01",
+                "region": "licensed01",
+                "region_hierarchy": ["all", "user360", "licensed01"],
+                "member_regions": ["all", "user360", "licensed01"],
+                "hierarchy_key": "Aofjh_5KDu",
+                "planned": true,
+                "attributes": {
+                  "email": "licensed01@testmay.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5be"
+              },
+              {
+                "code": "user360",
+                "name": "user360",
+                "region": "user360",
+                "region_hierarchy": ["all", "user360"],
+                "member_regions": ["all", "user360"],
+                "hierarchy_key": "koirVxZnDV",
+                "planned": true,
+                "attributes": {
+                  "email": "user360@testmay.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5bf"
+              }
+            ],
+            "user": {
+              "code": "user360",
+              "name": "user360",
+              "region": "user360",
+              "region_hierarchy": ["all", "user360"],
+              "hierarchy_key": "koirVxZnDV",
+              "member_regions": ["all", "user360"]
+            },
+            "vos": [],
+            "pending_kafka_push": false,
+            "order": 2,
+            "_id": "663b1778b0aa5d2c5064e634"
+          },
+          {
+            "event_id": "b8a4380e-5ffb-42da-a21b-f43f86814074",
+            "event_source": "",
+            "event_type": "calendar-completed",
+            "last_updated": {
+              "code": "user360",
+              "name": "user360",
+              "date": "2024-05-08T06:11:28.919Z",
+              "region": "user360",
+              "region_hierarchy": ["all", "user360"],
+              "hierarchy_key": "koirVxZnDV",
+              "server_date": "2024-05-08T06:11:28.919Z"
+            },
+            "participants": [
+              {
+                "code": "998",
+                "name": "TestMayUser03",
+                "region": "998",
+                "region_hierarchy": ["all", "998"],
+                "member_regions": ["all", "998"],
+                "hierarchy_key": "kox9GFJLNu",
+                "planned": true,
+                "attended": true,
+                "attributes": {
+                  "email": "testmayuser03@getvymo.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5ba"
+              },
+              {
+                "code": "17272",
+                "name": "Agency automation",
+                "region": "17272",
+                "region_hierarchy": ["all", "17272"],
+                "member_regions": ["all", "17272"],
+                "hierarchy_key": "koX0ymoZhu",
+                "planned": true,
+                "attended": true,
+                "attributes": {
+                  "email": "automation@c360.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5bb"
+              },
+              {
+                "code": "UserA",
+                "name": "User A",
+                "region": "UserA",
+                "region_hierarchy": ["all", "UserA"],
+                "member_regions": ["g_testmay_mayrole_bdr", "all", "UserA"],
+                "hierarchy_key": "AouHCzYnVK",
+                "planned": true,
+                "attended": true,
+                "attributes": {
+                  "email": "user_a@getvymo.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5bc"
+              },
+              {
+                "code": "unlicensed01",
+                "name": "unlicensed01 Automation",
+                "region": "unlicensed01",
+                "region_hierarchy": ["all", "user360", "unlicensed01"],
+                "member_regions": ["all", "user360", "unlicensed01"],
+                "hierarchy_key": "AoeojU5ROV",
+                "planned": true,
+                "attended": true,
+                "attributes": {
+                  "email": "unlicensed01@testmay.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5bd"
+              },
+              {
+                "code": "licensed01",
+                "name": "licensed01",
+                "region": "licensed01",
+                "region_hierarchy": ["all", "user360", "licensed01"],
+                "member_regions": ["all", "user360", "licensed01"],
+                "hierarchy_key": "Aofjh_5KDu",
+                "planned": true,
+                "attended": true,
+                "attributes": {
+                  "email": "licensed01@testmay.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5be"
+              },
+              {
+                "code": "user360",
+                "name": "user360",
+                "region": "user360",
+                "region_hierarchy": ["all", "user360"],
+                "member_regions": ["all", "user360"],
+                "hierarchy_key": "koirVxZnDV",
+                "planned": true,
+                "attended": true,
+                "attributes": {
+                  "email": "user360@testmay.com"
+                },
+                "primary": false,
+                "_id": "663b170a28a5bd3b2e45b5bf"
+              }
+            ],
+            "user": {
+              "code": "user360",
+              "name": "user360",
+              "region": "user360",
+              "region_hierarchy": ["all", "user360"],
+              "hierarchy_key": "koirVxZnDV",
+              "member_regions": ["all", "user360"]
+            },
+            "vos": [],
+            "pending_kafka_push": false,
+            "order": 3,
+            "_id": "663b179096c4731522ce1e22"
+          }
+        ],
+        "info": {
+          "inputs": [
+            {
+              "type": "code_name_spinner",
+              "code": "internal_reviews_purpose",
+              "name": "Internal Reviews Purpose",
+              "value": "Monthly 1:1",
+              "data": {
+                "code": "monthly1:1"
+              },
+              "_id": "663b170a28a5bd3b2e45b5cc"
+            },
+            {
+              "type": "code_name_spinner",
+              "code": "new_g2b4aksej5",
+              "name": "NEW",
+              "value": "Option_1",
+              "data": {
+                "code": "option_1"
+              },
+              "_id": "663b170a28a5bd3b2e45b5cd"
+            },
+            {
+              "type": "meeting",
+              "code": "scheduled_time",
+              "name": "Scheduled time",
+              "value": "May 08 at 05:30 pm for 5.0 mins",
+              "data": {
+                "date": "2024-05-08T17:30:00.000Z",
+                "duration": "300000"
+              },
+              "_id": "663b1778b0aa5d2c5064e632"
+            },
+            {
+              "type": "text",
+              "code": "notes",
+              "name": "Notes",
+              "value": "",
+              "_id": "663b1778b0aa5d2c5064e633"
+            },
+            {
+              "type": "text",
+              "code": "address_line_2",
+              "name": "Address line 2",
+              "value": "test",
+              "_id": "663b170a28a5bd3b2e45b5d0"
+            }
+          ]
+        },
+        "mode": "SCHEDULED",
+        "group_id": "738391f5-d2f8-4bfd-88c5-86810226c599",
+        "source_context": {
+          "id": "",
+          "type": ""
+        },
+        "origin": "vymo",
+        "detect_ids": [],
+        "hierarchyUpdates": {
+          "history": [
+            {
+              "timestamp": "2024-07-02T10:32:06.488Z",
+              "jobId": "6b6fab60-3859-11ef-aa61-b1809568229f",
+              "_id": "6683d7265dc83af3a923c815"
+            }
+          ],
+          "lastUpdate": {
+            "timestamp": "2024-07-02T10:32:06.488Z",
+            "jobId": "6b6fab60-3859-11ef-aa61-b1809568229f",
+            "_id": "6683d7265dc83af3a923c814"
+          },
+          "lastSequenceNo": -2147483552
+        },
+        "granted_regions": [],
+        "authorised_regions": [
+          "all",
+          "998",
+          "17272",
+          "g_testmay_mayrole_bdr",
+          "UserA",
+          "user360",
+          "unlicensed01",
+          "licensed01"
+        ],
+        "relationships": [],
+        "code": "786q9s91T",
+        "reschedules": [
+          {
+            "event_id": "082ea1bb-850e-4b19-bf1c-38a3a3311ddc",
+            "update_origin": "vymo",
+            "from": {
+              "date": "2024-05-08T09:30:00.000Z",
+              "duration": 1800000,
+              "end_date": "2024-05-08T10:00:00.000Z",
+              "code": "AoD1YwAyRV"
+            },
+            "inputs": [
+              {
+                "type": "code_name_spinner",
+                "code": "engagement_frequency",
+                "name": "Engagement frequency",
+                "value": "Weekly",
+                "data": {
+                  "code": "weekly"
+                },
+                "_id": "663b1778b0aa5d2c5064e62b"
+              },
+              {
+                "type": "text",
+                "code": "activity_reason_for_reschedule",
+                "name": "Reason for reschedule",
+                "value": "gyfhf",
+                "_id": "663b1778b0aa5d2c5064e62c"
+              },
+              {
+                "type": "number",
+                "code": "aadhaar",
+                "name": "Aadhaar",
+                "value": "777888888899",
+                "_id": "663b1778b0aa5d2c5064e62d"
+              },
+              {
+                "type": "meeting",
+                "code": "scheduled_time",
+                "name": "Scheduled time",
+                "value": "May 08 at 05:30 pm for 5.0 mins",
+                "data": {
+                  "date": "2024-05-08T17:30:00.000Z",
+                  "duration": "300000"
+                },
+                "_id": "663b1778b0aa5d2c5064e62e"
+              },
+              {
+                "type": "text",
+                "code": "notes",
+                "name": "Notes",
+                "value": "",
+                "_id": "663b1778b0aa5d2c5064e62f"
+              },
+              {
+                "type": "text",
+                "code": "activity_reason_for_cancellation",
+                "name": "Reason for cancellation",
+                "value": "7777ghgh",
+                "_id": "663b1778b0aa5d2c5064e630"
+              }
+            ],
+            "to": {
+              "date": "2024-05-08T17:30:00.000Z",
+              "duration": 300000,
+              "end_date": "2024-05-08T17:30:00.000Z",
+              "code": "BP1gEwGyRj"
+            },
+            "_id": "663b1778b0aa5d2c5064e62a",
+            "date": "2024-05-08T06:11:04.839Z",
+            "server_date": "2024-05-08T06:11:04.839Z"
+          }
+        ],
+        "reassigns": [],
+        "edits": [],
+        "complete_inputs": [
+          {
+            "type": "code_name_spinner",
+            "code": "newlogs_for_check_h35rpvb7ufh",
+            "name": "newlogs for check",
+            "value": "D",
+            "data": {
+              "code": "b9mn3x17ue"
+            },
+            "_id": "663b179096c4731522ce1e1f"
+          },
+          {
+            "type": "text",
+            "code": "notes",
+            "name": "Notes",
+            "value": "",
+            "_id": "663b179096c4731522ce1e20"
+          },
+          {
+            "type": "meeting",
+            "code": "meeting",
+            "name": "Follow-up date",
+            "value": "May 09 at 05:30 am for 30.0 mins",
+            "data": {
+              "date": "2024-05-09T05:30:00.000Z",
+              "duration": "1800000"
+            },
+            "_id": "663b179096c4731522ce1e21"
+          }
+        ],
+        "cancel_inputs": [],
+        "_version": 3,
+        "__v": 2,
+        "description": ""
+      }
+    ],
+    "options": {
+      "limit": 50,
+      "skip": 0
+    },
+    "filters": [
+      {
+        "type": "sifg",
+        "code": "user",
+        "hint": "Self or Team",
+        "sifg_options": {
+          "selection": {
+            "type": "code_name_spinner",
+            "code": "user",
+            "hint": "Self or Team",
+            "code_name_spinner_options": [
+              {
+                "code": "self",
+                "name": "Self"
+              },
+              {
+                "code": "Team",
+                "name": "Team"
+              }
+            ]
+          },
+          "inputs": {
+            "Team": [
+              {
+                "type": "user_hierarchy",
+                "code": "user_id",
+                "hint": "User"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "queryExprKey": "state",
+        "type": "code_name_spinner",
+        "code": "state",
+        "hint": "Status",
+        "code_name_spinner_options": [
+          {
+            "code": "",
+            "name": "All"
+          },
+          {
+            "code": "OPEN",
+            "name": "Open"
+          },
+          {
+            "code": "COMPLETED",
+            "name": "Completed"
+          },
+          {
+            "code": "CANCELLED",
+            "name": "Cancelled"
+          }
+        ],
+        "required": false,
+        "tags": ["state"],
+        "read_only": false,
+        "retain_form_context": false,
+        "hidden": false,
+        "tooltip": null,
+        "masked": false,
+        "value": "COMPLETED"
+      },
+      {
+        "queryExprKey": "mode",
+        "type": "code_name_spinner",
+        "code": "mode",
+        "hint": "Mode",
+        "code_name_spinner_options": [
+          {
+            "code": "",
+            "name": "All"
+          },
+          {
+            "code": "LOGGED",
+            "name": "Logged"
+          },
+          {
+            "code": "SCHEDULED",
+            "name": "Scheduled"
+          }
+        ],
+        "required": false,
+        "read_only": false,
+        "retain_form_context": false,
+        "hidden": false,
+        "tooltip": null,
+        "masked": false
+      },
+      {
+        "type": "sifg",
+        "code": "meeting_date",
+        "hint": "Meeting Date",
+        "queryExprKey": "schedule.date",
+        "data_type": "DATE_RANGE",
+        "sifg_options": {
+          "selection": {
+            "type": "code_name_spinner",
+            "code": "meeting_date",
+            "hint": "Meeting Date",
+            "queryExprKey": "schedule.date",
+            "code_name_spinner_options": [
+              {
+                "name": "Any",
+                "code": ""
+              },
+              {
+                "code": "today",
+                "name": "Today"
+              },
+              {
+                "code": "yesterday",
+                "name": "Yesterday"
+              },
+              {
+                "code": "this_week",
+                "name": "This Week"
+              },
+              {
+                "code": "last_7_days",
+                "name": "Last 7 days"
+              },
+              {
+                "code": "this_month",
+                "name": "This Month"
+              },
+              {
+                "code": "last_month",
+                "name": "30 days"
+              },
+              {
+                "code": "last_30_days",
+                "name": "Last 30 days"
+              },
+              {
+                "code": "last_90_days",
+                "name": "Last 90 days"
+              },
+              {
+                "code": "custom",
+                "name": "custom"
+              },
+              {
+                "code": "this_year",
+                "name": "this year"
+              }
+            ]
+          },
+          "inputs": {
+            "custom": [
+              {
+                "type": "date",
+                "code": "meeting_date.start",
+                "queryExprKey": "schedule.date.start",
+                "hint": "Meeting Date From"
+              },
+              {
+                "type": "date",
+                "code": "meeting_date.end",
+                "queryExprKey": "schedule.date.end",
+                "hint": "Meeting Date To"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "multi_select_auto_complete",
+        "code": "task_type_multiselect",
+        "hint": "Activity Type",
+        "selection_hint": "Select Activity Type",
+        "required": false,
+        "source": null,
+        "single_select": false,
+        "code_name_spinner_options": [
+          {
+            "name": "KsTWO",
+            "code": "43em786ph",
+            "module": "NewKSTest",
+            "moduleCode": "newks"
+          },
+          {
+            "name": "ONElead",
+            "code": "4okoo0d9h",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          },
+          {
+            "name": "Internal Calls",
+            "code": "4vwq7yd4t8",
+            "module": "User",
+            "moduleCode": "user"
+          },
+          {
+            "name": "Onegroup",
+            "code": "5pnuw2egbu",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          },
+          {
+            "name": "Group001",
+            "code": "9xnpr18em",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          },
+          {
+            "name": "newprofile",
+            "code": "app1z3yufp",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          },
+          {
+            "name": "Business planning",
+            "code": "business_planning-46q",
+            "module": "partner180.99",
+            "moduleCode": "partner180"
+          },
+          {
+            "name": "Business review",
+            "code": "business_review-sfh",
+            "module": "partner180.99",
+            "moduleCode": "partner180"
+          },
+          {
+            "name": "Email",
+            "code": "email",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Incoming Call",
+            "code": "inbound_call",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Internal Call",
+            "code": "internal_call",
+            "module": "User",
+            "moduleCode": "user"
+          },
+          {
+            "name": "Internal reviews",
+            "code": "internal_reviews-iy0",
+            "module": "User",
+            "moduleCode": "user"
+          },
+          {
+            "name": "KSmay actiivty",
+            "code": "ir0daky65m",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          },
+          {
+            "name": "Line Chat",
+            "code": "lw_chat",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Line Chat Disposition",
+            "code": "lw_chat_disposition",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Meeting",
+            "code": "meeting",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "O365 Calendar",
+            "code": "o365_calendar",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Other",
+            "code": "other-j3z",
+            "module": "User",
+            "moduleCode": "user"
+          },
+          {
+            "name": "Outgoing Call",
+            "code": "outbound_call",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Partner Visit",
+            "code": "partner_visit-ht8",
+            "module": "partner180.99",
+            "moduleCode": "partner180"
+          },
+          {
+            "name": "Product training",
+            "code": "product_training-zsm",
+            "module": "partner180.99",
+            "moduleCode": "partner180"
+          },
+          {
+            "name": "Reimbursable Visit",
+            "code": "reimbursable_visit",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Servicing",
+            "code": "servicing-9p2",
+            "module": "partner180.99",
+            "moduleCode": "partner180"
+          },
+          {
+            "name": "kSONE",
+            "code": "sud7cjmtgb",
+            "module": "NewKSTest",
+            "moduleCode": "newks"
+          },
+          {
+            "name": "Training",
+            "code": "training-hcc",
+            "module": "User",
+            "moduleCode": "user"
+          },
+          {
+            "name": "Morning Huddle",
+            "code": "uzlibnyi8",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Web conference",
+            "code": "webconference",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Zoom",
+            "code": "zoom",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "new group2021",
+            "code": "zqcqypntxh",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          }
+        ],
+        "read_only": false,
+        "retain_form_context": false,
+        "hidden": false,
+        "tooltip": null,
+        "masked": false
+      },
+      {
+        "type": "multi_select_auto_complete",
+        "code": "module",
+        "hint": "Module",
+        "selection_hint": "Select Module",
+        "required": false,
+        "source": null,
+        "single_select": false,
+        "code_name_spinner_options": [
+          {
+            "code": "stage_new",
+            "name": "stage"
+          },
+          {
+            "code": "partner180_new",
+            "name": "partner180.99"
+          },
+          {
+            "code": "customer_360_new",
+            "name": "Customer 360"
+          },
+          {
+            "code": "ksmaystage_new",
+            "name": "ksmaystage"
+          },
+          {
+            "code": "newks_new",
+            "name": "NewKSTest"
+          },
+          {
+            "code": "leadtab_new",
+            "name": "leadtab"
+          },
+          {
+            "code": "user",
+            "name": "User"
+          }
+        ],
+        "read_only": false,
+        "retain_form_context": false,
+        "hidden": false,
+        "tooltip": null,
+        "masked": false
+      }
+    ]
+  },
+  "last_update": {
+    "updates": []
+  }
+}

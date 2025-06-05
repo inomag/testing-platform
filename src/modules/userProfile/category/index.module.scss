@@ -1,0 +1,52 @@
+@import '../../../designTokens/scssVariables.scss';
+
+.layout {
+  &__table {
+    margin-top: var(--spacing-l);
+  }
+  &__noData {
+    margin: var(--spacing-m) var(--spacing-2xl);
+    margin-top: 24px;
+  }
+
+  &__tab {
+    margin-top: 24px;
+    > div:nth-child(2) {
+      padding-inline: 0px;
+    }
+  }
+
+  &__userList {
+    margin: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+
+    &__user {
+      display: flex;
+      gap: var(--spacing-xl);
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-m);
+      }
+    }
+  }
+
+  &__input {
+    margin-top: var(--spacing-xl);
+    &__subGroup {
+      margin-top: var(--spacing-xl);
+
+      &__form {
+        padding: 0px;
+      }
+      &__title {
+        font-size: var(--s-font-size);
+        font-weight: var(--font-weight-bold);
+        text-transform: uppercase;
+      }
+    }
+  }
+}

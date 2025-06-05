@@ -1,0 +1,73 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+.texArea__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-s);
+
+  .texArea__label {
+    font-size: var(--s-font-size);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-default);
+  }
+
+  .texArea {
+    @include inputBase;
+    display: flex;
+    align-items: center;
+
+    &__error {
+      border-color: var(--text-status-error);
+    }
+
+    &__success {
+      border-color: var(--text-status-success);
+    }
+
+    &__disabled {
+      cursor: not-allowed;
+      background-color: var(--background-disabled);
+    }
+
+    .texArea__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+    }
+
+    .texArea__field {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: var(--s-font-size);
+      padding: 0;
+      margin: 0;
+      color: var(--text-default);
+    }
+    .texArea__resizeNone {
+      resize: none;
+    }
+  }
+
+  .texArea__errors {
+    margin-top: 8px;
+
+    .texArea__error {
+      color: var(--text-status-error);
+      font-size: var(--xs-font-size);
+      margin-bottom: 4px;
+    }
+  }
+
+  .texArea__success {
+    color: var(--text-status-success);
+    font-size: var(--xs-font-size);
+    margin-top: 8px;
+  }
+
+  .texArea__sub__message {
+    margin-top: 8px;
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "code": "partner_default_field_group",
+    "name": "Input Types Field",
+    "fields": [
+      "customer_name_qu4p83wxh",
+      "phone",
+      "gst_number_0amsodvw1e",
+      "testingsentence_31hrda0rso",
+      "testingemail_hs7o4emv7"
+    ]
+  },
+  {
+    "code": "partner_default_field_group2",
+    "name": "Date/Time Fields",
+    "fields": [
+      "dob_19mar_3dat6eo56r",
+      "meet_19mar_8ia9t7zqyq",
+      "time_19mar_gzgfe82ywi"
+    ]
+  }
+]

@@ -1,0 +1,986 @@
+{
+  "total": 87,
+  "results": [
+    {
+      "_id": "67c82f43ee493c7fcdd35978",
+      "external_id": "wZCDSvGfJW",
+      "name": "Internal reviews",
+      "category": "USER_CALENDAR_ITEM",
+      "data": {
+        "task": {
+          "attributes": {
+            "assignees": "[{\"code\":\"599\",\"name\":\"Horlicks\"}]",
+            "participants": "[{\"code\":\"599\",\"name\":\"Horlicks\"}]",
+            "sifg_newlogs_for_check_h35rpvb7ufh": "Option_2",
+            "activity_reason_for_reschedule": "test",
+            "meeting": "{\"date\":\"2025-03-05T11:02:26.979Z\",\"duration\":0}",
+            "recurring": false,
+            "engagement": true,
+            "multi_assignee": true
+          },
+          "type": "meeting",
+          "code": "internal_reviews-iy0",
+          "hierarchy": ["internal_reviews-iy0"],
+          "content_share": {
+            "medium": "",
+            "medium_type": "",
+            "template_meta": {
+              "name": "",
+              "language": ""
+            },
+            "template_vars": [],
+            "message": {
+              "body": "",
+              "preview_body": "",
+              "type": ""
+            },
+            "email": {
+              "body": "",
+              "preview_body": "",
+              "subject": "",
+              "bcc_recipients": [],
+              "to_recipients": [],
+              "cc_recipients": [],
+              "type": ""
+            },
+            "preview_content_map": "",
+            "contents": []
+          }
+        },
+        "user": {
+          "code": "12345",
+          "name": "Fanish",
+          "region_hierarchy": ["all", "Ad838", "1990", "Lead360", "12345"],
+          "region": "12345",
+          "hierarchy_key": "AoO-6_jSju",
+          "member_regions": ["all", "Ad838", "1990", "Lead360", "12345"],
+          "attributes": {
+            "email": "fanish@testmay.com"
+          }
+        },
+        "other_participants": [],
+        "vo": {
+          "code": "",
+          "start_state": "",
+          "state": "",
+          "state_on_activity_completion": "",
+          "external_id": "",
+          "vo_module": {
+            "type": "",
+            "code": "",
+            "name": ""
+          },
+          "name": "",
+          "relationship": {
+            "code": "",
+            "primary": false
+          },
+          "pii": []
+        },
+        "vos": [],
+        "dimension_attributes": []
+      },
+      "schedule": {
+        "end_date": "2025-03-05T11:02:26.979Z",
+        "date": "2025-03-05T11:02:26.979Z",
+        "duration": 0,
+        "code": "1HbfJpqo1"
+      },
+      "planned_subtasks": [],
+      "sub_tasks": [],
+      "approvals": [],
+      "create_inputs": [
+        {
+          "type": "multi_select_check_box_user",
+          "sub_type": "",
+          "code": "assignees",
+          "name": "Select Assignees",
+          "value": "[{\"code\":\"599\",\"name\":\"Horlicks\"}]",
+          "source": "",
+          "_id": "67c82f43ee493c7fcdd3597a"
+        },
+        {
+          "type": "multi_select_check_box_user",
+          "sub_type": "",
+          "code": "participants",
+          "name": "Select Participants",
+          "value": "[{\"code\":\"599\",\"name\":\"Horlicks\"}]",
+          "source": "",
+          "_id": "67c82f43ee493c7fcdd3597b"
+        },
+        {
+          "type": "code_name_spinner",
+          "sub_type": "",
+          "code": "sifg_newlogs_for_check_h35rpvb7ufh",
+          "name": "newlogs for check",
+          "value": "Option_2",
+          "data": {
+            "code": "option_2"
+          },
+          "source": "",
+          "_id": "67c82f43ee493c7fcdd3597c"
+        },
+        {
+          "type": "text",
+          "sub_type": "",
+          "code": "activity_reason_for_reschedule",
+          "name": "Reason for reschedule",
+          "value": "test",
+          "source": "",
+          "_id": "67c82f43ee493c7fcdd3597d"
+        },
+        {
+          "type": "meeting",
+          "sub_type": "",
+          "code": "meeting",
+          "name": "Meetings",
+          "value": "Mar 05 at 11:02 am",
+          "data": {
+            "date": "2025-03-05T11:02:26.979Z",
+            "duration": 0
+          },
+          "source": "",
+          "_id": "67c82f43ee493c7fcdd3597e"
+        }
+      ],
+      "complete_inputs": [
+        {
+          "type": "multi_select_check_box_user",
+          "sub_type": "",
+          "code": "assignees",
+          "name": "Select Assignees",
+          "value": "[{\"code\":\"599\",\"name\":\"Horlicks\"}]",
+          "source": "",
+          "_id": "67c82f43ee493c7fcdd3597f"
+        },
+        {
+          "type": "multi_select_check_box_user",
+          "sub_type": "",
+          "code": "participants",
+          "name": "Select Participants",
+          "value": "[{\"code\":\"599\",\"name\":\"Horlicks\"}]",
+          "source": "",
+          "_id": "67c82f43ee493c7fcdd35980"
+        },
+        {
+          "type": "code_name_spinner",
+          "sub_type": "",
+          "code": "sifg_newlogs_for_check_h35rpvb7ufh",
+          "name": "newlogs for check",
+          "value": "Option_2",
+          "data": {
+            "code": "option_2"
+          },
+          "source": "",
+          "_id": "67c82f43ee493c7fcdd35981"
+        },
+        {
+          "type": "text",
+          "sub_type": "",
+          "code": "activity_reason_for_reschedule",
+          "name": "Reason for reschedule",
+          "value": "test",
+          "source": "",
+          "_id": "67c82f43ee493c7fcdd35982"
+        },
+        {
+          "type": "meeting",
+          "sub_type": "",
+          "code": "meeting",
+          "name": "Meetings",
+          "value": "Mar 05 at 11:02 am",
+          "data": {
+            "date": "2025-03-05T11:02:26.979Z",
+            "duration": 0
+          },
+          "source": "",
+          "_id": "67c82f43ee493c7fcdd35983"
+        }
+      ],
+      "meeting_link": [],
+      "completed": {
+        "start_date": "2025-03-05T11:02:26.979Z",
+        "server_date": "2025-03-05T11:02:26.979Z",
+        "present_sub_tasks": [],
+        "previous_sub_tasks": []
+      },
+      "created": {
+        "code": "12345",
+        "name": "Fanish",
+        "date": "2025-03-05T11:02:26.979Z",
+        "region": "12345",
+        "region_hierarchy": ["all", "Ad838", "1990", "Lead360", "12345"],
+        "hierarchy_key": "AoO-6_jSju",
+        "server_date": "2025-03-05T11:02:26.979Z"
+      },
+      "last_updated": {
+        "code": "12345",
+        "name": "Fanish",
+        "date": "2025-03-05T11:02:26.979Z",
+        "region": "12345",
+        "region_hierarchy": ["all", "Ad838", "1990", "Lead360", "12345"],
+        "hierarchy_key": "AoO-6_jSju",
+        "server_date": "2025-03-05T11:02:26.979Z"
+      },
+      "assigned_by": {
+        "code": "12345",
+        "name": "Fanish",
+        "date": "2025-03-05T11:02:26.979Z",
+        "region": "12345",
+        "region_hierarchy": ["all", "Ad838", "1990", "Lead360", "12345"],
+        "hierarchy_key": "AoO-6_jSju",
+        "server_date": "2025-03-05T11:02:26.979Z"
+      },
+      "source": "USER",
+      "state": "COMPLETED",
+      "automated": "",
+      "history": [
+        {
+          "event_id": "ef4d6ac0-7677-4b91-a30c-24287d7625e8",
+          "event_source": "",
+          "event_type": "calendar-logged",
+          "last_updated": {
+            "code": "12345",
+            "name": "Fanish",
+            "date": "2025-03-05T11:02:26.979Z",
+            "region": "12345",
+            "region_hierarchy": ["all", "Ad838", "1990", "Lead360", "12345"],
+            "hierarchy_key": "AoO-6_jSju",
+            "server_date": "2025-03-05T11:02:26.979Z"
+          },
+          "participants": [
+            {
+              "code": "12345",
+              "name": "Fanish",
+              "region": "12345",
+              "region_hierarchy": ["all", "Ad838", "1990", "Lead360", "12345"],
+              "member_regions": ["all", "Ad838", "1990", "Lead360", "12345"],
+              "hierarchy_key": "AoO-6_jSju",
+              "planned": true,
+              "attended": true,
+              "attributes": {
+                "email": "fanish@testmay.com"
+              },
+              "primary": false,
+              "_id": "67c82f43ee493c7fcdd35985"
+            }
+          ],
+          "user": {
+            "code": "12345",
+            "name": "Fanish",
+            "region": "12345",
+            "region_hierarchy": ["all", "Ad838", "1990", "Lead360", "12345"],
+            "hierarchy_key": "AoO-6_jSju",
+            "member_regions": ["all", "Ad838", "1990", "Lead360", "12345"]
+          },
+          "vos": [],
+          "pending_kafka_push": false,
+          "order": 1,
+          "_id": "67c82f43ee493c7fcdd35984"
+        }
+      ],
+      "info": {
+        "inputs": [
+          {
+            "type": "multi_select_check_box_user",
+            "sub_type": "",
+            "code": "assignees",
+            "name": "Select Assignees",
+            "value": "[{\"code\":\"599\",\"name\":\"Horlicks\"}]",
+            "source": "",
+            "_id": "67c82f43ee493c7fcdd35986"
+          },
+          {
+            "type": "multi_select_check_box_user",
+            "sub_type": "",
+            "code": "participants",
+            "name": "Select Participants",
+            "value": "[{\"code\":\"599\",\"name\":\"Horlicks\"}]",
+            "source": "",
+            "_id": "67c82f43ee493c7fcdd35987"
+          },
+          {
+            "type": "code_name_spinner",
+            "sub_type": "",
+            "code": "sifg_newlogs_for_check_h35rpvb7ufh",
+            "name": "newlogs for check",
+            "value": "Option_2",
+            "data": {
+              "code": "option_2"
+            },
+            "source": "",
+            "_id": "67c82f43ee493c7fcdd35988"
+          },
+          {
+            "type": "text",
+            "sub_type": "",
+            "code": "activity_reason_for_reschedule",
+            "name": "Reason for reschedule",
+            "value": "test",
+            "source": "",
+            "_id": "67c82f43ee493c7fcdd35989"
+          },
+          {
+            "type": "meeting",
+            "sub_type": "",
+            "code": "meeting",
+            "name": "Meetings",
+            "value": "Mar 05 at 11:02 am",
+            "data": {
+              "date": "2025-03-05T11:02:26.979Z",
+              "duration": 0
+            },
+            "source": "",
+            "_id": "67c82f43ee493c7fcdd3598a"
+          }
+        ]
+      },
+      "mode": "LOGGED",
+      "group_id": "23543892-9751-48d5-bdef-c48ae3276233",
+      "source_context": {
+        "id": "",
+        "type": ""
+      },
+      "origin": "vymo",
+      "detect_ids": [],
+      "granted_regions": [],
+      "authorised_regions": ["all", "Ad838", "1990", "Lead360", "12345"],
+      "relationships": [],
+      "code": "wZCDSvGfJW",
+      "reschedules": [],
+      "reassigns": [],
+      "cancel_inputs": [],
+      "_version": 1,
+      "__v": 0
+    }
+  ],
+  "options": {
+    "limit": 1,
+    "skip": 0
+  },
+  "config": {
+    "columns": [
+      {
+        "code": "user_code",
+        "title": "Regions",
+        "field": "regions",
+        "type": "region",
+        "visible": false,
+        "sortable": true,
+        "filter": true,
+        "group": "1",
+        "export": false
+      },
+      {
+        "title": "TEAM/SELF",
+        "code": "is_self",
+        "field": "show_self_stats",
+        "type": "show_self_stats",
+        "visible": false,
+        "sortable": false,
+        "filter": true,
+        "group": "1",
+        "export": false
+      },
+      {
+        "code": "meeting_date",
+        "title": "Meeting",
+        "field": "schedule.date",
+        "sortable": true,
+        "visible": true,
+        "filter": true,
+        "type": "date",
+        "group": "1"
+      },
+      {
+        "code": "assigned_user",
+        "title": "Assigned To",
+        "field": "data.user.name",
+        "sortable": false,
+        "filter": false,
+        "type": "text",
+        "group": "1"
+      },
+      {
+        "code": "assigned_user",
+        "title": "Assigned To",
+        "hint": "Assigned To",
+        "field": "data.user.code",
+        "sortable": false,
+        "filter": true,
+        "visible": false,
+        "type": "user-search",
+        "group": "1"
+      },
+      {
+        "code": "created_date",
+        "title": "Created",
+        "field": "created.date",
+        "sortable": true,
+        "filter": true,
+        "type": "date",
+        "group": "1"
+      },
+      {
+        "code": "state",
+        "title": "Status",
+        "field": "state",
+        "visible": true,
+        "filter": true,
+        "type": "multi_select_auto_complete",
+        "code_name_spinner_options": [
+          {
+            "code": "",
+            "name": "All"
+          },
+          {
+            "code": "OPEN",
+            "name": "Open"
+          },
+          {
+            "code": "COMPLETED",
+            "name": "Completed"
+          },
+          {
+            "code": "CANCELLED",
+            "name": "Cancelled"
+          }
+        ],
+        "group": "1"
+      },
+      {
+        "code": "task_name",
+        "title": "Activity Name",
+        "field": "name",
+        "visible": true,
+        "filter": false,
+        "type": "text",
+        "group": "1"
+      },
+      {
+        "code": "vo_name",
+        "title": "Partner Name",
+        "field": "data.vos[0].name",
+        "visible": true,
+        "filter": false,
+        "type": "text",
+        "group": "1"
+      },
+      {
+        "code": "vo_code",
+        "title": "Partner Code",
+        "field": "data.vos[0].code",
+        "visible": true,
+        "filter": true,
+        "type": "text",
+        "group": "1"
+      },
+      {
+        "code": "last_updated_date",
+        "title": "Last Updated",
+        "field": "last_updated.date",
+        "sortable": true,
+        "filter": true,
+        "type": "date",
+        "group": "1"
+      },
+      {
+        "code": "mode",
+        "title": "Mode",
+        "field": "mode",
+        "visible": false,
+        "filter": true,
+        "type": "code_name_spinner",
+        "code_name_spinner_options": [
+          {
+            "code": "",
+            "name": "All"
+          },
+          {
+            "code": "LOGGED",
+            "name": "Logged"
+          },
+          {
+            "code": "SCHEDULED",
+            "name": "Scheduled"
+          }
+        ],
+        "group": "1"
+      },
+      {
+        "title": "Participants View",
+        "code": "participants_view",
+        "field": "participants_view",
+        "type": "code_name_spinner",
+        "visible": true,
+        "filter": true,
+        "code_name_spinner_options": [
+          {
+            "code": "yes",
+            "name": "Yes"
+          },
+          {
+            "code": "no",
+            "name": "No"
+          }
+        ],
+        "group": "1",
+        "export": false,
+        "default_value": [
+          {
+            "code": "yes",
+            "name": "Yes"
+          }
+        ]
+      },
+      {
+        "code": "task_type_multiselect",
+        "title": "Activity Type",
+        "field": "data.task.code",
+        "visible": false,
+        "filter": true,
+        "code_name_spinner_options": [
+          {
+            "name": "KsTWO",
+            "code": "43em786ph",
+            "module": "NewKSTest",
+            "moduleCode": "newks"
+          },
+          {
+            "name": "ONElead",
+            "code": "4okoo0d9h",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          },
+          {
+            "name": "Onegroup",
+            "code": "5pnuw2egbu",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          },
+          {
+            "name": "Group001",
+            "code": "9xnpr18em",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          },
+          {
+            "name": "newprofile",
+            "code": "app1z3yufp",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          },
+          {
+            "name": "Business planning",
+            "code": "business_planning-46q",
+            "module": "partner180.99",
+            "moduleCode": "partner180"
+          },
+          {
+            "name": "Business review",
+            "code": "business_review-sfh",
+            "module": "partner180.99",
+            "moduleCode": "partner180"
+          },
+          {
+            "name": "Email",
+            "code": "email",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Incoming Call",
+            "code": "inbound_call",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Internal Call",
+            "code": "internal_call",
+            "module": "User",
+            "moduleCode": "user"
+          },
+          {
+            "name": "Internal reviews",
+            "code": "internal_reviews-iy0",
+            "module": "User",
+            "moduleCode": "user"
+          },
+          {
+            "name": "KSmay actiivty",
+            "code": "ir0daky65m",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          },
+          {
+            "name": "Line Chat",
+            "code": "lw_chat",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Line Chat Disposition",
+            "code": "lw_chat_disposition",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Meeting",
+            "code": "meeting",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "O365 Calendar",
+            "code": "o365_calendar",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Other",
+            "code": "other-j3z",
+            "module": "User",
+            "moduleCode": "user"
+          },
+          {
+            "name": "Outgoing Call",
+            "code": "outbound_call",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Partner Visit",
+            "code": "partner_visit-ht8",
+            "module": "partner180.99",
+            "moduleCode": "partner180"
+          },
+          {
+            "name": "Product training",
+            "code": "product_training-zsm",
+            "module": "partner180.99",
+            "moduleCode": "partner180"
+          },
+          {
+            "name": "Reimbursable Visit",
+            "code": "reimbursable_visit",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Servicing",
+            "code": "servicing-9p2",
+            "module": "partner180.99",
+            "moduleCode": "partner180"
+          },
+          {
+            "name": "kSONE",
+            "code": "sud7cjmtgb",
+            "module": "NewKSTest",
+            "moduleCode": "newks"
+          },
+          {
+            "name": "Training",
+            "code": "training-hcc",
+            "module": "User",
+            "moduleCode": "user"
+          },
+          {
+            "name": "Morning Huddle",
+            "code": "uzlibnyi8",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Web conference",
+            "code": "webconference",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Zoom",
+            "code": "zoom",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "new group2021",
+            "code": "zqcqypntxh",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          }
+        ],
+        "group": "1",
+        "type": "multi_select_auto_complete",
+        "export": false,
+        "single_select": false,
+        "default_selection": ""
+      },
+      {
+        "code": "module",
+        "title": "Module",
+        "field": "module",
+        "visible": false,
+        "sortable": false,
+        "filter": true,
+        "type": "multi_select_auto_complete",
+        "code_name_spinner_options": [
+          {
+            "code": "stage_new",
+            "name": "stage"
+          },
+          {
+            "code": "partner180_new",
+            "name": "partner180.99"
+          },
+          {
+            "code": "customer_360_new",
+            "name": "Customer 360"
+          },
+          {
+            "code": "ksmaystage_new",
+            "name": "ksmaystage"
+          },
+          {
+            "code": "user",
+            "name": "User"
+          }
+        ],
+        "export": false,
+        "group": "1",
+        "single_select": false,
+        "default_selection": ""
+      },
+      {
+        "code": "__auto_close_date",
+        "title": "Auto Close On",
+        "field": "data.task.attributes.auto_close.ttl_as_date",
+        "visible": true,
+        "filter": true,
+        "group": "1",
+        "type": "date",
+        "export": true
+      }
+    ],
+    "home_page_columns": [
+      {
+        "code": "meeting_date",
+        "title": "Meeting",
+        "field": "schedule.date",
+        "sortable": true,
+        "visible": true,
+        "filter": true,
+        "type": "date",
+        "group": "1"
+      },
+      {
+        "code": "task_type_multiselect",
+        "title": "Activity Type",
+        "field": "data.task.code",
+        "visible": false,
+        "filter": true,
+        "code_name_spinner_options": [
+          {
+            "name": "KsTWO",
+            "code": "43em786ph",
+            "module": "NewKSTest",
+            "moduleCode": "newks"
+          },
+          {
+            "name": "ONElead",
+            "code": "4okoo0d9h",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          },
+          {
+            "name": "Onegroup",
+            "code": "5pnuw2egbu",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          },
+          {
+            "name": "Group001",
+            "code": "9xnpr18em",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          },
+          {
+            "name": "newprofile",
+            "code": "app1z3yufp",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          },
+          {
+            "name": "Business planning",
+            "code": "business_planning-46q",
+            "module": "partner180.99",
+            "moduleCode": "partner180"
+          },
+          {
+            "name": "Business review",
+            "code": "business_review-sfh",
+            "module": "partner180.99",
+            "moduleCode": "partner180"
+          },
+          {
+            "name": "Email",
+            "code": "email",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Incoming Call",
+            "code": "inbound_call",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Internal Call",
+            "code": "internal_call",
+            "module": "User",
+            "moduleCode": "user"
+          },
+          {
+            "name": "Internal reviews",
+            "code": "internal_reviews-iy0",
+            "module": "User",
+            "moduleCode": "user"
+          },
+          {
+            "name": "KSmay actiivty",
+            "code": "ir0daky65m",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          },
+          {
+            "name": "Line Chat",
+            "code": "lw_chat",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Line Chat Disposition",
+            "code": "lw_chat_disposition",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Meeting",
+            "code": "meeting",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "O365 Calendar",
+            "code": "o365_calendar",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Other",
+            "code": "other-j3z",
+            "module": "User",
+            "moduleCode": "user"
+          },
+          {
+            "name": "Outgoing Call",
+            "code": "outbound_call",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Partner Visit",
+            "code": "partner_visit-ht8",
+            "module": "partner180.99",
+            "moduleCode": "partner180"
+          },
+          {
+            "name": "Product training",
+            "code": "product_training-zsm",
+            "module": "partner180.99",
+            "moduleCode": "partner180"
+          },
+          {
+            "name": "Reimbursable Visit",
+            "code": "reimbursable_visit",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Servicing",
+            "code": "servicing-9p2",
+            "module": "partner180.99",
+            "moduleCode": "partner180"
+          },
+          {
+            "name": "kSONE",
+            "code": "sud7cjmtgb",
+            "module": "NewKSTest",
+            "moduleCode": "newks"
+          },
+          {
+            "name": "Training",
+            "code": "training-hcc",
+            "module": "User",
+            "moduleCode": "user"
+          },
+          {
+            "name": "Morning Huddle",
+            "code": "uzlibnyi8",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Web conference",
+            "code": "webconference",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "Zoom",
+            "code": "zoom",
+            "module": "stage",
+            "moduleCode": "stage"
+          },
+          {
+            "name": "new group2021",
+            "code": "zqcqypntxh",
+            "module": "ksmaystage",
+            "moduleCode": "ksmaystage"
+          }
+        ],
+        "group": "1",
+        "type": "multi_select_auto_complete",
+        "export": false,
+        "single_select": false,
+        "default_selection": ""
+      },
+      {
+        "code": "detect_status",
+        "title": "Detect Status",
+        "field": "detect_status",
+        "visible": false,
+        "filter": true,
+        "type": "code_name_spinner",
+        "code_name_spinner_options": [
+          {
+            "code": "Select",
+            "name": "Select"
+          },
+          {
+            "code": "DETECTED",
+            "name": "DETECTED"
+          },
+          {
+            "code": "VERIFIED",
+            "name": "VERIFIED"
+          },
+          {
+            "code": "REJECTED",
+            "name": "REJECTED"
+          }
+        ],
+        "group": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+@import '../designTokens/scssVariables.scss';
+
+.workspace {
+  &__childComponentWithRouter {
+    flex: 1 1;
+    overflow-y: auto;
+  }
+  &__customPage {
+    align-items: center;
+    margin: auto;
+    > div:first-child {
+      display: flex;
+      align-items: center;
+    }
+    > div:last-child {
+      margin-top: 10px;
+    }
+    @media screen and (max-width: $tablet-breakpoint) {
+      margin: 30px;
+    }
+  }
+}

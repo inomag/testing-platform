@@ -1,0 +1,62 @@
+@import '../../../../designTokens/scssVariables.scss';
+
+@mixin chipVariant($background-color, $font-color) {
+  background-color: $background-color;
+  color: $font-color;
+  svg {
+    path {
+      color: $font-color;
+    }
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.chip {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  border-radius: var(--radius-xs-4);
+  font-size: var(--xs-font-size);
+  font-weight: var(--font-weight-semi-bold);
+  width: fit-content;
+  background-color: var(--background-default);
+  color: var(--text-default);
+  text-transform: uppercase;
+  padding: var(--spacing-xs);
+
+  &.success {
+    @include chipVariant(
+      var(--background-status-success),
+      var(--text-status-success)
+    );
+  }
+
+  &.error {
+    @include chipVariant(
+      var(--background-status-error),
+      var(--text-status-error)
+    );
+  }
+
+  &.warning {
+    @include chipVariant(
+      var(--background-status-warning),
+      var(--text-status-warning)
+    );
+  }
+  &.info {
+    @include chipVariant(
+      var(--background-status-info),
+      var(--text-status-info)
+    );
+  }
+
+  &__bold {
+    font-weight: var(--font-weight-bold);
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+  }
+}

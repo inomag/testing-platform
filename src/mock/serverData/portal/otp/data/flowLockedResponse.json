@@ -1,0 +1,6 @@
+{
+  "status": 400,
+  "error_code": "flow_locked",
+  "blocked_until": "2024-01-15T07:33:25.493Z",
+  "message": "Resend OTP limit exhausted. Try again after 2024-01-15 13:29:17"
+}

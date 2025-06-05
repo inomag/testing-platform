@@ -1,0 +1,20 @@
+.docu-sign-modal {
+  min-width: 80vw;
+  min-height: 90vh;
+}
+@media only screen and (max-width: 768px) {
+  .docusign-agreement-container {
+    width: auto;
+    height: 80vh;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .docusign-agreement-container {
+    height: 90vh;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .docusign-agreement-container {
+    height: 90vh;
+  }
+}

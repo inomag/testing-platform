@@ -1,0 +1,12 @@
+@import '../../../designTokens/scssVariables.scss';
+
+.builder {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  &__section {
+    flex: 1;
+    display: flex;
+    gap: var(--spacing-l);
+  }
+}

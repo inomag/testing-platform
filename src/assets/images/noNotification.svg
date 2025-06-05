@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none" stroke="#D3D3D3"
+    stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Bell Icon -->
+    <path d="M50 85a10 10 0 0 1-10-10h20a10 10 0 0 1-10 10z" />
+    <path d="M75 65H25s5-5 5-20a20 20 0 0 1 40 0c0 15 5 20 5 20z" />
+
+    <!-- Slash Line -->
+    <line x1="20" y1="20" x2="80" y2="80" stroke="#D3D3D3" stroke-width="6" />
+</svg>

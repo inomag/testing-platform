@@ -1,0 +1,48 @@
+@import '../../../designTokens/scssVariables.scss';
+
+.container {
+  background: var(--background-flat);
+  margin: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-s);
+  padding: var(--spacing-s) var(--spacing-xl);
+  border: var(--border-default);
+  &__header {
+    display: flex;
+    flex-direction: column;
+    > span:last-child {
+      color: #9b9b9b;
+    }
+  }
+  &__content {
+    display: flex;
+    &__tile {
+      width: 350px;
+      padding: var(--spacing-s);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      &:hover {
+        cursor: pointer;
+        background: #f7f7f7;
+        border-radius: 4px;
+      }
+      &__left {
+        border-radius: 100%;
+        border: 1px solid #d8d8d8;
+      }
+      &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: var(--spacing-xs);
+        > span:last-child {
+          color: #9b9b9b;
+        }
+      }
+    }
+  }
+}

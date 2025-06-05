@@ -1,0 +1,176 @@
+{
+  "result": {
+    "visitor": {
+      "code": "APmhE2pNyw"
+    },
+    "template": {
+      "type": "page",
+      "code": "ckyc",
+      "actionCategory": "CkycDetailsActionCategory",
+      "actionType": "ckyc",
+      "milestones": {
+        "checklist": [
+          {
+            "code": "abslamc_z2psx7-recruitment_leads_tdhixr_new",
+            "name": "Candidate Added",
+            "status": "completed",
+            "steps": []
+          },
+          {
+            "code": "abslamc_z2psx7-recruitment_leads_tdhixr_amc_agent_recruitment_application",
+            "name": "Application",
+            "status": "in_progress",
+            "steps": [
+              {
+                "status": "in_progress",
+                "code": "basic_details",
+                "name": "Basic Details",
+                "description": "Basic Details (Description)",
+                "type": "conditional",
+                "actions": [
+                  {
+                    "name": "Online Payment",
+                    "code": "online_payment",
+                    "description": "Online Payment",
+                    "status": "enabled",
+                    "type": "profile_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://abc-staging.lms.getvymo.com/web-platform/branch/PE-7523/onboarding/#/stepper/action/online_payment?vo=APmhE2pNyw&portalId=abslamc-recruitment-portal",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "name": "Basic Details Capture",
+                    "code": "basic_details",
+                    "description": "Please fill your Basic details",
+                    "status": "enabled",
+                    "type": "profile_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://abc-staging.lms.getvymo.com/web-platform/branch/PE-7523/onboarding/#/stepper/action/basic_details?vo=APmhE2pNyw&portalId=abslamc-recruitment-portal",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "name": "CKYC Details",
+                    "code": "ckyc",
+                    "description": "Please fill your Basic details",
+                    "status": "enabled",
+                    "type": "profile_redirect",
+                    "actionStatusMessage": "",
+                    "metadata": {
+                      "portal": {
+                        "url": "https://abc-staging.lms.getvymo.com/web-platform/branch/PE-7523/onboarding/#/stepper/action/ckyc?vo=APmhE2pNyw&portalId=abslamc-recruitment-portal",
+                        "query_params": {
+                          "requires_auth": true,
+                          "payload": {},
+                          "method": "GET",
+                          "headers": {}
+                        }
+                      }
+                    }
+                  }
+                ],
+                "stepStatusMessage": ""
+              },
+              {
+                "status": "locked",
+                "code": "additional_details",
+                "name": "Additional Details",
+                "description": "Additional Details (Description)",
+                "type": "conditional",
+                "actions": [],
+                "stepStatusMessage": ""
+              },
+              {
+                "status": "locked",
+                "code": "details_for_empanelment",
+                "name": "Details For Empanelment",
+                "description": "Details For Empanelment (Description)",
+                "type": "conditional",
+                "actions": [],
+                "stepStatusMessage": ""
+              }
+            ]
+          },
+          {
+            "code": "abslamc_z2psx7-recruitment_leads_tdhixr_amc_agent_recruitment_outcome",
+            "name": "CAMS Outcome",
+            "status": "locked",
+            "steps": []
+          },
+          {
+            "code": "abslamc_z2psx7-recruitment_leads_tdhixr_amc_agent_recruited",
+            "name": "Recruited",
+            "status": "locked",
+            "steps": []
+          }
+        ]
+      },
+      "title": "CKYC Details",
+      "description": "Please check your CKYC details",
+      "infoSection": null,
+      "html": null,
+      "cta": [
+        {
+          "type": "action",
+          "title": "Submit",
+          "action": "basic_details"
+        }
+      ],
+      "form": {
+        "inputs": [
+          {
+            "type": "text",
+            "code": "name",
+            "hint": "Name",
+            "required": true,
+            "read_only": true,
+            "oif_options": null
+          },
+          {
+            "code": "pan",
+            "hint": "PAN",
+            "type": "pan",
+            "read_only": true
+          },
+          {
+            "type": "email",
+            "code": "testingemail_hs7o4emv7",
+            "hint": "testingemail",
+            "required": true,
+            "read_only": true
+          }
+        ],
+        "fieldGroupConfig": [
+          {
+            "fields": ["name", "pan", "testingemail_hs7o4emv7"],
+            "code": "basic_details",
+            "name": "Basic Details"
+          }
+        ],
+        "inputs_map": {
+          "name": "Test Name",
+          "pan": "ABCDE1234F",
+          "testingemail_hs7o4emv7": "a@a.com"
+        }
+      }
+    },
+    "isAssistedOnboarding": false
+  }
+}

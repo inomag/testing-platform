@@ -1,0 +1,352 @@
+[
+  {
+    "type": "sifg",
+    "code": "sifg_payment_mode_chw0gfq6vo",
+    "required": true,
+    "hint": "SIFG Field",
+    "value": "Cash",
+    "sifg_options": {
+      "selection": {
+        "type": "code_name_spinner",
+        "code": "payment_mode_chw0gfq6vo",
+        "hint": "Payment Mode",
+        "code_name_spinner_options": [
+          {
+            "code": "none",
+            "name": "Select",
+            "order": 0
+          },
+          {
+            "code": "Cheque",
+            "name": "Cheque"
+          },
+          {
+            "code": "DD",
+            "name": "DD"
+          }
+        ],
+        "required": true
+      },
+      "inputs": {
+        "Cash": [],
+        "Cheque": [
+          {
+            "type": "date",
+            "code": "cheque_dd_date_ru6jxvvlh",
+            "hint": "Cheque/DD Date",
+            "required": true,
+            "show_day_month_year": "DMY",
+            "min_date": 0,
+            "max_date": 0,
+            "oif_options": null,
+            "read_only": false,
+            "display_in_form_type": "MODULE"
+          },
+          {
+            "type": "text",
+            "code": "cheque_dd_no_ce29164mpp",
+            "hint": "Cheque/DD No",
+            "required": true,
+            "oif_options": null,
+            "read_only": false,
+            "display_in_form_type": "MODULE"
+          },
+          {
+            "type": "text",
+            "code": "micr_code_676weuw8i7",
+            "hint": "MICR Code",
+            "required": false,
+            "oif_options": null,
+            "read_only": false,
+            "display_in_form_type": "MODULE"
+          },
+          {
+            "type": "text",
+            "code": "bank_name_8gcf8bmd9c",
+            "hint": "Bank Name",
+            "required": true,
+            "oif_options": null,
+            "read_only": false,
+            "display_in_form_type": "MODULE"
+          }
+        ],
+        "DD": [
+          {
+            "type": "date",
+            "code": "cheque_dd_date_ru6jxvvlh",
+            "hint": "Cheque/DD Date",
+            "required": true,
+            "show_day_month_year": "DMY",
+            "min_date": 0,
+            "max_date": 0,
+            "oif_options": null,
+            "read_only": false,
+            "display_in_form_type": "MODULE"
+          },
+          {
+            "type": "text",
+            "code": "cheque_dd_no_ce29164mpp",
+            "hint": "Cheque/DD No",
+            "required": true,
+            "oif_options": null,
+            "read_only": false,
+            "display_in_form_type": "MODULE"
+          },
+          {
+            "type": "text",
+            "code": "micr_code_676weuw8i7",
+            "hint": "MICR Code",
+            "required": false,
+            "oif_options": null,
+            "read_only": false,
+            "display_in_form_type": "MODULE"
+          },
+          {
+            "type": "text",
+            "code": "bank_name_8gcf8bmd9c",
+            "hint": "Bank Name",
+            "required": true,
+            "oif_options": null,
+            "read_only": false,
+            "display_in_form_type": "MODULE"
+          }
+        ]
+      }
+    },
+    "oif_options": {
+      "type": "default"
+    },
+    "read_only": false,
+    "display_in_form_type": "MODULE"
+  },
+  {
+    "type": "aif",
+    "code": "AIF Field",
+    "required": true,
+    "hint": "Transaction Mode AIF",
+    "value": [],
+    "group_title": "Transaction",
+    "add_action_title": "Add Transaction",
+    "min_group": 1,
+    "max_group": 5,
+    "input_fields": [
+      {
+        "type": "text",
+        "code": "aif1",
+        "hint": "Transaction Code",
+        "required": true,
+        "oif_options": null,
+        "read_only": false,
+        "display_in_form_type": "MODULE"
+      },
+      {
+        "type": "text",
+        "code": "aif2",
+        "hint": "Transaction name",
+        "required": false,
+        "oif_options": null,
+        "read_only": false,
+        "display_in_form_type": "MODULE"
+      },
+      {
+        "type": "text",
+        "code": "aif3",
+        "hint": "Transaction desc",
+        "required": true,
+        "oif_options": null,
+        "read_only": false,
+        "display_in_form_type": "MODULE"
+      }
+    ],
+    "oif_options": {
+      "type": "default"
+    },
+    "read_only": false,
+    "display_in_form_type": "MODULE"
+  },
+  {
+    "type": "referral",
+    "code": "calendar_complete",
+    "hint": "Referral Field",
+    "source": "loan_new",
+    "async": false,
+    "required": true,
+    "online": true,
+    "context_filters": [],
+    "read_only": false,
+    "referred_field": "code",
+    "display_in_form_type": "MODULE"
+  },
+  {
+    "type": "label",
+    "hint": "Label with Link",
+    "code": "link_label",
+    "value": "Testing Yahoo: <a href=\"http://yahoo.com\">Yahoo</a>"
+  },
+  {
+    "type": "link",
+    "hint": "Simple Link",
+    "title": "Yahoo",
+    "code": "simple_link",
+    "url": "http://yahoo.com",
+    "show_link_icon": false
+  },
+  {
+    "type": "text",
+    "code": "customer_name_qu4p83wxh",
+    "hint": "Oif field with Text Type",
+    "required": false,
+    "read_only": false,
+    "display_in_form_type": "MODULE",
+    "oif_options": {
+      "type": "default",
+      "url": "/validation/validateEntity",
+      "params": [
+        {
+          "code": "customer_name_qu4p83wxh",
+          "name": "customer_name_qu4p83wxh"
+        }
+      ]
+    }
+  },
+  {
+    "type": "sifg",
+    "code": "sifg_payee_type_gpu8wmbsa",
+    "required": true,
+    "hint": "Oif Field with Dropdown(SIFG)",
+    "sifg_options": {
+      "selection": {
+        "type": "code_name_spinner",
+        "code": "payee_type_gpu8wmbsa",
+        "hint": "Payee Type",
+        "code_name_spinner_options": [
+          {
+            "code": "none",
+            "name": "Select",
+            "order": 0
+          },
+          {
+            "code": "Customer",
+            "name": "Customer"
+          },
+          {
+            "code": "Spouse",
+            "name": "Spouse"
+          },
+          {
+            "code": "Mother",
+            "name": "Mother"
+          },
+          {
+            "code": "Father",
+            "name": "Father"
+          },
+          {
+            "code": "Brother",
+            "name": "Brother"
+          },
+          {
+            "code": "Sister",
+            "name": "Sister"
+          }
+        ],
+        "required": true
+      },
+      "inputs": {
+        "Customer": [],
+        "Relative": [],
+        "Self": [],
+        "Spouse": [
+          {
+            "type": "text",
+            "code": "payeee_name__yty9vxu8j",
+            "hint": "Payee name",
+            "required": true,
+            "regex": "^[A-Za-z]+[A-Za-z ]*$",
+            "regex_hint": "Please input correct name",
+            "oif_options": null,
+            "read_only": false,
+            "display_in_form_type": "MODULE"
+          }
+        ],
+        "Mother": [
+          {
+            "type": "text",
+            "code": "payeee_name__yty9vxu8j",
+            "hint": "Payee name",
+            "required": true,
+            "regex": "^[A-Za-z]+[A-Za-z ]*$",
+            "regex_hint": "Please input correct name",
+            "oif_options": null,
+            "read_only": false,
+            "display_in_form_type": "MODULE"
+          }
+        ],
+        "Father": [
+          {
+            "type": "text",
+            "code": "payeee_name__yty9vxu8j",
+            "hint": "Payee name",
+            "required": true,
+            "regex": "^[A-Za-z]+[A-Za-z ]*$",
+            "regex_hint": "Please input correct name",
+            "oif_options": null,
+            "read_only": false,
+            "display_in_form_type": "MODULE"
+          }
+        ],
+        "Brother": [
+          {
+            "type": "text",
+            "code": "payeee_name__yty9vxu8j",
+            "hint": "Payee name",
+            "required": true,
+            "regex": "^[A-Za-z]+[A-Za-z ]*$",
+            "regex_hint": "Please input correct name",
+            "oif_options": null,
+            "read_only": false,
+            "display_in_form_type": "MODULE"
+          }
+        ],
+        "Sister": [
+          {
+            "type": "text",
+            "code": "payeee_name__yty9vxu8j",
+            "hint": "Payee name",
+            "required": true,
+            "regex": "^[A-Za-z]+[A-Za-z ]*$",
+            "regex_hint": "Please input correct name",
+            "oif_options": null,
+            "read_only": false,
+            "display_in_form_type": "MODULE"
+          }
+        ],
+        "Other": [
+          {
+            "type": "text",
+            "code": "payeee_name__yty9vxu8j",
+            "hint": "Payee name",
+            "required": true,
+            "regex": "^[A-Za-z]+[A-Za-z ]*$",
+            "regex_hint": "Please input correct name",
+            "oif_options": null,
+            "read_only": false,
+            "display_in_form_type": "MODULE"
+          }
+        ]
+      }
+    },
+    "oif_options": {
+      "type": "default",
+      "url": "/validation/validateEntity",
+      "params": [
+        {
+          "code": "sifg_payee_type_gpu8wmbsa",
+          "name": "sifg_payee_type_gpu8wmbsa"
+        }
+      ]
+    },
+    "read_only": false,
+    "display_in_form_type": "MODULE"
+  }
+]

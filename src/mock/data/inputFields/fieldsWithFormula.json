@@ -1,0 +1,84 @@
+[
+  {
+    "type": "text",
+    "code": "input_a",
+    "hint": "Input A",
+    "required": false,
+    "read_only": false
+  },
+  {
+    "type": "text",
+    "code": "input_b",
+    "hint": "Input B Data would be equals to input a",
+    "required": false,
+    "read_only": false,
+    "default_value": {
+      "type": "standard",
+      "inputs": [
+        {
+          "type": "value",
+          "value": {
+            "val_type": "form",
+            "operator_required": false,
+            "attribute": "input_a",
+            "input_field": "input_a"
+          }
+        }
+      ],
+      "standard_function": "IS",
+      "return_type": "text"
+    }
+  },
+  {
+    "type": "text",
+    "code": "input_d",
+    "hint": "Input D would hide if \"input a\" value is not empty",
+    "required": false,
+    "read_only": false,
+    "hiddenV2": {
+      "type": "standard",
+      "inputs": [
+        {
+          "type": "value",
+          "value": {
+            "val_type": "form",
+            "operator_required": false,
+            "attribute": "input_a",
+            "input_field": "input_a"
+          }
+        }
+      ],
+      "standard_function": "IS_NOT_EMPTY",
+      "return_type": "text"
+    }
+  },
+  {
+    "type": "text",
+    "code": "input_c",
+    "hint": "Input C (Validations on other field)",
+    "required": false,
+    "read_only": false,
+    "validations": [
+      {
+        "expression": {
+          "type": "standard",
+          "inputs": [
+            {
+              "type": "value",
+              "value": {
+                "val_type": "form",
+                "operator_required": false,
+                "attribute": "input_a",
+                "input_field": "input_a"
+              }
+            }
+          ],
+          "standard_function": "IS_EMPTY",
+          "return_type": "bool"
+        },
+        "error_message": "Input A is mandatory.",
+        "disable_backend_validation": false
+      }
+    ]
+  }
+]
