@@ -25,8 +25,6 @@ const FOLDER_PATH = 'src/modules/uiBuilder/templates/selfServe';
 //   process.env;
 
 const {
-  BITBUCKET_USER_NAME = 'Harshit-886',
-  BITBUCKET_APP_PASSWORD = 'ATBB9hqKqqfucftsNnmJtAamTHB21C241A05',
   WORKSPACE = 'vymo',
   REPO_SLUG = 'vymo-web-platform',
 } = process.env;
