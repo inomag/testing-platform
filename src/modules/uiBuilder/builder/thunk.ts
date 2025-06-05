@@ -21,13 +21,11 @@ const { format } = prettier;
 const TARGET_BRANCH = 'master';
 const FOLDER_PATH = 'src/modules/uiBuilder/templates/selfServe';
 
-// const { BITBUCKET_USER_NAME, BITBUCKET_APP_PASSWORD, WORKSPACE, REPO_SLUG } =
-//   process.env;
 
 const {
   WORKSPACE = 'vymo',
   REPO_SLUG = 'vymo-web-platform',
-} = process.env;
+} = {};
 
 const axiosClient = axios.create({
   baseURL: 'https://api.bitbucket.org/2.0',
